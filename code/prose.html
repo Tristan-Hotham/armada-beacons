@@ -1,0 +1,122 @@
+<div class="stats">
+  <div><b>{{n_sites|int}}</b><span>hills and summits with "beacon" in their name</span></div>
+  <div><b>{{main.share_sees_any|pct0}}</b><span>can see another beacon site's fire within 50 km</span></div>
+  <div><b class="h">{{main.reached_from_lizard|int}}</b><span>sites the Lizard fire reaches on beacon names alone, all in Cornwall</span></div>
+  <div><b class="h">{{filled.50.targets.london.hops|int}}</b><span>hops to London if the gaps had fires too: {{filled.50.targets.london.minutes_fast|dur}} to {{filled.50.targets.london.minutes_slow|dur}}</span></div>
+</div>
+
+<p class="lede">On {{refs.sighting_date.value|raw}} the Spanish Armada was sighted off the Lizard in Cornwall, and a chain of beacons was lit to spread the warning. That date is in the English calendar of the time; by the Gregorian calendar Spain already used, it was 29 July. In {{refs.poem_written.value|raw}} Thomas Babington Macaulay turned the scene into a poem, "The Armada", with fire leaping from hill to hill until "twelve fair counties saw the blaze on Malvern's lonely height".</p>
+<p>The fires left their mark on the map. Many hills in Britain are still called Beacon Hill, or Something Beacon. So I asked a simple question of them: how fast could fire carry the news? I took every hill and summit in the Ordnance Survey's gazetteer with "beacon" in its name, {{n_sites|int}} in all, traced the line of sight between every pair, and lit a fire at the one nearest the Lizard.</p>
+<p>The answer has two halves. The beacon names on today's map do not make a chain: from the Lizard, the fire runs out after {{main.reached_from_lizard|int}} hills, all in Cornwall. But the gaps are small. Add a fire to the highest ground of every 10 km square and the news could reach the edge of London in {{filled.50.targets.london.hops|int}} hops, which is {{filled.50.targets.london.minutes_fast|dur}} at a brisk five minutes a hop and {{filled.50.targets.london.minutes_slow|dur}} at a slow thirty.</p>
+
+<h2><span class="n">01 · The map</span>Light the Lizard</h2>
+<p>Every dot is a beacon site. Press play to light the fire at Roskruge Beacon, {{start.km_from_lizard_point|f1}} km from Lizard Point, and watch it spread, one hop at a time, to every beacon that can see a fire already burning. Switch between the beacon names alone and the network with its gaps filled, change the time per hop, and pick a destination to draw the route. Tap a beacon to see what it could see.</p>
+<div class="figure bleed">
+  <div class="controls">
+    <span class="clab">Network</span>
+    <div class="seg" role="group" aria-label="Network"><button class="btn" data-mode="names" aria-pressed="false">Names only</button><button class="btn" data-mode="filled" aria-pressed="true">Filled gaps</button></div>
+    <span class="clab">Per hop</span>
+    <div class="seg" role="group" aria-label="Minutes per hop"><button class="btn" data-delay="5" aria-pressed="false">5 min</button><button class="btn" data-delay="15" aria-pressed="true">15 min</button><button class="btn" data-delay="30" aria-pressed="false">30 min</button></div>
+    <button class="btn" id="blinks" aria-pressed="true">Sight lines</button>
+    <select id="route" aria-label="Route to draw"><option value="london" selected>Route to London</option><option value="york">Route to York</option><option value="beacon_fell">Route to Beacon Fell, Lancashire</option><option value="malvern">Route to Malvern</option><option value="carlisle">Route to Carlisle</option><option value="berwick">Route to Berwick</option><option value="none">No route</option></select>
+  </div>
+  <div class="timebar"><button class="btn play" id="play">▶ Play</button><span class="clock" id="clock">0 min</span><input type="range" id="tslider" min="0" max="300" value="0" aria-label="Time since the first fire"><span class="lit" id="litc"></span></div>
+  <div class="mapgrid">
+    <div>
+      <div id="map" role="application" aria-label="Map of beacon sites and the spread of fire from the Lizard"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="side">
+      <div class="card" id="routeCard"></div>
+      <div class="card empty" id="card">Tap a beacon to see what it could see and how soon it would be lit.</div>
+    </div>
+  </div>
+  <div class="src">Line of sight from a watcher's eye 2 m above the ground to the top of a fire 5 m above the ground, up to 50 km, over a 90 m elevation model, with earth curvature and standard refraction. Each beacon point is moved to the highest ground within 250 m. Relay hills are the highest ground in each 10 km square: a model, not known beacon sites. Time per hop is an assumption (section 04).</div>
+</div>
+
+<h2><span class="n">02 · The names</span>{{n_sites|int}} hills called beacon</h2>
+<p>I started from OS Open Names, the Ordnance Survey's free gazetteer, and kept every hill, mountain or spot height with "beacon" in its name, plus the headland called Fire Beacon Point in Cornwall. {{n_beacon_hill|int}} are plain Beacon Hill; {{n_x_beacon|int}} are a place name followed by Beacon, like Dunkery Beacon, Ditchling Beacon or Worcestershire Beacon on the Malverns. I added two named historic beacons from OpenStreetMap that the gazetteer does not carry, Pinhaw Beacon and Penhill Beacon, and left out woods, farms, coastal rocks, reservoirs, the Brecon Beacons range and every navigation mark. Wikidata's beacons all turned out to be harbour lights and sea marks, so none is used. {{n_excluded|int}} candidates were dropped in all, each with its reason in the data.</p>
+<p>The sites are overwhelmingly English: {{n_by_country.England|int}} in England, {{n_by_country.Wales|int}} in Wales and {{n_by_country.Scotland|int}} in Scotland. Wales and Scotland had their own warning fires, but their hills mostly carry Welsh, Gaelic or Scots names, and the English word "beacon" is rare there. So this is really a study of England, with a few outliers.</p>
+<p class="pull">A Beacon Hill is evidence that someone once lit, or planned to light, a fire there. It is not proof of 1588.</p>
+<p>Warning fires were used in England long before 1588 and long after it, and hills were named and renamed over the centuries. Some Beacon Hills may be named for a later bonfire or celebration. Many real Armada beacons, meanwhile, stood on hills whose names never mention it. The names are a sample of where fires were lit at some time, not a register of the 1588 chain.</p>
+
+<h2><span class="n">03 · The chain breaks</span>A fire that never leaves Cornwall</h2>
+<p>Within 50 km, {{main.sees_any|int}} of the {{n_sites|int}} sites ({{main.share_sees_any|pct0}}) can see at least one other beacon site's fire. The typical site is linked to {{degree_median|int}} others, and the best connected, Blackborough Beacon in Devon and three hills in Somerset, to {{degree_max|int}}. Of all pairs within 50 km, {{share_pairs_visible_50|pct0}} are in line of sight, and the median sight line in use is {{median_link_km|f1}} km.</p>
+<p>But joining them up gives not one network but {{main.n_components|int}}. The largest has {{main.giant|int}} sites ({{main.share_giant|pct0}}). It runs from east Cornwall and Dartmoor through Somerset, Dorset, Wiltshire and Hampshire, and north through Gloucestershire and the Malverns to the edge of the Black Country. Next come a north-eastern network of {{main.second|int}} sites in North Yorkshire, Durham and Northumberland, and a Pennine one reaching from Westmorland and Lancashire to West Yorkshire. {{main.isolated|int}} sites can see no other at all.</p>
+<div class="figure">
+  <div class="fig-h">Separate beacon networks</div>
+  <div class="fig-sub">Each bar is a group of beacon sites linked by lines of sight within 50 km. Orange: the group with the Lizard in it.</div>
+  <div class="chart" id="comps"></div>
+</div>
+<p>The Lizard is in a Cornish network of {{start_component_size|int}} sites. Lit at Roskruge Beacon, the fire reaches all of them within {{main.max_hops|int}} hops, and then stops. The nearest crossing into Devon would need a sight line of {{bridged.malvern.gaps.0.km|f1}} km, from a hill called The Beacon in mid Cornwall to Penn Beacon on Dartmoor, a little beyond my 50 km limit. Allow it, and the fire runs on through Devon and Somerset to Malvern in {{bridged.malvern.hops|int}} hops.</p>
+<p>London is out of reach on any terms. The only beacon-named hill within {{zone_km|int}} km of London is Beacon Hill at Purfleet in Thurrock, just {{zone_detail.london.0.elev_m|f1}} m above sea level on the elevation tiles. Its own fire could be seen from one other beacon site, across the Thames in Medway, but from it no other beacon fire is in sight at any distance up to 150 km. York has no beacon-named hill within {{zone_km|int}} km at all, and neither has Berwick.</p>
+<p>So the names alone do not make a chain. That is not a surprise, and it is not evidence that there was no chain: it shows how much of the 1588 system has left no trace in the names on today's map.</p>
+
+<h2><span class="n">04 · Filling the gaps</span>How fast could fire carry the news?</h2>
+<p>To see how close the names come to a working chain, I added possible relay hills: one point on the highest ground of each 10 km square of the National Grid, {{filled.n_relays|int}} in all, over Great Britain up to roughly the Forth. These are not known beacon sites. They stand for the many beacons, watch hills and church towers that left no "beacon" in the gazetteer. Then I let the fire spread through the beacon sites and the relay hills together.</p>
+<p>Now the fire reaches {{filled.50.reached_beacons|int}} of the {{n_sites|int}} beacon sites. The two it misses are on Scilly and in the Highlands, beyond the reach of any relay. The routes it takes, and the number of hops to each place:</p>
+<div class="figure">
+  <div class="fig-h">From the Lizard to ...</div>
+  <div class="fig-sub">Fewest hops through beacon sites and relay hills, within 50 km a hop. Dots: 5, 15 and 30 minutes a hop. A place counts as reached when a fire within {{zone_km|int}} km of it is lit.</div>
+  <div class="chart" id="targets"></div>
+</div>
+<p>London takes {{filled.50.targets.london.hops|int}} hops, York {{filled.50.targets.york.hops|int}}, Beacon Fell above Preston {{filled.50.targets.beacon_fell.hops|int}}, and the edge of Berwick-upon-Tweed {{filled.50.targets.berwick.hops|int}}. Malvern, Macaulay's "lonely height", is {{filled.50.targets.malvern.hops|int}} hops away.</p>
+<h3>How long is a hop?</h3>
+<p>Nobody timed the 1588 beacons, and I found no reliable figure for how long one took to answer another. So I treat the time per hop as an assumption and show a range. At the quick end, five minutes: a watcher who is awake and looking the right way, with dry fuel ready to light. In the middle, fifteen minutes. At the slow end, thirty: the watcher has to notice the glow, make sure it is a beacon and not a house fire, and get a large fire going in the wind.</p>
+<p>On those terms the news reaches the edge of London in {{filled.50.targets.london.minutes_fast|dur}}, {{filled.50.targets.london.minutes_central|dur}} or {{filled.50.targets.london.minutes_slow|dur}}. York takes {{filled.50.targets.york.minutes_fast|dur}} to {{filled.50.targets.york.minutes_slow|dur}}, and the Scottish border near Berwick {{filled.50.targets.berwick.minutes_fast|dur}} to {{filled.50.targets.berwick.minutes_slow|dur}}. With a fixed time per hop, the quickest route is simply the one with the fewest hops; real delays would vary from hill to hill and night to night.</p>
+<div class="figure">
+  <div class="fig-h">Beacon sites alight, by hour</div>
+  <div class="fig-sub">Of the {{n_sites|int}} beacon sites, how many are alight at each hour after the Lizard fire, in the filled network, for three times per hop. Dashed: the beacon names alone.</div>
+  <div class="chart" id="byhour"></div>
+</div>
+<p>At fifteen minutes a hop, {{filled.50.beacons_alight_by_hour.central.2|int}} beacon sites are alight after two hours and {{filled.50.beacons_alight_by_hour.central.4|int}} after four. The last is lit after {{filled.50.max_hops_beacons|int}} hops: {{filled.50.hours_all_beacons.fast|f1}} hours at the quick rate, {{filled.50.hours_all_beacons.central|f1}} in the middle, {{filled.50.hours_all_beacons.slow|f1}} at the slow one.</p>
+<div class="figure">
+  <div class="fig-h">Hops to the first beacon in each region</div>
+  <div class="fig-sub">Filled network, within 50 km a hop. Label: hops, and the time at fifteen minutes a hop.</div>
+  <div class="chart" id="regions"></div>
+</div>
+
+<h2><span class="n">05 · Gaps</span>Only {{filled.50.targets.london.min_relays|words}} missing hills to London</h2>
+<p>The quickest route to London runs mostly over relay hills: {{filled.50.targets.london.relays_on_fastest|int}} of its {{filled.50.targets.london.hops|int}} hops land on one. But that is because the relay hills are everywhere. A better test of the names is to ask how few relay hills it takes to join them up. To London, the answer is {{filled.50.targets.london.min_relays|words}}, for a route of {{filled.50.targets.london.min_relay_hops|int}} hops. The fire crosses from the Lizard to the coast near Polperro, picks up the named beacons of Dartmoor, the Blackdowns, Somerset and Wiltshire, and needs new fires only in Hampshire and Surrey to finish the job.</p>
+<p>Malvern needs just {{filled.50.targets.malvern.min_relays|words}} relay hill, the one that gets the fire out of Cornwall. Beacon Fell in Lancashire needs {{filled.50.targets.beacon_fell.min_relays|words}}, and York {{filled.50.targets.york.min_relays|words}}. The far north is thinnest: the border near Berwick needs {{filled.50.targets.berwick.min_relays|words}}.</p>
+<p class="pull">The first and worst gap is right at the start: the Lizard's own fires cannot see out of Cornwall.</p>
+
+<h2><span class="n">06 · Chokepoints</span>Where one fire matters most</h2>
+<p>Some beacon sites sit on far more of the shortest routes than others. The measure is betweenness: the share of shortest routes between all pairs of beacon sites that pass through a site. Top of the list is Beacon Batch, the summit of Black Down, the highest hill in the Mendips, a range Macaulay names in the poem. Take it away and {{chokepoints.0.giant_lost|int}} sites drop out of the largest network. {{n_cut_vertices_giant|int}} sites in the largest network are cut points like this: lose one and the network splits.</p>
+<div class="figure">
+  <div class="tablewrap"><table class="t" id="choke"></table></div>
+  <div class="src">Beacon names only, within 50 km. Betweenness: share of shortest routes between pairs of beacon sites that pass through the site. Sites cut off: how many fall out of the largest network if this one is not lit.</div>
+</div>
+
+<h2><span class="n">07 · Limits</span>What this can and cannot say</h2>
+<p><b>Names are not history.</b> A Beacon Hill tells you a fire was lit or planned there at some time. It does not date it, and many real 1588 beacons have no such name. The relay hills are a model of what the ground allowed, not a map of the missing beacons.</p>
+<p><b>Seeing a line is not seeing a fire.</b> A clear line of sight at night is necessary but not enough. Haze, rain, low cloud and the size of the fire all matter, and a fire 50 km away is a small spark. I used 50 km as the main limit, and show 30, 70 and 100 km below. Smoke by day carries differently again.</p>
+<p><b>The ground model is coarse.</b> The elevation tiles have pixels about 90 m across and smooth off summits: Worcestershire Beacon, {{refs.worcs_height_m.value|int}} m high, comes out at {{zone_detail.malvern.0.elev_m|int}} m. There are no trees or buildings in the model. The name points are moved to the highest ground within 250 m (a median shift of {{snap_median_m|int}} m), and I also ran everything from the original points.</p>
+<p><b>The delays are assumptions.</b> Five, fifteen and thirty minutes a hop are my choices, not measurements. The hop counts are the robust result; the times scale with whatever delay you prefer.</p>
+<div class="figure">
+  <div class="fig-h">How the results change with the assumptions</div>
+  <div class="fig-sub">Beacon names only. "Reached" counts the sites the Lizard fire reaches, including the first.</div>
+  <div class="tablewrap"><table class="t" id="sens"></table></div>
+  <div class="src">Summit: points moved to the highest ground within 250 m. Name point: the gazetteer point as given. A 10 m fire stands for a tall blaze on a platform or a column of smoke.</div>
+</div>
+<p>Allowing 70 km sight lines and a 10 m fire, the names alone reach Carlisle and Beacon Fell but still not London or York. Cutting the range to 30 km leaves the Lizard fire only {{sensitivity.0.reached|int}} sites.</p>
+
+<div class="note" id="method">
+  <h3>How I did this</h3>
+  <p><b>Sites.</b> OS Open Names (OGL v3), every landform of type hill or mountain, or spot height, whose name contains "beacon", plus Fire Beacon Point; two named OpenStreetMap historic beacons (ODbL); duplicates within 1 km merged. Excluded candidates are listed with reasons.</p>
+  <p><b>Ground and sight lines.</b> AWS Terrain Tiles (Mapzen/Tilezen) at zoom 10, about 90 m pixels, sampled every 45 m along each line with bilinear interpolation. A fire 5 m above the ground at one site is visible from a watcher 2 m above the ground at another if no ground, raised by the curve of the earth with standard refraction (k = 0.13), reaches the line between them. This is the same code as my study <a href="https://tristan-hotham.github.io/within-sight/">Within Sight</a>, which checked it on synthetic ground.</p>
+  <p><b>Network.</b> A fire passes from site A to site B when A's fire is visible from B. The fire starts at the beacon site nearest Lizard Point (OS Open Names) and spreads by fewest hops. London, York, Carlisle and Berwick count as reached when any lit site within {{zone_km|int}} km of their OS Open Names point is lit. Betweenness is computed on the undirected network of beacon names within 50 km.</p>
+  <p><b>Filled network.</b> One relay point per 10 km square of the British National Grid south of northing 700 km, at the highest elevation sampled every 100 m; squares below 5 m are treated as sea. Sight lines among all {{filled.n_nodes|int}} points up to 50 km. The fewest-relay route gives each relay hill a cost of 1,000 hops, so it minimises relay hills first and hops second.</p>
+  <p><b>Time.</b> Hops times an assumed delay of 5, 15 or 30 minutes. All numbers on this page come from the published results file.</p>
+</div>
+
+<h2><span class="n">08 · Sources</span>Data, licences and code</h2>
+<div class="cta"><a class="p" href="https://doi.org/10.5281/zenodo.23688581">Read the paper</a><a href="https://github.com/Tristan-Hotham/armada-beacons">Data and code</a><a href="https://blog.tristanhotham.com/">Blog home</a></div>
+<p>Related: <a href="https://tristan-hotham.github.io/within-sight/">Within Sight</a>, on whether Britain's hillforts could see each other, which this study borrows its line-of-sight code from.</p>
+<ul>
+<li>Ordnance Survey, OS Open Names. Contains OS data © Crown copyright and database right 2026 (Open Government Licence v3.0).</li>
+<li>OpenStreetMap, historic=beacon features, © OpenStreetMap contributors (ODbL 1.0). Wikidata (CC0), checked and not used.</li>
+<li>Elevation: AWS Terrain Tiles by Mapzen/Tilezen, from sources including SRTM, GMTED2010, ETOPO1 and national datasets.</li>
+<li>Sighting date: Royal Museums Greenwich, <a href="https://www.rmg.co.uk/stories/topics/elizabeth-i-spanish-armada">"Elizabeth I and the Spanish Armada"</a>.</li>
+<li>The poem: Wikipedia, <a href="https://en.wikipedia.org/wiki/Lays_of_Ancient_Rome">"Lays of Ancient Rome"</a> (written in 1832) and <a href="https://en.wikipedia.org/wiki/Worcestershire_Beacon">"Worcestershire Beacon"</a> (height and the Malvern line).</li>
+</ul>

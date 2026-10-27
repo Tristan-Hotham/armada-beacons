@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fire on the Hills</title>
+<meta name="description" content="How fast could fire carry the news of the Armada? Line of sight between {{n_sites|int}} beacon hills in Britain, the chains they form, and where the chain breaks.">
+<meta property="og:title" content="Fire on the Hills: how fast could the Armada beacons carry the news?">
+<meta property="og:description" content="Line of sight between {{n_sites|int}} beacon-named hills, the fire's spread from the Lizard, and the gaps in the chain.">
+<meta property="og:image" content="https://tristan-hotham.github.io/armada-beacons/header.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+/* Dawn paper. Flame = fire and lit beacons. Ember = routes. Slate = sight lines. Gold = relay hills. */
+:root{
+  --bg:#FCF0E3; --panel:#F6E2CE; --fg:#2B1B12; --muted:#7A6252; --rule:#EDD5BF; --card:#FFF8F1; --border:#DDBCA0;
+  --hot:#D9480F; --ember:#9C2A12; --gold:#C98A12; --slate:#4F6D8A; --plum:#7E4A8E; --moss:#5B7A3A;
+  --sea:#E4E6E3; --dot:#A8927F; --glow:rgba(242,106,48,.35);
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#18120E; --panel:#221A14; --fg:#F1E6DA; --muted:#AE9A88; --rule:#3A2E25; --card:#241B15; --border:#4E3F33;
+  --hot:#FF7A33; --ember:#FF9F6B; --gold:#E9B14A; --slate:#8FB0D0; --plum:#C690D6; --moss:#97BC6E;
+  --sea:#121416; --dot:#7F6F62; --glow:rgba(255,122,51,.4); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#18120E; --panel:#221A14; --fg:#F1E6DA; --muted:#AE9A88; --rule:#3A2E25; --card:#241B15; --border:#4E3F33;
+  --hot:#FF7A33; --ember:#FF9F6B; --gold:#E9B14A; --slate:#8FB0D0; --plum:#C690D6; --moss:#97BC6E;
+  --sea:#121416; --dot:#7F6F62; --glow:rgba(255,122,51,.4); color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+.wrap{max-width:680px;margin:0 auto;padding-block:28px 64px}
+.wrap .bleed{width:min(1080px,calc(100vw - 32px));margin-left:calc((100% - min(1080px,100vw - 32px))/2);margin-right:0}
+a{color:inherit;text-decoration-color:var(--hot);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:var(--hot);color:#fff;padding:5px 8px;font-weight:500}
+header.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:end;border-bottom:6px double var(--fg);padding-bottom:22px;margin-top:18px}
+h1{font:900 clamp(54px,13vw,112px)/.86 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance;font-variation-settings:"SOFT" 50}
+h1 em{font-style:normal;color:var(--hot)}
+.mark{width:clamp(92px,21vw,176px);height:auto;display:block}
+.dek{grid-column:1/-1;font-size:21px;line-height:1.42;margin:8px 0 0;max-width:44ch}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+h2{font:800 34px/1.04 var(--display);letter-spacing:-.01em;margin:52px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--hot);display:block;letter-spacing:.1em;margin-bottom:10px}
+h3{font:600 20px/1.25 var(--display);margin:28px 0 6px}
+p{margin:0 0 16px}
+.lede::first-letter{font:900 72px/.8 var(--display);float:left;margin:6px 10px 0 0;color:var(--hot)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:26px 0 8px}
+.stats div{background:var(--card);padding:14px 12px}
+.stats b{display:block;font:900 clamp(28px,6vw,40px)/1 var(--display);color:var(--fg)}
+.stats b.h{color:var(--hot)}
+.stats span{font:400 12px/1.35 var(--mono);color:var(--muted);display:block;margin-top:6px}
+@media (max-width:600px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{margin:26px 0 30px}
+.fig-h{font:600 19px/1.25 var(--display);margin:0 0 4px}
+.fig-sub{font:400 13px/1.45 var(--mono);color:var(--muted);margin:0 0 12px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--mono);fill:var(--fg)}
+.lab{font-size:12px}.lab.m{fill:var(--muted)}.lab.b{font-weight:500}.lab.s{font-size:11px}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font:400 12px/1.45 var(--mono);padding:8px 10px;border-radius:3px;max-width:270px;z-index:1000;transform:translate(-50%,calc(-100% - 12px));display:none}
+.tip b{font-weight:500}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 10px}
+.btn{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px 10px;cursor:pointer;min-height:36px}
+.btn[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn.play{background:var(--hot);border-color:var(--hot);color:#fff;min-width:84px}
+.btn:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:3px;overflow:hidden}
+.seg .btn{border:0;border-radius:0;border-right:1px solid var(--border)}
+.seg .btn:last-child{border-right:0}
+.clab{font:400 11px/1 var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+select{font:400 13px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px;min-height:36px;max-width:100%}
+.timebar{display:flex;gap:12px;align-items:center;margin:8px 0 10px;flex-wrap:wrap}
+.timebar input[type=range]{flex:1 1 220px;min-width:0;accent-color:var(--hot)}
+.clock{font:900 30px/1 var(--display);color:var(--hot);min-width:5.2ch}
+.lit{font:400 13px/1.3 var(--mono);color:var(--muted)}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:820px){.mapgrid{grid-template-columns:1fr}}
+#map{height:clamp(440px,74vh,660px);border:1px solid var(--border);background:var(--sea);border-radius:2px;z-index:0}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font:400 12px/1.3 var(--mono);color:var(--muted);margin-top:8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.legend i.ln{width:18px;height:3px;border-radius:0;vertical-align:3px}
+.side{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--hot);padding:12px 14px;font:400 13px/1.5 var(--mono)}
+.card.empty{border-left-color:var(--border);color:var(--muted)}
+.card b{font:600 18px/1.2 var(--display);display:block;margin-bottom:6px}
+.card dl{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;margin:6px 0 8px}
+.card dt{color:var(--muted)}.card dd{margin:0}
+.card ol{margin:6px 0 0;padding-left:30px;max-height:240px;overflow:auto}
+.pull{font:600 26px/1.25 var(--display);border-left:6px solid var(--hot);padding:4px 0 4px 18px;margin:30px 0}
+.note{background:var(--panel);border:1px solid var(--rule);padding:14px 16px;font-size:16px;margin:22px 0}
+.note h3{margin-top:0}
+table.t{width:100%;border-collapse:collapse;font:400 13px/1.35 var(--mono)}
+table.t th{text-align:left;font-weight:500;color:var(--muted);border-bottom:2px solid var(--fg);padding:6px 8px 6px 0}
+table.t td{border-bottom:1px solid var(--rule);padding:7px 8px 7px 0;vertical-align:top}
+table.t td.num,table.t th.num{text-align:right}
+.tablewrap{overflow-x:auto}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:var(--hot);border-color:var(--hot);color:#fff}
+footer{border-top:6px double var(--fg);margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{position:fixed;right:12px;bottom:12px;z-index:1001}
+.leaflet-container{font:400 12px/1.4 var(--mono);background:var(--sea)}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--card);color:var(--fg);border-radius:3px;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.leaflet-popup-content{margin:10px 12px;font:400 12.5px/1.45 var(--mono)}
+.leaflet-popup-content b{font:600 15px/1.2 var(--display);display:block;margin-bottom:4px}
+.leaflet-container a.leaflet-popup-close-button{color:var(--muted)}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--card) 85%,transparent)!important;color:var(--muted)!important;font-size:10px}
+.leaflet-control-attribution a{color:var(--fg)!important}
+.leaflet-bar a{background:var(--card);color:var(--fg);border-bottom-color:var(--border)}
+.leaflet-bar a:hover{background:var(--panel)}
+.leaflet-bar{border:1px solid var(--border)!important}
+@media print{.theme,.controls,.timebar{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker"><b>Data study</b><span>History × landscape</span><span>England, Wales and Scotland</span></div>
+<header class="hero">
+  <h1>Fire on the <em>hills</em></h1>
+  <svg class="mark" viewBox="-100 -100 200 200" aria-hidden="true"><g id="heroMark"></g></svg>
+  <p class="dek">How fast could fire carry the news of the Armada? I traced the line of sight between {{n_sites|int}} hills that carry the word "beacon" in their name, then lit a fire at the Lizard and watched where it could go.</p>
+</header>
+<div class="byline">Dr Tristan Hotham, Independent researcher · October 2026 · Data: OS Open Names, OpenStreetMap, AWS Terrain Tiles</div>
+
+<!--PROSE-->
+
+<footer>
+  <p>Dr Tristan Hotham, researcher on social media, campaigns and politics. Independent researcher. Paper: <a href="https://doi.org/10.5281/zenodo.23688581">doi.org/10.5281/zenodo.23688581</a>. <a href="https://blog.tristanhotham.com/">Blog home</a>.</p>
+  <p>Place names: OS Open Names, contains OS data © Crown copyright and database right 2026, Open Government Licence v3.0. Two beacon sites (Pinhaw Beacon and Penhill Beacon): © OpenStreetMap contributors, Open Database Licence 1.0. Wikidata (CC0) was checked and not used. Elevation: <a href="https://registry.opendata.aws/terrain-tiles/">AWS Terrain Tiles</a> by Mapzen/Tilezen; sources include SRTM, GMTED2010, ETOPO1 and national datasets (<a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md">full attribution</a>). Base map tiles © Esri, HERE, Garmin, © OpenStreetMap contributors, and the GIS user community. Map library: Leaflet.</p>
+  <p>The derived data and the text of this page are released under CC BY 4.0, except the two rows derived from OpenStreetMap, which remain under the ODbL. Code is MIT.</p>
+  <p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+</footer>
+</div>
+<div class="tip" id="tip"></div>
+<button class="btn theme" id="theme" aria-label="Toggle dark mode">◐</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+/*DATA*/
+const NS = "http://www.w3.org/2000/svg";
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const el = (t, a = {}, p) => { const e = document.createElementNS(NS, t); for (const k in a) if (a[k] != null) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const fmt = n => Math.round(n).toLocaleString("en-GB");
+const pc = (x, d = 0) => (x * 100).toFixed(d) + "%";
+const tip = document.getElementById("tip");
+function showTip(h, x, y) { tip.innerHTML = h; tip.style.display = "block"; const w = tip.offsetWidth; x = Math.max(w / 2 + 8, Math.min(innerWidth - w / 2 - 8, x)); tip.style.left = x + scrollX + "px"; tip.style.top = y + scrollY + "px"; }
+function hideTip() { tip.style.display = "none"; }
+function hover(node, h) { node.style.cursor = "pointer"; node.setAttribute("tabindex", "0"); const s = () => { const r = node.getBoundingClientRect(); showTip(h, r.left + r.width / 2, r.top); }; node.addEventListener("pointerenter", s); node.addEventListener("focus", s); node.addEventListener("pointerleave", hideTip); node.addEventListener("blur", hideTip); node.addEventListener("click", e => { e.stopPropagation(); s(); }); }
+document.addEventListener("click", hideTip);
+const redraws = [];
+function resp(box, render) { let last = 0; const go = (force) => { const w = Math.max(280, Math.round(box.clientWidth)); if (!force && Math.abs(w - last) < 4) return; last = w; box.innerHTML = ""; render(w, w < 560); }; new ResizeObserver(() => go()).observe(box); redraws.push(() => go(true)); go(); }
+const lbl = (svg, x, y, s, cls = "lab", anchor = "start") => { const t = el("text", { x, y, class: cls, "text-anchor": anchor }, svg); t.textContent = s; return t; };
+const R = D.R;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const dur = m => { if (m < 60) return m + " min"; const h = Math.floor(m / 60), r = m % 60; return h + " h" + (r ? " " + r + " min" : ""); };
+document.getElementById("theme").onclick = () => { const r = document.documentElement; const dark = r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; r.dataset.theme = dark ? "light" : "dark"; redraws.forEach(f => f()); window.__restyle && window.__restyle(); };
+const isDark = () => { const r = document.documentElement; return r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
+
+/* hero mark: three hills, a fire and its rings */
+(() => { const g = document.getElementById("heroMark");
+  el("path", { d: "M-98 70 C-84 50 -70 30 -56 24 C-40 18 -30 40 -16 44 C0 48 8 -4 30 -10 C52 -14 70 30 98 70 Z", fill: "var(--fg)", opacity: .1 }, g);
+  el("path", { d: "M-98 70 C-84 50 -70 30 -56 24 C-40 18 -30 40 -16 44 C0 48 8 -4 30 -10 C52 -14 70 30 98 70", fill: "none", stroke: "var(--fg)", "stroke-width": 3 }, g);
+  [0, 1, 2, 3].forEach(i => el("circle", { cx: 30, cy: -22, r: 18 + i * 16, fill: "none", stroke: "var(--hot)", "stroke-width": 2.4 - i * .4, opacity: .7 - i * .15 }, g));
+  el("path", { d: "M30 -48 C40 -36 42 -28 30 -14 C18 -28 22 -36 30 -48 Z", fill: "var(--hot)" }, g);
+  el("path", { d: "M30 -36 C35 -30 35 -24 30 -17 C25 -24 26 -30 30 -36 Z", fill: "var(--gold)" }, g);
+  el("circle", { cx: -56, cy: 18, r: 5, fill: "var(--hot)", opacity: .6 }, g);
+  el("line", { x1: -50, y1: 16, x2: 18, y2: -18, stroke: "var(--hot)", "stroke-width": 2, "stroke-dasharray": "5 5" }, g);
+})();
+
+/* ===== data ===== */
+const B = D.s.map((r, i) => ({ i, lat: r[0], lon: r[1], name: r[2], county: r[3], elev: r[4], h: r[5], bc: r[6], deg: r[7], region: r[8], hf: r[9] }));
+const RH = D.r.map((r, j) => ({ j, k: B.length + j, lat: r[0], lon: r[1], hf: r[2], elev: r[3] }));
+const node = k => k < B.length ? B[k] : RH[k - B.length];
+const nodeName = k => k < B.length ? `${B[k].name}, ${B[k].county}` : "unnamed hill (relay)";
+const ADJ = {}; for (const km of [30, 50, 70]) { const a = B.map(() => []); const e = D.e[km]; for (let k = 0; k < e.length; k += 2) { a[e[k]].push(e[k + 1]); a[e[k + 1]].push(e[k]); } ADJ[km] = a; }
+const DELAY = { 5: 5, 15: 15, 30: 30 };
+const TG = { london: "London", york: "York", beacon_fell: "Beacon Fell, Lancashire", carlisle: "Carlisle", berwick: "Berwick-upon-Tweed", malvern: "Worcestershire Beacon, Malvern" };
+
+/* ===== map ===== */
+(() => {
+  const card = document.getElementById("card");
+  if (!window.L) { document.getElementById("map").innerHTML = '<p style="padding:16px;font:400 13px/1.5 var(--mono)">The map library did not load. The charts below still work.</p>'; return; }
+  let mode = "filled", delay = 15, t = 0, links = true, route = "london", sel = null, playing = null;
+  const map = L.map("map", { preferCanvas: true, scrollWheelZoom: false, zoomSnap: .25, minZoom: 4, maxZoom: 14 }).fitBounds([[49.85, -6.5], [55.9, 1.9]], { padding: [6, 6] });
+  map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
+  map.on("focus", () => map.scrollWheelZoom.enable()); map.on("blur", () => map.scrollWheelZoom.disable());
+  const tileUrl = () => `https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/${isDark() ? "World_Dark_Gray_Base" : "World_Light_Gray_Base"}/MapServer/tile/{z}/{y}/{x}`;
+  const tiles = L.tileLayer(tileUrl(), { maxZoom: 16, attribution: 'Tiles &copy; Esri, HERE, Garmin, &copy; OpenStreetMap contributors, and the GIS user community · Names: OS Open Names (OGL v3)' }).addTo(map);
+  for (const [n, z] of [["lines", 405], ["relays", 408], ["route", 412], ["dots", 420]]) { map.createPane(n); map.getPane(n).style.zIndex = z; if (n !== "dots") map.getPane(n).style.pointerEvents = "none"; }
+  const lineR = L.canvas({ pane: "lines", padding: .3 }), relR = L.canvas({ pane: "relays", padding: .3 }), routeR = L.canvas({ pane: "route", padding: .3 }), dotR = L.canvas({ pane: "dots", padding: .3, tolerance: 6 });
+  const linkLayer = L.layerGroup().addTo(map), routeLayer = L.layerGroup().addTo(map);
+  const C = {}; const col = v => C[v] || (C[v] = css(v));
+  const relMarks = RH.map(r => L.circleMarker([r.lat, r.lon], { renderer: relR, radius: 1.6, weight: 0, fillOpacity: .5, interactive: false }).addTo(map));
+  const glow = B.map(p => L.circleMarker([p.lat, p.lon], { renderer: relR, radius: 0, weight: 0, fillOpacity: .25, interactive: false }).addTo(map));
+  const marks = B.map(p => { const m = L.circleMarker([p.lat, p.lon], { renderer: dotR, radius: 4, weight: 1 }); m.on("click", () => select(p, true)); m.addTo(map); return m; });
+  const hopOf = p => mode === "names" ? p.h : p.hf;
+  const maxHop = () => mode === "names" ? R.main.max_hops : R.filled["50"].max_hops_beacons;
+  const slider = document.getElementById("tslider"), clock = document.getElementById("clock"), litc = document.getElementById("litc");
+  function setRange() { slider.max = maxHop() * delay + delay; if (t > +slider.max) t = +slider.max; slider.step = 1; slider.value = t; }
+  function style() {
+    const fire = col("--hot"), gold = col("--gold"), dot = col("--dot"), bg = col("--bg"), fg = col("--fg");
+    let nLit = 0;
+    B.forEach((p, i) => { const h = hopOf(p), lit = h >= 0 && h * delay <= t, fresh = lit && t - h * delay < delay;
+      if (lit) nLit++;
+      const r = 3.2 + Math.sqrt(p.deg) * 1.1;
+      marks[i].setStyle({ radius: sel === p ? Math.max(r, 7) : r, fillColor: lit ? fire : (h < 0 ? bg : dot), color: sel === p ? fg : (lit ? bg : dot), weight: sel === p ? 2.4 : (h < 0 ? 1.2 : .8), fillOpacity: lit ? 1 : (h < 0 ? .9 : .75), opacity: 1 });
+      glow[i].setStyle({ radius: lit ? (fresh ? r * 2.8 : r * 1.8) : 0, fillColor: fresh ? gold : fire, fillOpacity: fresh ? .4 : .18 }); });
+    RH.forEach((r, j) => { const lit = mode === "filled" && r.hf >= 0 && r.hf * delay <= t;
+      relMarks[j].setStyle({ fillColor: lit ? gold : dot, fillOpacity: mode === "filled" ? (lit ? .75 : .22) : 0, radius: lit ? 2 : 1.4 }); });
+    clock.textContent = dur(t);
+    litc.textContent = `${nLit} of ${B.length} beacon sites alight` + (mode === "filled" ? ` · ${RH.filter(r => r.hf >= 0 && r.hf * delay <= t).length} relay hills` : "");
+  }
+  function drawLinks() { linkLayer.clearLayers(); if (!links) return; const segs = []; const e = D.e[50];
+    for (let k = 0; k < e.length; k += 2) { const a = B[e[k]], b = B[e[k + 1]]; segs.push([[a.lat, a.lon], [b.lat, b.lon]]); }
+    L.polyline(segs, { renderer: lineR, color: col("--slate"), weight: 1, opacity: .55, interactive: false }).addTo(linkLayer); }
+  function drawRoute() { routeLayer.clearLayers(); if (route === "none") return;
+    const T = mode === "filled" ? R.filled["50"].targets[route] : R.main.targets[route];
+    const legs = [];
+    if (mode === "filled" && T) { legs.push([T.min_relay_path, "--plum", 3.2, "6 6"]); legs.push([T.path, "--ember", 3.6, null]); }
+    else if (T && T.hops != null) legs.push([T.path, "--ember", 3.6, null]);
+    legs.forEach(([path, c, w, dash]) => { const ll = path.map(k => [node(k).lat, node(k).lon]);
+      L.polyline(ll, { renderer: routeR, color: col("--bg"), weight: w + 2.4, opacity: .9, interactive: false }).addTo(routeLayer);
+      L.polyline(ll, { renderer: routeR, color: col(c), weight: w, opacity: 1, dashArray: dash, interactive: false }).addTo(routeLayer);
+      path.forEach(k => { if (k >= B.length) L.circleMarker([node(k).lat, node(k).lon], { renderer: routeR, radius: 4, color: col("--fg"), weight: 1.4, fillColor: col("--gold"), fillOpacity: 1, interactive: false }).addTo(routeLayer); }); });
+    const rc = document.getElementById("routeCard");
+    if (!T || T.hops == null) { rc.innerHTML = `<b>${TG[route]}</b>The beacon names alone never reach ${esc(TG[route])}. Switch to <i>Filled gaps</i> to see the route with relay hills.`; rc.className = "card empty"; return; }
+    rc.className = "card";
+    rc.innerHTML = `<b>Lizard to ${esc(TG[route])}</b><dl><dt>Fewest hops</dt><dd style="color:var(--hot);font-weight:500">${T.hops}</dd><dt>At 5 / 15 / 30 min</dt><dd>${dur(T.minutes_fast)} / ${dur(T.minutes_central)} / ${dur(T.minutes_slow)}</dd>` +
+      (mode === "filled" ? `<dt>Relay hills on it</dt><dd>${T.relays_on_fastest}</dd><dt>Fewest relay hills</dt><dd>${T.min_relays}, in ${T.min_relay_hops} hops</dd>` : "") + `</dl><div style="color:var(--muted)">Fastest route:</div><ol>${(T.path_names || T.path.map(nodeName)).map(n => `<li>${esc(n)}</li>`).join("")}</ol>`;
+  }
+  function popupHtml(p) { return `<b>${esc(p.name)}</b>${esc(p.county)}<br>Ground height: ${fmt(p.elev)} m<br>Beacon sites in sight (50 km): ${p.deg}<br>` +
+    `<span style="color:var(--hot)">${p.h >= 0 ? `Names only: ${p.h} hops from the Lizard` : "Names only: never reached from the Lizard"}<br>${p.hf >= 0 ? `Gaps filled: ${p.hf} hops` : "Gaps filled: not reached"}</span>`; }
+  function select(p, popup) { sel = p; map.closePopup(); style();
+    if (!p) { card.className = "card empty"; card.textContent = "Tap a beacon to see what it could see and how soon it would be lit."; return; }
+    if (popup) L.popup({ maxWidth: 260 }).setLatLng([p.lat, p.lon]).setContent(popupHtml(p)).openOn(map);
+    const nb = ADJ[50][p.i].map(i => B[i]);
+    card.className = "card"; card.innerHTML = `<b>${esc(p.name)}</b><dl><dt>County</dt><dd>${esc(p.county)}</dd><dt>Region</dt><dd>${esc(p.region)}</dd><dt>Ground</dt><dd>${fmt(p.elev)} m</dd><dt>Names only</dt><dd>${p.h >= 0 ? p.h + " hops" : "not reached"}</dd><dt>Gaps filled</dt><dd>${p.hf >= 0 ? p.hf + " hops, " + dur(p.hf * delay) : "not reached"}</dd></dl>` +
+      (nb.length ? `<div style="color:var(--muted)">Beacon sites in sight within 50 km:</div><ol>${nb.map(q => `<li>${esc(q.name)}, ${esc(q.county)}</li>`).join("")}</ol>` : `<div style="color:var(--muted)">No other beacon site in sight within 50 km.</div>`);
+  }
+  function legend() { const L2 = [`<span><i style="background:var(--hot)"></i>Beacon site alight</span>`, `<span><i style="background:var(--dot)"></i>Not yet alight</span>`, `<span><i style="background:var(--bg);outline:1px solid var(--dot)"></i>Never reached</span>`];
+    if (mode === "filled") L2.push(`<span><i style="background:var(--gold)"></i>Relay hill alight (one per 10 km square)</span>`);
+    if (links) L2.push(`<span><i class="ln" style="background:var(--slate)"></i>Beacon sites in sight of each other (50 km)</span>`);
+    if (route !== "none") { L2.push(`<span><i class="ln" style="background:var(--ember)"></i>Fewest hops</span>`); if (mode === "filled") L2.push(`<span><i class="ln" style="background:var(--plum)"></i>Fewest relay hills</span>`); }
+    document.getElementById("legend").innerHTML = L2.join(""); }
+  const all = () => { setRange(); style(); drawLinks(); drawRoute(); legend(); };
+  document.querySelectorAll("[data-mode]").forEach(b => b.onclick = () => { mode = b.dataset.mode; document.querySelectorAll("[data-mode]").forEach(x => x.setAttribute("aria-pressed", x === b)); stop(); t = mode === "names" ? maxHop() * delay : t; all(); if (sel) select(sel, false); });
+  document.querySelectorAll("[data-delay]").forEach(b => b.onclick = () => { const f = t / delay; delay = +b.dataset.delay; t = Math.round(f * delay); document.querySelectorAll("[data-delay]").forEach(x => x.setAttribute("aria-pressed", x === b)); all(); if (sel) select(sel, false); });
+  const bl = document.getElementById("blinks"); bl.onclick = () => { links = !links; bl.setAttribute("aria-pressed", links); drawLinks(); legend(); };
+  const rs = document.getElementById("route"); rs.onchange = () => { route = rs.value; drawRoute(); legend(); };
+  slider.oninput = () => { stop(); t = +slider.value; style(); };
+  const pb = document.getElementById("play");
+  function stop() { if (playing) { cancelAnimationFrame(playing); playing = null; pb.textContent = "▶ Play"; } }
+  pb.onclick = () => { if (playing) { stop(); return; } if (t >= +slider.max) t = 0; pb.textContent = "❚❚ Pause"; let last = performance.now();
+    const step = now => { const dt = (now - last) / 1000; last = now; t = Math.min(+slider.max, t + dt * (maxHop() * delay) / 12); slider.value = t; style(); if (t >= +slider.max) { stop(); return; } playing = requestAnimationFrame(step); };
+    playing = requestAnimationFrame(step); };
+  map.on("click", () => select(null));
+  window.__restyle = () => { for (const k in C) delete C[k]; tiles.setUrl(tileUrl()); all(); };
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", window.__restyle);
+  window.__set = (m, tt) => { mode = m; t = tt; document.querySelectorAll("[data-mode]").forEach(x => x.setAttribute("aria-pressed", x.dataset.mode === m)); all(); };
+  t = R.filled["50"].targets.london.minutes_central; all();
+  const refit = () => { map.invalidateSize(); map.fitBounds([[49.85, -6.5], [55.9, 1.9]], { padding: [6, 6], animate: false }); };
+  setTimeout(refit, 50); window.addEventListener("load", refit);
+})();
+
+/* ===== targets: hops and time range ===== */
+resp(document.getElementById("targets"), (W, nar) => {
+  const keys = ["malvern", "london", "beacon_fell", "york", "carlisle", "berwick"], T = R.filled["50"].targets;
+  const rowH = nar ? 50 : 38, m = { l: nar ? 8 : 190, r: 16, t: 8, b: 40 }, H = keys.length * rowH + m.t + m.b;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Time for the fire to reach each place, by delay per hop" }, document.getElementById("targets"));
+  const max = Math.ceil(Math.max(...keys.map(k => T[k].minutes_slow)) / 60) * 60, X = v => m.l + v / max * (W - m.l - m.r);
+  for (let h = 0; h <= max; h += 60) { el("line", { x1: X(h), x2: X(h), y1: m.t, y2: H - m.b, stroke: "var(--rule)" }, svg); lbl(svg, X(h), H - m.b + 16, h / 60 + " h", "lab m s", "middle"); }
+  lbl(svg, (W + m.l) / 2, H - 6, "Hours after the Lizard fire is lit", "lab m s", "middle");
+  keys.forEach((k, i) => { const t = T[k], y = m.t + i * rowH + (nar ? 32 : 20);
+    lbl(svg, nar ? 0 : m.l - 12, nar ? y - 14 : y + 4, `${TG[k]} · ${t.hops} hops`, "lab", nar ? "start" : "end");
+    el("line", { x1: X(t.minutes_fast), x2: X(t.minutes_slow), y1: y, y2: y, stroke: "var(--hot)", "stroke-width": 5, opacity: .35, "stroke-linecap": "round" }, svg);
+    [["minutes_fast", 4], ["minutes_slow", 4], ["minutes_central", 7]].forEach(([f, r]) => { const c = el("circle", { cx: X(t[f]), cy: y, r, fill: f === "minutes_central" ? "var(--hot)" : "var(--card)", stroke: "var(--hot)", "stroke-width": 2 }, svg);
+      hover(c, `<b>${TG[k]}</b><br>${t.hops} hops<br>5 min a hop: ${dur(t.minutes_fast)}<br>15 min a hop: ${dur(t.minutes_central)}<br>30 min a hop: ${dur(t.minutes_slow)}`); });
+  });
+});
+
+/* ===== beacons alight by hour ===== */
+resp(document.getElementById("byhour"), (W, nar) => {
+  const F = R.filled["50"].beacons_alight_by_hour, H = nar ? 250 : 280, m = { l: 44, r: 16, t: 14, b: 42 }, hrs = 10;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Beacon sites alight by hour after the Lizard fire" }, document.getElementById("byhour"));
+  const X = v => m.l + v / hrs * (W - m.l - m.r), Y = v => H - m.b - v / R.n_sites * (H - m.t - m.b);
+  for (let v = 0; v <= R.n_sites; v += 50) { el("line", { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), stroke: "var(--rule)" }, svg); lbl(svg, m.l - 6, Y(v) + 4, v, "lab m s", "end"); }
+  for (let h = 0; h <= hrs; h += nar ? 2 : 1) lbl(svg, X(h), H - m.b + 16, h + " h", "lab m s", "middle");
+  lbl(svg, (W + m.l) / 2, H - 6, "Hours after the Lizard fire is lit", "lab m s", "middle");
+  const dense = (perHop, hops) => { const pts = []; for (let mm = 0; mm <= hrs * 60; mm += 1) { let c = 0; hops.forEach((n, h) => { if (h * perHop <= mm) c = n; }); pts.push([mm / 60, c]); } return pts; };
+  const series = [["fast", 5, "var(--gold)"], ["central", 15, "var(--hot)"], ["slow", 30, "var(--ember)"]];
+  const byHop = R.filled["50"].beacons_alight_by_hop;
+  series.forEach(([k, per, c]) => { const pts = dense(per, byHop); el("path", { d: "M" + pts.map(([x, y]) => `${X(x).toFixed(1)} ${Y(y).toFixed(1)}`).join("L"), fill: "none", stroke: c, "stroke-width": k === "central" ? 3 : 2 }, svg); });
+  const nm = dense(15, R.alight_by_hop); el("path", { d: "M" + nm.map(([x, y]) => `${X(x).toFixed(1)} ${Y(y).toFixed(1)}`).join("L"), fill: "none", stroke: "var(--slate)", "stroke-width": 2, "stroke-dasharray": "5 4" }, svg);
+  let lx = m.l + 6, ly = m.t + 10;
+  [["5 min a hop", "var(--gold)"], ["15 min a hop", "var(--hot)"], ["30 min a hop", "var(--ember)"], ["Names only, 15 min", "var(--slate)"]].forEach(([s, c], i) => { const yy = ly + i * 17; el("line", { x1: W - m.r - 170, x2: W - m.r - 150, y1: yy + 70, y2: yy + 70, stroke: c, "stroke-width": 3, "stroke-dasharray": i === 3 ? "5 4" : null }, svg); lbl(svg, W - m.r - 144, yy + 74, s, "lab s"); });
+  const ov = el("rect", { x: m.l, y: m.t, width: W - m.l - m.r, height: H - m.t - m.b, fill: "transparent" }, svg);
+  ov.addEventListener("pointermove", e => { const r = svg.getBoundingClientRect(), x = (e.clientX - r.left) / r.width * W, h = Math.max(0, Math.min(hrs, (x - m.l) / (W - m.l - m.r) * hrs)); const at = per => { let c = 0; byHop.forEach((n, k) => { if (k * per <= h * 60) c = n; }); return c; };
+    showTip(`<b>${h.toFixed(1)} h after the first fire</b><br>5 min a hop: ${at(5)} alight<br>15 min a hop: ${at(15)}<br>30 min a hop: ${at(30)}`, e.clientX, e.clientY - 10); });
+  ov.addEventListener("pointerleave", hideTip);
+});
+
+/* ===== regions: hops to the first beacon ===== */
+resp(document.getElementById("regions"), (W, nar) => {
+  const rows = R.filled.region_hops, rowH = 30, m = { l: nar ? 128 : 190, r: 92, t: 6, b: 30 }, H = rows.length * rowH + m.t + m.b;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Hops from the Lizard to the first beacon site in each region" }, document.getElementById("regions"));
+  const max = Math.max(...rows.map(r => r.first_hops)), X = v => m.l + v / max * (W - m.l - m.r);
+  rows.forEach((r, i) => { const y = m.t + i * rowH; lbl(svg, m.l - 10, y + 18, nar ? r.region.replace("Yorkshire and the Humber", "Yorks & Humber") : r.region, "lab", "end");
+    const b = el("rect", { x: m.l, y: y + 6, width: Math.max(2, X(r.first_hops) - m.l), height: rowH - 12, fill: "var(--hot)", opacity: .85 }, svg);
+    hover(b, `<b>${r.region}</b><br>First beacon site lit after ${r.first_hops} hops<br>${dur(r.first_hops * 5)} to ${dur(r.first_hops * 30)}<br>${r.reached} of ${r.n} sites reached; median ${r.median_hops} hops`);
+    lbl(svg, X(r.first_hops) + 6, y + 19, `${r.first_hops} · ${dur(r.first_hops * 15)}`, "lab b s"); });
+  lbl(svg, m.l, H - 6, "Hops to the first beacon site (and time at 15 min a hop)", "lab m s");
+});
+
+/* ===== components of the name-only network ===== */
+resp(document.getElementById("comps"), (W, nar) => {
+  const rows = [{ size: R.main.giant, regions: Object.keys(R.giant_regions), g: 1, names: [] }, ...R.other_components], rowH = 30, m = { l: 34, r: 12, t: 6, b: 26 }, H = rows.length * rowH + m.t + m.b;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Sizes of the separate beacon networks" }, document.getElementById("comps"));
+  const max = R.main.giant, X = v => m.l + v / max * (W - m.l - m.r) * .45;
+  rows.forEach((r, i) => { const y = m.t + i * rowH; lbl(svg, m.l - 8, y + 18, r.size, "lab b", "end");
+    const b = el("rect", { x: m.l, y: y + 6, width: X(r.size) - m.l, height: rowH - 12, fill: r.names.some(n => n.startsWith("Roskruge")) ? "var(--hot)" : "var(--slate)", opacity: .85 }, svg);
+    hover(b, `<b>${r.size} beacon sites</b><br>${r.regions.join(", ")}`);
+    lbl(svg, X(r.size) + 8, y + 19, (r.g && !nar ? "Largest: " : r.names.some(n => n.startsWith("Roskruge")) ? "With the Lizard: " : "") + (nar && r.regions.length > 2 ? r.regions.slice(0, 2).join(", ") + " +" : r.regions.join(", ")), "lab s"); });
+  lbl(svg, 0, H - 4, "Separate networks of three or more beacon sites (50 km)", "lab m s");
+});
+
+/* ===== tables ===== */
+(() => {
+  const c = document.getElementById("choke");
+  c.innerHTML = `<thead><tr><th>Beacon site</th><th class="num">Betweenness</th><th class="num">Cut point?</th><th class="num">Sites cut off</th></tr></thead><tbody>` +
+    R.chokepoints.slice(0, 8).map(r => `<tr><td>${r.name}, ${r.county}</td><td class="num">${r.betweenness.toFixed(3)}</td><td class="num">${r.cut_vertex ? "yes" : "no"}</td><td class="num">${r.giant_lost}</td></tr>`).join("") + "</tbody>";
+  const s = document.getElementById("sens"); const hv = v => v == null ? "none" : v;
+  s.innerHTML = `<thead><tr><th>Range</th><th>Version</th><th class="num">Links</th><th class="num">See another</th><th class="num">Largest network</th><th class="num">Reached from the Lizard</th></tr></thead><tbody>` +
+    R.sensitivity.map(r => `<tr><td>${r.range_km} km</td><td>${r.variant}</td><td class="num">${r.links}</td><td class="num">${pc(r.share_sees_any)}</td><td class="num">${r.giant}</td><td class="num">${r.reached}</td></tr>`).join("") + "</tbody>";
+})();
+</script>
+</body>
+</html>
