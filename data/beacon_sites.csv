@@ -1,0 +1,194 @@
+site_id,source,source_id,name,local_type,lat,lon,county,country,elev_point_m,snap_lat,snap_lon,elev_m,snap_shift_m
+B001,OS Open Names,,Beacon Hill,Hill Or Mountain,49.96074,-6.34088,Isles of Scilly,England,28.1,49.96056,-6.34249,31.9,117.0
+B002,OS Open Names,,Roskruge Beacon,Hill Or Mountain,50.06653,-5.10393,Cornwall,England,102.1,50.06554,-5.10386,103.0,110.0
+B003,OS Open Names,,The Beacon,Hill Or Mountain,50.10887,-5.61757,Cornwall,England,164.0,50.10869,-5.6175,164.9,21.0
+B004,OS Open Names,,Crowan Beacon,Hill Or Mountain,50.16953,-5.27221,Cornwall,England,208.4,50.17124,-5.27151,211.0,196.0
+B005,OS Open Names,,Beacon Hill,Hill Or Mountain,50.30545,-4.00811,Devon,England,96.9,50.30729,-4.00656,105.0,232.0
+B006,OS Open Names,,St Agnes Beacon,Hill Or Mountain,50.30731,-5.21727,Cornwall,England,165.7,50.30902,-5.21783,170.8,194.0
+B007,OS Open Names,,Beacon Hill,Hill Or Mountain,50.31734,-4.04766,Devon,England,73.3,50.31864,-4.04485,79.1,247.0
+B008,OS Open Names,,Fire Beacon Hill,Hill Or Mountain,50.37384,-3.60591,Devon,England,161.0,50.37299,-3.60563,163.8,97.0
+B009,OS Open Names,,Hensbarrow Beacon,Hill Or Mountain,50.38359,-4.81913,Cornwall,England,305.1,50.38328,-4.81568,332.1,247.0
+B010,OS Open Names,,Western Beacon,Hill Or Mountain,50.40399,-3.89475,Devon,England,317.9,50.40462,-3.89531,318.9,81.0
+B011,OS Open Names,,Beacon Hill,Hill Or Mountain,50.40704,-4.64228,Cornwall,England,108.3,50.40821,-4.63967,110.0,226.0
+B012,OS Open Names,,Ugborough Beacon,Hill Or Mountain,50.41668,-3.87694,Devon,England,358.9,50.41596,-3.8775,362.0,89.0
+B013,OS Open Names,,Belowda Beacon,Hill Or Mountain,50.42751,-4.85752,Cornwall,England,213.7,50.42733,-4.85808,215.0,45.0
+B014,OS Open Names,,Yarner Beacon,Hill Or Mountain,50.44568,-3.72124,Devon,England,51.5,50.44483,-3.72223,54.9,118.0
+B015,OS Open Names,,Beacon Hill,Hill Or Mountain,50.44695,-3.60976,Devon,England,175.0,50.44664,-3.60969,175.9,35.0
+B016,OS Open Names,,Penn Beacon,Hill Or Mountain,50.44949,-3.97448,Devon,England,411.5,50.4516,-3.97356,425.0,244.0
+B017,OS Open Names,,The Beacon,Hill Or Mountain,50.46521,-4.72408,Cornwall,England,149.6,50.46584,-4.72464,151.0,81.0
+B018,OS Open Names,,St Breock Beacon,Hill Or Mountain,50.47841,-4.8659,Cornwall,England,207.6,50.4789,-4.86625,208.0,60.0
+B019,OS Open Names,,Beacon Hill,Hill Or Mountain,50.49393,-3.69033,Devon,England,109.7,50.49456,-3.68941,110.9,95.0
+B020,OS Open Names,,The Beacon,Hill Or Mountain,50.52854,-3.50928,Devon,England,137.2,50.52782,-3.50942,138.9,81.0
+B021,OS Open Names,,The Beacon,Hill Or Mountain,50.53456,-4.67375,Cornwall,England,207.4,50.53559,-4.67262,211.0,140.0
+B022,OS Open Names,,Trelill Beacon,Hill Or Mountain,50.56842,-4.75736,Cornwall,England,143.4,50.56797,-4.75793,146.8,64.0
+B023,OS Open Names,,Michaelstow Beacon,Hill Or Mountain,50.58438,-4.70833,Cornwall,England,206.0,50.58447,-4.70826,206.0,11.0
+B024,OS Open Names,,The Beacon,Hill Or Mountain,50.59477,-4.17358,Devon,England,291.8,50.59675,-4.17393,294.0,221.0
+B025,OS Open Names,,Hameldown Beacon,Hill Or Mountain,50.5956,-3.82652,Devon,England,503.7,50.59758,-3.82815,506.9,248.0
+B026,OS Open Names,,West Down Beacon,Hill Or Mountain,50.62195,-3.35087,Devon,England,94.1,50.62406,-3.35016,114.0,240.0
+B027,OS Open Names,,Tregearedown Beacon,Hill Or Mountain,50.65474,-4.47632,Cornwall,England,209.7,50.65429,-4.47625,210.9,50.0
+B028,OS Open Names,,Firebeacon Hill,Hill Or Mountain,50.68279,-4.728,Cornwall,England,10.8,50.68194,-4.72474,54.4,249.0
+B029,OS Open Names,,Beacon Knap,Hill Or Mountain,50.69297,-2.68311,Dorset,England,113.3,50.69252,-2.6824,114.9,71.0
+B030,OS Open Names,,Fire Beacon Point,Coastal Headland,50.70433,-4.68114,Cornwall,England,39.0,50.70321,-4.67809,105.9,248.0
+B031,OS Open Names,,Beacon Hill,Hill Or Mountain,50.71102,-3.25954,Devon,England,213.3,50.71313,-3.25947,228.3,235.0
+B032,OS Open Names,,Thorncombe Beacon,Hill Or Mountain,50.71996,-2.80113,Dorset,England,86.9,50.7218,-2.79914,112.3,248.0
+B033,OS Open Names,,The Beacon,Hill Or Mountain,50.73394,-4.57034,Cornwall,England,172.9,50.73336,-4.56963,173.9,82.0
+B034,OS Open Names,,Beacon Hill,Hill Or Mountain,50.74135,-2.36988,Dorset,England,114.6,50.74009,-2.37279,124.7,248.0
+B035,OS Open Names,,Beacon Hill,Hill Or Mountain,50.74827,-3.48398,Devon,England,112.6,50.74742,-3.48327,113.8,107.0
+B036,OS Open Names,,Beacon Hill,Hill Or Mountain,50.79698,0.09335,East Sussex,England,53.6,50.7968,0.09683,64.0,246.0
+B037,OS Open Names,,Beacon Hill,Hill Or Mountain,50.80841,-0.06531,The City of Brighton and Hove,England,49.5,50.8081,-0.06524,50.0,35.0
+B038,OS Open Names,,Beacon Hill,Hill Or Mountain,50.81952,-3.06635,Devon,England,187.2,50.81853,-3.06585,190.0,115.0
+B039,OS Open Names,,Efford Beacon,Hill Or Mountain,50.82425,-4.55746,Cornwall,England,18.9,50.82461,-4.5559,37.9,117.0
+B040,OS Open Names,,Firle Beacon,Hill Or Mountain,50.83369,0.10819,East Sussex,England,181.2,50.83243,0.10783,191.8,142.0
+B041,OS Open Names,,Holsworthy Beacon,Hill Or Mountain,50.85062,-4.33389,Devon,England,191.6,50.85058,-4.33339,192.0,35.0
+B042,OS Open Names,,Blackborough Beacon,Hill Or Mountain,50.87566,-3.29021,Devon,England,223.0,50.87535,-3.28672,245.6,247.0
+B043,OS Open Names,,Beacon Hill,Hill Or Mountain,50.8801,-1.45647,Hampshire,England,21.9,50.87911,-1.45362,24.0,228.0
+B044,OS Open Names,,Ditchling Beacon,Hill Or Mountain,50.90199,-0.1072,East Sussex,England,216.8,50.90006,-0.10884,235.9,244.0
+B045,OS Open Names,,Combe Beacon,Hill Or Mountain,50.90567,-3.00423,Somerset,England,243.6,50.90603,-3.00672,245.9,179.0
+B046,OS Open Names,,Glatting Beacon,Hill Or Mountain,50.90961,-0.62754,West Sussex,England,228.5,50.90876,-0.62832,230.9,110.0
+B047,OS Open Names,,Limekiln Beacon,Hill Or Mountain,50.90991,-2.54429,Dorset,England,129.9,50.90865,-2.54401,133.0,141.0
+B048,OS Open Names,,Culmstock Beacon,Hill Or Mountain,50.92825,-3.26776,Devon,England,224.9,50.92969,-3.26512,243.5,244.0
+B049,OS Open Names,,Beacon Hill,Hill Or Mountain,50.93213,-2.91381,Somerset,England,86.7,50.93209,-2.91203,91.9,125.0
+B050,OS Open Names,,Stoodleigh Beacon,Hill Or Mountain,50.95681,-3.59031,Devon,England,285.2,50.95623,-3.59045,285.9,66.0
+B051,OS Open Names,,Beacon Hill,Hill Or Mountain,50.9595,-0.85211,West Sussex,England,210.2,50.95797,-0.85225,220.7,170.0
+B052,OS Open Names,,Beacon Hill,Hill Or Mountain,50.96417,-3.32261,Devon,England,120.9,50.96399,-3.32125,124.8,97.0
+B053,OS Open Names,,Beacon Hill,Hill Or Mountain,50.9984,-1.14275,Hampshire,England,179.9,50.99862,-1.14482,184.0,147.0
+B054,OS Open Names,,The Beacon,Hill Or Mountain,51.00892,-2.52469,Somerset,England,148.5,51.00807,-2.52141,169.9,249.0
+B055,OS Open Names,,Beacon Hill,Hill Or Mountain,51.06033,-1.4303,Hampshire,England,152.3,51.05907,-1.43323,158.5,248.0
+B056,OS Open Names,,Beacon Hill,Hill Or Mountain,51.0623,0.59965,Kent,England,91.7,51.06266,0.60079,92.0,89.0
+B057,OS Open Names,,Kingston Beacon,Hill Or Mountain,51.06954,-3.10059,Somerset,England,196.6,51.07125,-3.09837,201.4,245.0
+B058,OS Open Names,,Beacon Hill,Hill Or Mountain,51.06967,-2.12667,Wiltshire,England,226.6,51.0703,-2.12531,231.8,118.0
+B059,OS Open Names,,Beacon Hill,Hill Or Mountain,51.08332,-0.24955,West Sussex,England,146.6,51.08314,-0.24926,147.0,28.0
+B060,OS Open Names,,Beacon Hill,Hill Or Mountain,51.11402,-3.35987,Somerset,England,323.4,51.11195,-3.36109,333.8,245.0
+B061,OS Open Names,,Lamyatt Beacon,Hill Or Mountain,51.12396,-2.47358,Somerset,England,187.4,51.12378,-2.47265,189.9,68.0
+B062,OS Open Names,,Hurley Beacon,Hill Or Mountain,51.13569,-3.22728,Somerset,England,331.8,51.13672,-3.2242,336.6,244.0
+B063,OS Open Names,,Beacon Hill,Hill Or Mountain,51.1615,-3.25341,Somerset,England,292.1,51.16078,-3.25248,294.7,103.0
+B064,OS Open Names,,Dunkery Beacon,Hill Or Mountain,51.16274,-3.58667,Somerset,England,498.2,51.16256,-3.58638,499.9,28.0
+B065,OS Open Names,,Beacon Hill,Hill Or Mountain,51.16721,-4.67263,Devon,England,128.6,51.16919,-4.67105,136.0,246.0
+B066,OS Open Names,,Beacon Hill,Hill Or Mountain,51.18364,-1.72239,Wiltshire,England,180.4,51.184,-1.72146,182.8,76.0
+B067,OS Open Names,,Popham Beacon,Hill Or Mountain,51.19367,-1.22652,Hampshire,England,175.8,51.1943,-1.22559,177.0,95.0
+B068,OS Open Names,,Beacon Hill,Hill Or Mountain,51.20615,1.34737,Kent,England,54.8,51.2057,1.34787,55.0,61.0
+B069,OS Open Names,,Beacon Hill,Hill Or Mountain,51.21134,-2.51936,Somerset,England,282.9,51.21251,-2.51929,286.8,130.0
+B070,OS Open Names,,Selworthy Beacon,Hill Or Mountain,51.22075,-3.54947,Somerset,England,289.8,51.2203,-3.54918,290.0,54.0
+B071,OS Open Names,,Beacon Hill,Hill Or Mountain,51.24388,0.8904,Kent,England,108.0,51.24168,0.89047,112.1,245.0
+B072,OS Open Names,,Beacon Hill,Hill Or Mountain,51.24614,-0.82146,Hampshire,England,163.3,51.24461,-0.82397,176.6,244.0
+B073,OS Open Names,,Westbury Beacon,Hill Or Mountain,51.25396,-2.71786,Somerset,England,254.2,51.25553,-2.71693,261.9,186.0
+B074,OS Open Names,,Beacon Hill,Hill Or Mountain,51.26697,1.2996,Kent,England,31.4,51.26652,1.30118,32.0,121.0
+B075,OS Open Names,,Beacon Batch,Hill Or Mountain,51.31215,-2.74083,Somerset,England,315.0,51.3113,-2.74054,316.9,97.0
+B076,OS Open Names,,Beacon Hill,Hill Or Mountain,51.3128,-1.34384,Hampshire,England,226.8,51.31208,-1.34377,231.8,80.0
+B077,OS Open Names,,Beacon Hill,Hill Or Mountain,51.3204,0.85226,Kent,England,39.0,51.31847,0.85061,43.6,244.0
+B078,OS Open Names,,Beacon Hill,Hill Or Mountain,51.38747,-1.99974,Wiltshire,England,202.5,51.38675,-1.99643,205.0,243.0
+B079,OS Open Names,,Beacon Hill,Hill Or Mountain,51.41481,0.52607,Medway,England,45.5,51.41598,0.52809,52.8,191.0
+B080,OS Open Names,,Beacon Hill,Hill Or Mountain,51.48098,0.24264,Thurrock,England,7.2,51.48174,0.24596,12.7,245.0
+B081,OS Open Names,,Beacon Hill,Hill Or Mountain,51.48569,-1.98003,Wiltshire,England,96.8,51.4874,-1.98234,107.1,248.0
+B082,OS Open Names,,Beacon Hill,Hill Or Mountain,51.61873,0.74014,Essex,England,36.6,51.61842,0.74238,39.0,159.0
+B083,OS Open Names,,Beacon Hill,Hill Or Mountain,51.62875,-0.68848,Buckinghamshire,England,169.6,51.62951,-0.68732,172.0,117.0
+B084,OS Open Names,,Beacon Hill,Hill Or Mountain,51.66728,-0.94782,Oxfordshire,England,232.0,51.66616,-0.94471,242.8,248.0
+B085,OS Open Names,,Beacon Hill,Hill Or Mountain,51.66765,0.2522,Essex,England,82.7,51.66612,0.25466,93.0,240.0
+B086,OS Open Names,,Beacon Hill,Hill Or Mountain,51.67084,0.66625,Essex,England,49.6,51.67201,0.66676,51.0,134.0
+B087,OS Open Names,,Beacon Hill,Hill Or Mountain,51.74693,-0.79062,Buckinghamshire,England,203.9,51.7454,-0.79033,206.0,171.0
+B088,OS Open Names,,Beacon Hill,Hill Or Mountain,51.7687,-1.35177,Oxfordshire,England,110.1,51.76825,-1.35061,115.0,94.0
+B089,OS Open Names,,Haresfield Beacon,Hill Or Mountain,51.77827,-2.26177,Gloucestershire,England,173.8,51.7793,-2.25865,186.6,244.0
+B090,OS Open Names,,Beacon Hill,Hill Or Mountain,51.78361,0.68946,Essex,England,85.0,51.78532,0.68997,87.9,193.0
+B091,OS Open Names,,Painswick Beacon,Hill Or Mountain,51.80716,-2.19251,Gloucestershire,England,250.3,51.80658,-2.19113,255.8,115.0
+B092,OS Open Names,,Chedworth Beacon,Hill Or Mountain,51.80954,-1.93748,Gloucestershire,England,238.7,51.81165,-1.93871,240.0,250.0
+B093,OS Open Names,,Beacon Hill,Hill Or Mountain,51.82999,-2.4871,Gloucestershire,England,257.7,51.83116,-2.48899,260.9,184.0
+B094,OS Open Names,,Beacon Hill,Hill Or Mountain,51.84218,-0.6084,Buckinghamshire,England,191.9,51.84119,-0.60636,202.8,178.0
+B095,OS Open Names,,Wyck Beacon,Hill Or Mountain,51.88513,-1.70862,Gloucestershire,England,246.3,51.88535,-1.70767,247.0,70.0
+B096,OS Open Names,,Beacon Hill,Hill Or Mountain,51.91739,-1.0609,Buckinghamshire,England,97.7,51.9195,-1.06083,98.2,235.0
+B097,OS Open Names,,Beacon Hill,Hill Or Mountain,51.93752,1.28959,Essex,England,4.7,51.9395,1.28791,6.0,248.0
+B098,OS Open Names,,Herefordshire Beacon,Hill Or Mountain,52.05819,-2.35153,County of Herefordshire,England,285.6,52.05626,-2.35168,291.6,215.0
+B099,OS Open Names,,Beacon Hill,Hill Or Mountain,52.10326,-2.44539,County of Herefordshire,England,134.5,52.10268,-2.4451,136.8,68.0
+B100,OS Open Names,,Worcestershire Beacon,Hill Or Mountain,52.10481,-2.33909,Worcestershire,England,376.7,52.1045,-2.33924,376.9,36.0
+B101,OS Open Names,,Beacon Hill,Hill Or Mountain,52.24471,-1.28535,Warwickshire,England,190.4,52.24588,-1.2833,197.0,191.0
+B102,OS Open Names,,Beacon Hill,Hill Or Mountain,52.25714,-0.67044,North Northamptonshire,England,82.5,52.2575,-0.66684,90.6,248.0
+B103,OS Open Names,,Beacon Hill,Hill Or Mountain,52.38213,-2.01964,Worcestershire,England,282.4,52.38101,-2.01957,288.0,125.0
+B104,OS Open Names,,Beacon Hill,Hill Or Mountain,52.39612,1.29896,Norfolk,England,37.4,52.39608,1.30257,40.0,245.0
+B105,OS Open Names,,Beacon Hill,Hill Or Mountain,52.47177,0.9551,Norfolk,England,45.0,52.47388,0.95407,45.0,245.0
+B106,OS Open Names,,Beacon Hill,Hill Or Mountain,52.53692,1.53761,Norfolk,England,20.0,52.53836,1.53613,20.0,188.0
+B107,OS Open Names,,Beacon Hill,Hill Or Mountain,52.54405,-2.541,Shropshire,England,124.0,52.54198,-2.5396,139.5,249.0
+B108,OS Open Names,,Sedgley Beacon,Hill Or Mountain,52.54658,-2.11485,Dudley,England,223.2,52.54586,-2.11544,224.0,89.0
+B109,OS Open Names,,Barr Beacon,Hill Or Mountain,52.57421,-1.91187,Walsall,England,214.0,52.57336,-1.90958,220.0,182.0
+B110,OS Open Names,,Beacon Hill,Hill Or Mountain,52.72858,-1.24726,Leicestershire,England,226.9,52.72759,-1.2463,229.9,128.0
+B111,OS Open Names,,Beacon Hill,Hill Or Mountain,52.77984,-0.54657,Lincolnshire,England,97.2,52.77831,-0.54605,99.0,173.0
+B112,OS Open Names,,Beacon Hill,Hill Or Mountain,52.80484,0.82484,Norfolk,England,87.0,52.8048,0.82335,87.0,100.0
+B113,OS Open Names,,Beacon Hill,Hill Or Mountain,52.82349,-2.08239,Staffordshire,England,121.2,52.82398,-2.07986,124.0,178.0
+B114,OS Open Names,,Beacon Hill,Hill Or Mountain,52.8396,-1.64328,Staffordshire,England,72.9,52.83888,-1.64321,73.0,80.0
+B115,OS Open Names,,Beacon Hill,Hill Or Mountain,52.88192,-0.37644,Lincolnshire,England,38.2,52.88188,-0.37994,42.2,235.0
+B116,OS Open Names,,Beacon Hill,Hill Or Mountain,52.89288,1.40077,Norfolk,England,56.6,52.89351,1.39727,58.1,245.0
+B117,OS Open Names,,Beacon Hill,Hill Or Mountain,52.92577,1.24686,Norfolk,England,97.1,52.92411,1.24917,103.0,241.0
+B118,OS Open Names,,Beacon Hill,Hill Or Mountain,52.93409,0.72383,Norfolk,England,48.6,52.93189,0.72435,54.4,247.0
+B119,OS Open Names,,Beacon Hill,Hill Or Mountain,52.9462,0.5766,Norfolk,England,47.9,52.94575,0.57891,51.9,163.0
+B120,OS Open Names,,Beacon Hill,Hill Or Mountain,52.94829,-0.79267,Leicestershire,England,57.1,52.94811,-0.7917,58.0,68.0
+B121,OS Open Names,,Beacon Hill,Hill Or Mountain,52.97892,-0.36203,Lincolnshire,England,16.8,52.97874,-0.35905,17.8,201.0
+B122,OS Open Names,,Beacon Hill,Hill Or Mountain,53.03645,-1.23507,Nottinghamshire,England,132.6,53.03667,-1.23858,135.8,236.0
+B123,OS Open Names,,Beacon Hill,Hill Or Mountain,53.1638,-0.62194,Lincolnshire,England,15.4,53.16376,-0.62007,16.0,125.0
+B124,OS Open Names,,Beacon Hill,Hill Or Mountain,53.2534,-0.91283,Nottinghamshire,England,63.4,53.25336,-0.90983,71.0,200.0
+B125,OS Open Names,,Beacon Hill,Hill Or Mountain,53.28479,-2.72191,Cheshire West and Chester,England,135.6,53.28448,-2.72251,137.9,53.0
+B126,OS Open Names,,Beacon Hill,Hill Or Mountain,53.29598,-0.16329,Lincolnshire,England,105.2,53.29513,-0.16141,106.9,157.0
+B127,OS Open Names,,Beacon Hill,Hill Or Mountain,53.33184,-2.74251,Halton,England,68.1,53.33045,-2.74176,73.0,163.0
+B128,OS Open Names,,Beacon Hill,Hill Or Mountain,53.41096,-1.22273,Rotherham,England,138.5,53.40903,-1.22288,142.0,215.0
+B129,OS Open Names,,Beacon Hill,Hill Or Mountain,53.46227,0.06831,Lincolnshire,England,2.0,53.46236,0.07201,3.0,245.0
+B130,OS Open Names,,Beacon Hill,Hill Or Mountain,53.55431,-0.03839,North East Lincolnshire,England,12.7,53.55615,-0.03763,13.0,211.0
+B131,OS Open Names,,Beacon Hill (Woolley Edge),Hill Or Mountain,53.61658,-1.53785,Wakefield,England,162.8,53.61667,-1.53596,168.9,125.0
+B132,OS Open Names,,Upton Beacon,Hill Or Mountain,53.62033,-1.2851,Wakefield,England,81.6,53.61894,-1.2823,86.9,241.0
+B133,OS Open Names,,Beacon Hill,Hill Or Mountain,53.66333,-1.93235,Calderdale,England,309.1,53.66288,-1.93159,311.8,71.0
+B134,OS Open Names,,Beacon Hill,Hill Or Mountain,53.66479,-0.4474,North Lincolnshire,England,59.0,53.6638,-0.4471,59.9,112.0
+B135,OS Open Names,,Beacon Hill,Hill Or Mountain,53.67951,0.03523,East Riding of Yorkshire,England,23.3,53.68,0.03508,23.9,56.0
+B136,OS Open Names,,Beacon Hill,Hill Or Mountain,53.72205,-1.84577,Calderdale,England,230.6,53.7216,-1.84364,246.0,148.0
+B137,OS Open Names,,Beacon Hill,Hill Or Mountain,53.81008,-0.06163,East Riding of Yorkshire,England,16.5,53.80828,-0.06384,22.0,247.0
+B138,OS Open Names,,Beacon (Big End),Hill Or Mountain,53.86855,-2.29856,Lancashire,England,532.8,53.86904,-2.29963,540.9,89.0
+B139,OS Open Names,,Beacon Fell,Hill Or Mountain,53.8799,-2.65843,Lancashire,England,250.4,53.87891,-2.65653,258.7,166.0
+B140,OS Open Names,,Beacon Hill,Hill Or Mountain,53.89317,-1.69781,Leeds,England,262.8,53.89259,-1.69682,265.9,92.0
+B141,OpenStreetMap historic=beacon,node/434353238,Pinhaw Beacon,historic=beacon,53.920946,-2.086282,North Yorkshire,England,374.2,53.9209,-2.08529,374.9,65.0
+B142,OS Open Names,,Beacon Hill,Hill Or Mountain,53.92824,-2.37647,Lancashire,England,291.8,53.9282,-2.37777,292.9,85.0
+B143,OS Open Names,,Beamsley Beacon,Hill Or Mountain,53.96789,-1.85076,North Yorkshire,England,359.6,53.96852,-1.84725,376.0,240.0
+B144,OS Open Names,,Rudston Beacon,Hill Or Mountain,54.07459,-0.32872,East Riding of Yorkshire,England,86.0,54.07508,-0.33025,86.0,114.0
+B145,OS Open Names,,Beacon Hill,Hill Or Mountain,54.10581,-0.12566,East Riding of Yorkshire,England,38.4,54.10792,-0.12558,41.0,235.0
+B146,OS Open Names,,Beacon Hill,Hill Or Mountain,54.12986,-3.12684,Westmorland and Furness,England,73.2,54.13062,-3.12492,79.0,151.0
+B147,OS Open Names,,Beacon Hill,Hill Or Mountain,54.15709,-0.25242,North Yorkshire,England,119.5,54.15637,-0.25603,124.9,248.0
+B148,OS Open Names,,Beacon Hill,Hill Or Mountain,54.20551,-0.31066,North Yorkshire,England,53.3,54.20547,-0.30966,54.0,65.0
+B149,OS Open Names,,Beacon Hill,Hill Or Mountain,54.24959,-0.7845,North Yorkshire,England,44.5,54.2513,-0.78212,48.1,245.0
+B150,OS Open Names,,Seamer Beacon,Spot Height,54.27425,-0.45299,North Yorkshire,England,175.5,54.27609,-0.45499,177.0,242.0
+B151,OpenStreetMap historic=beacon,node/624110573,Penhill Beacon,historic=beacon,54.276271,-1.917682,North Yorkshire,England,476.8,54.27488,-1.92061,506.5,245.0
+B152,OS Open Names,,Beacon Fell,Hill Or Mountain,54.30667,-3.11112,Westmorland and Furness,England,215.5,54.30568,-3.11104,219.5,110.0
+B153,OS Open Names,,White Beacon Hill,Hill Or Mountain,54.34967,-2.15824,North Yorkshire,England,581.3,54.35178,-2.15955,593.1,250.0
+B154,OS Open Names,,Beacon Hill,Hill Or Mountain,54.39102,-1.2932,North Yorkshire,England,273.9,54.38895,-1.29289,285.9,231.0
+B155,OS Open Names,,Whinfell Beacon,Hill Or Mountain,54.39633,-2.65835,Westmorland and Furness,England,434.1,54.39696,-2.65804,437.8,73.0
+B156,OS Open Names,,Beacon Hill,Hill Or Mountain,54.41824,-1.77748,North Yorkshire,England,307.0,54.41846,-1.78111,311.9,236.0
+B157,OS Open Names,,Beacon Hill,Hill Or Mountain,54.44092,-0.55771,North Yorkshire,England,177.6,54.43993,-0.56111,179.4,246.0
+B158,OS Open Names,,Beacon Hill,Hill Or Mountain,54.46515,-2.43285,Westmorland and Furness,England,349.3,54.46591,-2.43648,366.9,250.0
+B159,OS Open Names,,Danby Beacon,Hill Or Mountain,54.47333,-0.86538,North Yorkshire,England,289.7,54.47288,-0.866,290.0,64.0
+B160,OS Open Names,,Beacon Hill,Hill Or Mountain,54.47473,-0.5739,North Yorkshire,England,91.6,54.4728,-0.57197,94.0,248.0
+B161,OS Open Names,,Beacon Hill,Hill Or Mountain,54.48355,-2.56512,Westmorland and Furness,England,381.5,54.48391,-2.56458,382.0,53.0
+B162,OS Open Names,,Beacon Hill,Hill Or Mountain,54.54934,-0.7751,North Yorkshire,England,98.1,54.54714,-0.77502,103.8,245.0
+B163,OS Open Names,,Beacon Moor,Spot Height,54.57313,-1.02813,Redcar and Cleveland,England,156.9,54.5716,-1.02643,171.0,202.0
+B164,OS Open Names,,Shackleton Beacon Hill,Hill Or Mountain,54.60452,-1.64621,Darlington,England,183.6,54.6034,-1.6445,190.0,166.0
+B165,OS Open Names,,Narrowgate Beacon,Hill Or Mountain,54.62882,-2.40861,Westmorland and Furness,England,629.3,54.63053,-2.41109,668.8,248.0
+B166,OS Open Names,,Beacon Hill,Hill Or Mountain,54.67516,-2.74378,Westmorland and Furness,England,264.4,54.67552,-2.73997,276.4,248.0
+B167,OS Open Names,,Beacon Hill,Hill Or Mountain,54.6862,-1.3161,Hartlepool,England,113.9,54.68831,-1.31626,114.7,235.0
+B168,OS Open Names,,Beacon Hill,Hill Or Mountain,54.73475,-1.479,County Durham,England,178.3,54.73605,-1.47846,180.9,149.0
+B169,OS Open Names,,Beacon Hill,Hill Or Mountain,54.76423,-3.33592,Cumberland,England,77.5,54.7627,-3.33864,79.3,244.0
+B170,OS Open Names,,Beacon Hill,Hill Or Mountain,54.80174,-1.31675,County Durham,England,70.6,54.80021,-1.31948,75.3,244.0
+B171,OS Open Names,,Catton Beacon,Hill Or Mountain,54.92772,-2.27914,Northumberland,England,323.3,54.92902,-2.28047,325.0,168.0
+B172,OS Open Names,,Beacon Hill (Fell House Fell),Spot Height,54.92913,-2.36883,Northumberland,England,328.9,54.92841,-2.3725,330.1,248.0
+B173,OS Open Names,,Beacon Hill,Hill Or Mountain,54.96843,-1.38465,South Tyneside,England,77.8,54.96865,-1.38504,78.0,35.0
+B174,OS Open Names,,The Beacon,Hill Or Mountain,55.03916,-2.66958,Cumberland,England,294.0,55.041,-2.66739,302.2,248.0
+B175,OS Open Names,,Beacon Hill,Hill Or Mountain,55.07766,-1.78076,Northumberland,England,76.8,55.07802,-1.78445,78.8,238.0
+B176,OS Open Names,,Beacon Hill,Hill Or Mountain,55.13452,-2.43776,Northumberland,England,301.0,55.1338,-2.44145,306.1,248.0
+B177,OS Open Names,,Beacon Hill,Hill Or Mountain,55.20712,-1.70528,Northumberland,England,122.0,55.20667,-1.70355,123.9,121.0
+B178,OS Open Names,,Beacon Hill,Hill Or Mountain,55.21702,-1.7719,Northumberland,England,191.0,55.21846,-1.76946,196.0,223.0
+B179,OS Open Names,,Beacon Hill,Hill Or Mountain,55.3217,-1.55221,Northumberland,England,6.3,55.32246,-1.55592,9.0,250.0
+B180,OS Open Names,,Beacon Hill,Hill Or Mountain,55.36416,-1.70805,Northumberland,England,175.7,55.36465,-1.70773,176.0,58.0
+B181,OS Open Names,,Beacon Hill,Hill Or Mountain,55.07071,-3.70238,Dumfries and Galloway,Scotland,180.6,55.07282,-3.70183,185.2,237.0
+B182,OS Open Names,,Beacon Hill,Hill Or Mountain,55.09785,-3.48078,Dumfries and Galloway,Scotland,220.8,55.09754,-3.4807,221.8,35.0
+B183,OS Open Names,,Beacon Hill,Hill Or Mountain,55.15477,-3.74509,Dumfries and Galloway,Scotland,196.5,55.15486,-3.74548,196.9,27.0
+B184,OS Open Names,,Beacon Hill,Hill Or Mountain,55.5132,-4.11443,East Ayrshire,Scotland,220.2,55.51504,-4.11221,228.2,248.0
+B185,OS Open Names,,Beacon Hill,Hill Or Mountain,55.76332,-2.92059,Scottish Borders,Scotland,335.2,55.76543,-2.92171,351.2,245.0
+B186,OS Open Names,,Beacon Hill,Hill Or Mountain,57.82931,-3.80782,Highland,Scotland,16.2,57.82832,-3.81153,20.9,246.0
+B187,OS Open Names,,The Beacon,Spot Height,51.5764,-4.28158,Abertawe - Swansea,Wales,164.0,51.57568,-4.27977,175.7,148.0
+B188,OS Open Names,,Marros Beacon,Hill Or Mountain,51.74202,-4.60315,Sir Gaerfyrddin - Carmarthenshire,Wales,122.1,51.74278,-4.60395,128.9,101.0
+B189,OS Open Names,,Beacon Hill,Hill Or Mountain,51.74495,-2.70799,Sir Fynwy - Monmouthshire,Wales,290.7,51.74437,-2.70726,295.0,82.0
+B190,OS Open Names,,Beacon Hill,Hill Or Mountain,51.76755,-4.83556,Sir Benfro - Pembrokeshire,Wales,91.9,51.76751,-4.83592,92.0,25.0
+B191,OS Open Names,,Beacon Hill,Hill Or Mountain,52.38294,-3.21142,Powys - Powys,Wales,534.3,52.38357,-3.21135,534.9,70.0
+B192,OS Open Names,,Beacon Ring,Hill Or Mountain,52.64487,-3.08796,Powys - Powys,Wales,399.1,52.64523,-3.08655,401.8,103.0
+B193,OS Open Names,,Beacon Hill,Hill Or Mountain,53.17891,-3.46941,Sir Ddinbych - Denbighshire,Wales,159.9,53.17671,-3.47001,172.2,248.0

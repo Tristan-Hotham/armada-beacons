@@ -1,0 +1,180 @@
+target,route,hop,site_id,name,county,lat,lon
+"Worcestershire Beacon, Malvern","bridged, sight lines up to 53.5 km",0,B002,Roskruge Beacon,Cornwall,50.06554,-5.10386
+"Worcestershire Beacon, Malvern","bridged, sight lines up to 53.5 km",1,B009,Hensbarrow Beacon,Cornwall,50.38328,-4.81568
+"Worcestershire Beacon, Malvern","bridged, sight lines up to 53.5 km",2,B017,The Beacon,Cornwall,50.46584,-4.72464
+"Worcestershire Beacon, Malvern","bridged, sight lines up to 53.5 km",3,B016,Penn Beacon,Devon,50.4516,-3.97356
+"Worcestershire Beacon, Malvern","bridged, sight lines up to 53.5 km",4,B010,Western Beacon,Devon,50.40462,-3.89531
+"Worcestershire Beacon, Malvern","bridged, sight lines up to 53.5 km",5,B020,The Beacon,Devon,50.52782,-3.50942
+"Worcestershire Beacon, Malvern","bridged, sight lines up to 53.5 km",6,B042,Blackborough Beacon,Devon,50.87535,-3.28672
+"Worcestershire Beacon, Malvern","bridged, sight lines up to 53.5 km",7,B062,Hurley Beacon,Somerset,51.13672,-3.2242
+"Worcestershire Beacon, Malvern","bridged, sight lines up to 53.5 km",8,B075,Beacon Batch,Somerset,51.3113,-2.74054
+"Worcestershire Beacon, Malvern","bridged, sight lines up to 53.5 km",9,B189,Beacon Hill,Sir Fynwy - Monmouthshire,51.74437,-2.70726
+"Worcestershire Beacon, Malvern","bridged, sight lines up to 53.5 km",10,B100,Worcestershire Beacon,Worcestershire,52.1045,-2.33924
+London,"filled network, fewest hops",0,B002,"Roskruge Beacon, Cornwall",Cornwall,50.06554,-5.10386
+London,"filled network, fewest hops",1,B013,"Belowda Beacon, Cornwall",Cornwall,50.42733,-4.85808
+London,"filled network, fewest hops",2,R0119,"hill near Bowithick, Cornwall",,50.59016,-4.60296
+London,"filled network, fewest hops",3,R0178,"hill near Meldon, Devon",,50.69273,-4.0111
+London,"filled network, fewest hops",4,R0261,"hill near Huntsham, Devon",,50.96274,-3.45168
+London,"filled network, fewest hops",5,R0309,"hill near Aller, Somerset",,51.06579,-2.84979
+London,"filled network, fewest hops",6,R0396,"hill near Whitbourne Springs, Wiltshire",,51.18821,-2.24678
+London,"filled network, fewest hops",7,R0436,"hill near Tidcombe, Wiltshire",,51.31818,-1.60033
+London,"filled network, fewest hops",8,R0362,"hill near Four Marks, Hampshire",,51.1207,-1.04051
+London,"filled network, fewest hops",9,R0480,"hill near Whiteley Village, Surrey",,51.34716,-0.44133
+London,"filled network, fewest relay hills",0,B002,"Roskruge Beacon, Cornwall",Cornwall,50.06554,-5.10386
+London,"filled network, fewest relay hills",1,R0064,"hill near Polperro, Cornwall",,50.32158,-4.5461
+London,"filled network, fewest relay hills",2,B010,"Western Beacon, Devon",Devon,50.40462,-3.89531
+London,"filled network, fewest relay hills",3,B020,"The Beacon, Devon",Devon,50.52782,-3.50942
+London,"filled network, fewest relay hills",4,B042,"Blackborough Beacon, Devon",Devon,50.87535,-3.28672
+London,"filled network, fewest relay hills",5,B062,"Hurley Beacon, Somerset",Somerset,51.13672,-3.2242
+London,"filled network, fewest relay hills",6,B069,"Beacon Hill, Somerset",Somerset,51.21251,-2.51929
+London,"filled network, fewest relay hills",7,B058,"Beacon Hill, Wiltshire",Wiltshire,51.0703,-2.12531
+London,"filled network, fewest relay hills",8,B066,"Beacon Hill, Wiltshire",Wiltshire,51.184,-1.72146
+London,"filled network, fewest relay hills",9,R0362,"hill near Four Marks, Hampshire",,51.1207,-1.04051
+London,"filled network, fewest relay hills",10,R0480,"hill near Whiteley Village, Surrey",,51.34716,-0.44133
+York,"filled network, fewest hops",0,B002,"Roskruge Beacon, Cornwall",Cornwall,50.06554,-5.10386
+York,"filled network, fewest hops",1,B013,"Belowda Beacon, Cornwall",Cornwall,50.42733,-4.85808
+York,"filled network, fewest hops",2,R0142,"hill near Tintagel, Cornwall",,50.66021,-4.76391
+York,"filled network, fewest hops",3,R0256,"hill near Tythecott, Devon",,50.92392,-4.25442
+York,"filled network, fewest hops",4,R0382,"hill near Bradwell, Devon",,51.16038,-4.16295
+York,"filled network, fewest hops",5,R0533,"hill near Rhossili, Abertawe - Swansea",,51.57545,-4.27931
+York,"filled network, fewest hops",6,R0714,"hill near Llanddeusant, Sir Gaerfyrddin - Carmarthenshire",,51.87681,-3.74825
+York,"filled network, fewest hops",7,R0863,"hill near Glascwm, Powys - Powys",,52.19086,-3.23096
+York,"filled network, fewest hops",8,R0971,"hill near Cleehill, Shropshire",,52.39805,-2.59885
+York,"filled network, fewest hops",9,R1130,"hill near Snedshill, Telford and Wrekin",,52.68643,-2.43858
+York,"filled network, fewest hops",10,R1405,"hill near Mow Cop, Cheshire East",,53.11494,-2.21286
+York,"filled network, fewest hops",11,R1589,"hill near Crowden, Derbyshire",,53.4629,-1.84558
+York,"filled network, fewest hops",12,R1734,"hill near Kippax Common, Leeds",,53.78312,-1.36938
+York,"filled network, fewest relay hills",0,B002,"Roskruge Beacon, Cornwall",Cornwall,50.06554,-5.10386
+York,"filled network, fewest relay hills",1,R0064,"hill near Polperro, Cornwall",,50.32158,-4.5461
+York,"filled network, fewest relay hills",2,B010,"Western Beacon, Devon",Devon,50.40462,-3.89531
+York,"filled network, fewest relay hills",3,B020,"The Beacon, Devon",Devon,50.52782,-3.50942
+York,"filled network, fewest relay hills",4,B042,"Blackborough Beacon, Devon",Devon,50.87535,-3.28672
+York,"filled network, fewest relay hills",5,B063,"Beacon Hill, Somerset",Somerset,51.16078,-3.25248
+York,"filled network, fewest relay hills",6,B075,"Beacon Batch, Somerset",Somerset,51.3113,-2.74054
+York,"filled network, fewest relay hills",7,B189,"Beacon Hill, Sir Fynwy - Monmouthshire",Sir Fynwy - Monmouthshire,51.74437,-2.70726
+York,"filled network, fewest relay hills",8,B100,"Worcestershire Beacon, Worcestershire",Worcestershire,52.1045,-2.33924
+York,"filled network, fewest relay hills",9,B103,"Beacon Hill, Worcestershire",Worcestershire,52.38101,-2.01957
+York,"filled network, fewest relay hills",10,B108,"Sedgley Beacon, Dudley",Dudley,52.54586,-2.11544
+York,"filled network, fewest relay hills",11,B113,"Beacon Hill, Staffordshire",Staffordshire,52.82398,-2.07986
+York,"filled network, fewest relay hills",12,R1405,"hill near Mow Cop, Cheshire East",,53.11494,-2.21286
+York,"filled network, fewest relay hills",13,R1589,"hill near Crowden, Derbyshire",,53.4629,-1.84558
+York,"filled network, fewest relay hills",14,R1734,"hill near Kippax Common, Leeds",,53.78312,-1.36938
+Carlisle,"filled network, fewest hops",0,B002,"Roskruge Beacon, Cornwall",Cornwall,50.06554,-5.10386
+Carlisle,"filled network, fewest hops",1,B013,"Belowda Beacon, Cornwall",Cornwall,50.42733,-4.85808
+Carlisle,"filled network, fewest hops",2,R0142,"hill near Tintagel, Cornwall",,50.66021,-4.76391
+Carlisle,"filled network, fewest hops",3,R0256,"hill near Tythecott, Devon",,50.92392,-4.25442
+Carlisle,"filled network, fewest hops",4,R0385,"hill near Furzehill, Devon",,51.16276,-3.81122
+Carlisle,"filled network, fewest hops",5,R0499,"hill near Downs, Bro Morgannwg - the Vale of Glamorgan",,51.46109,-3.28319
+Carlisle,"filled network, fewest hops",6,R0669,"hill near Nant-ddu, Powys - Powys",,51.86137,-3.49932
+Carlisle,"filled network, fewest hops",7,R0916,"hill near Llanfihangel Rhydithon, Powys - Powys",,52.26671,-3.19935
+Carlisle,"filled network, fewest hops",8,R1124,"hill near The Green, Powys - Powys",,52.63537,-3.28034
+Carlisle,"filled network, fewest hops",9,R1346,"hill near Pant, Sir Ddinbych - Denbighshire",,53.03561,-3.17584
+Carlisle,"filled network, fewest hops",10,R1540,"hill near Prenton, Wirral",,53.3659,-3.03764
+Carlisle,"filled network, fewest hops",11,R1723,"hill near Great Plumpton, Lancashire",,53.78842,-2.92206
+Carlisle,"filled network, fewest hops",12,R1871,"hill near Dalton, Westmorland and Furness",,54.19178,-2.6812
+Carlisle,"filled network, fewest hops",13,R2077,"hill near Legburthwaite, Cumberland",,54.57497,-3.01863
+Carlisle,"filled network, fewest hops",14,B166,"Beacon Hill, Westmorland and Furness",Westmorland and Furness,54.67552,-2.73997
+Carlisle,"filled network, fewest relay hills",0,B002,"Roskruge Beacon, Cornwall",Cornwall,50.06554,-5.10386
+Carlisle,"filled network, fewest relay hills",1,R0064,"hill near Polperro, Cornwall",,50.32158,-4.5461
+Carlisle,"filled network, fewest relay hills",2,B010,"Western Beacon, Devon",Devon,50.40462,-3.89531
+Carlisle,"filled network, fewest relay hills",3,B020,"The Beacon, Devon",Devon,50.52782,-3.50942
+Carlisle,"filled network, fewest relay hills",4,B042,"Blackborough Beacon, Devon",Devon,50.87535,-3.28672
+Carlisle,"filled network, fewest relay hills",5,B063,"Beacon Hill, Somerset",Somerset,51.16078,-3.25248
+Carlisle,"filled network, fewest relay hills",6,B075,"Beacon Batch, Somerset",Somerset,51.3113,-2.74054
+Carlisle,"filled network, fewest relay hills",7,B189,"Beacon Hill, Sir Fynwy - Monmouthshire",Sir Fynwy - Monmouthshire,51.74437,-2.70726
+Carlisle,"filled network, fewest relay hills",8,B100,"Worcestershire Beacon, Worcestershire",Worcestershire,52.1045,-2.33924
+Carlisle,"filled network, fewest relay hills",9,B103,"Beacon Hill, Worcestershire",Worcestershire,52.38101,-2.01957
+Carlisle,"filled network, fewest relay hills",10,B108,"Sedgley Beacon, Dudley",Dudley,52.54586,-2.11544
+Carlisle,"filled network, fewest relay hills",11,B113,"Beacon Hill, Staffordshire",Staffordshire,52.82398,-2.07986
+Carlisle,"filled network, fewest relay hills",12,R1405,"hill near Mow Cop, Cheshire East",,53.11494,-2.21286
+Carlisle,"filled network, fewest relay hills",13,B125,"Beacon Hill, Cheshire West and Chester",Cheshire West and Chester,53.28448,-2.72251
+Carlisle,"filled network, fewest relay hills",14,R1617,"hill near Freshfield, Sefton",,53.58133,-3.07161
+Carlisle,"filled network, fewest relay hills",15,B139,"Beacon Fell, Lancashire",Lancashire,53.87891,-2.65653
+Carlisle,"filled network, fewest relay hills",16,B146,"Beacon Hill, Westmorland and Furness",Westmorland and Furness,54.13062,-3.12492
+Carlisle,"filled network, fewest relay hills",17,B155,"Whinfell Beacon, Westmorland and Furness",Westmorland and Furness,54.39696,-2.65804
+Carlisle,"filled network, fewest relay hills",18,B161,"Beacon Hill, Westmorland and Furness",Westmorland and Furness,54.48391,-2.56458
+Carlisle,"filled network, fewest relay hills",19,B166,"Beacon Hill, Westmorland and Furness",Westmorland and Furness,54.67552,-2.73997
+Berwick-upon-Tweed,"filled network, fewest hops",0,B002,"Roskruge Beacon, Cornwall",Cornwall,50.06554,-5.10386
+Berwick-upon-Tweed,"filled network, fewest hops",1,B013,"Belowda Beacon, Cornwall",Cornwall,50.42733,-4.85808
+Berwick-upon-Tweed,"filled network, fewest hops",2,R0142,"hill near Tintagel, Cornwall",,50.66021,-4.76391
+Berwick-upon-Tweed,"filled network, fewest hops",3,R0256,"hill near Tythecott, Devon",,50.92392,-4.25442
+Berwick-upon-Tweed,"filled network, fewest hops",4,R0382,"hill near Bradwell, Devon",,51.16038,-4.16295
+Berwick-upon-Tweed,"filled network, fewest hops",5,R0534,"hill near Perriswood, Abertawe - Swansea",,51.58145,-4.15258
+Berwick-upon-Tweed,"filled network, fewest hops",6,R0668,"hill near Glyntawe, Powys - Powys",,51.85789,-3.62554
+Berwick-upon-Tweed,"filled network, fewest hops",7,R0864,"hill near Gladestry, Powys - Powys",,52.18793,-3.16505
+Berwick-upon-Tweed,"filled network, fewest hops",8,R1074,"hill near Tankerville, Shropshire",,52.58287,-2.93345
+Berwick-upon-Tweed,"filled network, fewest hops",9,R1349,"hill near Wirswall, Cheshire East",,52.99187,-2.67408
+Berwick-upon-Tweed,"filled network, fewest hops",10,R1498,"hill near Hough, Cheshire East",,53.29472,-2.21225
+Berwick-upon-Tweed,"filled network, fewest hops",11,R1693,"hill near Weir, Lancashire",,53.73968,-2.19326
+Berwick-upon-Tweed,"filled network, fewest hops",12,R1874,"hill near Foxup, North Yorkshire",,54.17192,-2.23357
+Berwick-upon-Tweed,"filled network, fewest hops",13,R2082,"hill near Hilton, Westmorland and Furness",,54.61392,-2.30423
+Berwick-upon-Tweed,"filled network, fewest hops",14,R2207,"hill near Ayle, Northumberland",,54.87777,-2.42466
+Berwick-upon-Tweed,"filled network, fewest hops",15,R2371,"hill near Hepple, Northumberland",,55.26041,-2.02593
+Berwick-upon-Tweed,"filled network, fewest hops",16,R2474,"hill near Chillingham, Northumberland",,55.52183,-1.87247
+Berwick-upon-Tweed,"filled network, fewest relay hills",0,B002,"Roskruge Beacon, Cornwall",Cornwall,50.06554,-5.10386
+Berwick-upon-Tweed,"filled network, fewest relay hills",1,R0064,"hill near Polperro, Cornwall",,50.32158,-4.5461
+Berwick-upon-Tweed,"filled network, fewest relay hills",2,B010,"Western Beacon, Devon",Devon,50.40462,-3.89531
+Berwick-upon-Tweed,"filled network, fewest relay hills",3,B020,"The Beacon, Devon",Devon,50.52782,-3.50942
+Berwick-upon-Tweed,"filled network, fewest relay hills",4,B042,"Blackborough Beacon, Devon",Devon,50.87535,-3.28672
+Berwick-upon-Tweed,"filled network, fewest relay hills",5,B063,"Beacon Hill, Somerset",Somerset,51.16078,-3.25248
+Berwick-upon-Tweed,"filled network, fewest relay hills",6,B075,"Beacon Batch, Somerset",Somerset,51.3113,-2.74054
+Berwick-upon-Tweed,"filled network, fewest relay hills",7,B189,"Beacon Hill, Sir Fynwy - Monmouthshire",Sir Fynwy - Monmouthshire,51.74437,-2.70726
+Berwick-upon-Tweed,"filled network, fewest relay hills",8,B100,"Worcestershire Beacon, Worcestershire",Worcestershire,52.1045,-2.33924
+Berwick-upon-Tweed,"filled network, fewest relay hills",9,B103,"Beacon Hill, Worcestershire",Worcestershire,52.38101,-2.01957
+Berwick-upon-Tweed,"filled network, fewest relay hills",10,B108,"Sedgley Beacon, Dudley",Dudley,52.54586,-2.11544
+Berwick-upon-Tweed,"filled network, fewest relay hills",11,B113,"Beacon Hill, Staffordshire",Staffordshire,52.82398,-2.07986
+Berwick-upon-Tweed,"filled network, fewest relay hills",12,R1405,"hill near Mow Cop, Cheshire East",,53.11494,-2.21286
+Berwick-upon-Tweed,"filled network, fewest relay hills",13,R1589,"hill near Crowden, Derbyshire",,53.4629,-1.84558
+Berwick-upon-Tweed,"filled network, fewest relay hills",14,B140,"Beacon Hill, Leeds",Leeds,53.89259,-1.69682
+Berwick-upon-Tweed,"filled network, fewest relay hills",15,R1837,"hill near Warsill, North Yorkshire",,54.08274,-1.67973
+Berwick-upon-Tweed,"filled network, fewest relay hills",16,B154,"Beacon Hill, North Yorkshire",North Yorkshire,54.38895,-1.29289
+Berwick-upon-Tweed,"filled network, fewest relay hills",17,B163,"Beacon Moor, Redcar and Cleveland",Redcar and Cleveland,54.5716,-1.02643
+Berwick-upon-Tweed,"filled network, fewest relay hills",18,B173,"Beacon Hill, South Tyneside",South Tyneside,54.96865,-1.38504
+Berwick-upon-Tweed,"filled network, fewest relay hills",19,R2449,"hill near Bilton, Northumberland",,55.38484,-1.65826
+Berwick-upon-Tweed,"filled network, fewest relay hills",20,R2474,"hill near Chillingham, Northumberland",,55.52183,-1.87247
+"Beacon Fell, Lancashire","filled network, fewest hops",0,B002,"Roskruge Beacon, Cornwall",Cornwall,50.06554,-5.10386
+"Beacon Fell, Lancashire","filled network, fewest hops",1,B013,"Belowda Beacon, Cornwall",Cornwall,50.42733,-4.85808
+"Beacon Fell, Lancashire","filled network, fewest hops",2,R0142,"hill near Tintagel, Cornwall",,50.66021,-4.76391
+"Beacon Fell, Lancashire","filled network, fewest hops",3,R0256,"hill near Tythecott, Devon",,50.92392,-4.25442
+"Beacon Fell, Lancashire","filled network, fewest hops",4,R0382,"hill near Bradwell, Devon",,51.16038,-4.16295
+"Beacon Fell, Lancashire","filled network, fewest hops",5,R0534,"hill near Perriswood, Abertawe - Swansea",,51.58145,-4.15258
+"Beacon Fell, Lancashire","filled network, fewest hops",6,R0668,"hill near Glyntawe, Powys - Powys",,51.85789,-3.62554
+"Beacon Fell, Lancashire","filled network, fewest hops",7,R0864,"hill near Gladestry, Powys - Powys",,52.18793,-3.16505
+"Beacon Fell, Lancashire","filled network, fewest hops",8,R1074,"hill near Tankerville, Shropshire",,52.58287,-2.93345
+"Beacon Fell, Lancashire","filled network, fewest hops",9,R1347,"hill near Pentre Bychan, Wrecsam - Wrexham",,53.01796,-3.04418
+"Beacon Fell, Lancashire","filled network, fewest hops",10,R1582,"hill near Gillar's Green, St. Helens",,53.44315,-2.81219
+"Beacon Fell, Lancashire","filled network, fewest hops",11,B139,"Beacon Fell, Lancashire",Lancashire,53.87891,-2.65653
+"Beacon Fell, Lancashire","filled network, fewest relay hills",0,B002,"Roskruge Beacon, Cornwall",Cornwall,50.06554,-5.10386
+"Beacon Fell, Lancashire","filled network, fewest relay hills",1,R0064,"hill near Polperro, Cornwall",,50.32158,-4.5461
+"Beacon Fell, Lancashire","filled network, fewest relay hills",2,B010,"Western Beacon, Devon",Devon,50.40462,-3.89531
+"Beacon Fell, Lancashire","filled network, fewest relay hills",3,B020,"The Beacon, Devon",Devon,50.52782,-3.50942
+"Beacon Fell, Lancashire","filled network, fewest relay hills",4,B042,"Blackborough Beacon, Devon",Devon,50.87535,-3.28672
+"Beacon Fell, Lancashire","filled network, fewest relay hills",5,B063,"Beacon Hill, Somerset",Somerset,51.16078,-3.25248
+"Beacon Fell, Lancashire","filled network, fewest relay hills",6,B075,"Beacon Batch, Somerset",Somerset,51.3113,-2.74054
+"Beacon Fell, Lancashire","filled network, fewest relay hills",7,B189,"Beacon Hill, Sir Fynwy - Monmouthshire",Sir Fynwy - Monmouthshire,51.74437,-2.70726
+"Beacon Fell, Lancashire","filled network, fewest relay hills",8,B100,"Worcestershire Beacon, Worcestershire",Worcestershire,52.1045,-2.33924
+"Beacon Fell, Lancashire","filled network, fewest relay hills",9,B103,"Beacon Hill, Worcestershire",Worcestershire,52.38101,-2.01957
+"Beacon Fell, Lancashire","filled network, fewest relay hills",10,B108,"Sedgley Beacon, Dudley",Dudley,52.54586,-2.11544
+"Beacon Fell, Lancashire","filled network, fewest relay hills",11,B113,"Beacon Hill, Staffordshire",Staffordshire,52.82398,-2.07986
+"Beacon Fell, Lancashire","filled network, fewest relay hills",12,R1405,"hill near Mow Cop, Cheshire East",,53.11494,-2.21286
+"Beacon Fell, Lancashire","filled network, fewest relay hills",13,B125,"Beacon Hill, Cheshire West and Chester",Cheshire West and Chester,53.28448,-2.72251
+"Beacon Fell, Lancashire","filled network, fewest relay hills",14,R1617,"hill near Freshfield, Sefton",,53.58133,-3.07161
+"Beacon Fell, Lancashire","filled network, fewest relay hills",15,B139,"Beacon Fell, Lancashire",Lancashire,53.87891,-2.65653
+"Worcestershire Beacon, Malvern","filled network, fewest hops",0,B002,"Roskruge Beacon, Cornwall",Cornwall,50.06554,-5.10386
+"Worcestershire Beacon, Malvern","filled network, fewest hops",1,B013,"Belowda Beacon, Cornwall",Cornwall,50.42733,-4.85808
+"Worcestershire Beacon, Malvern","filled network, fewest hops",2,R0142,"hill near Tintagel, Cornwall",,50.66021,-4.76391
+"Worcestershire Beacon, Malvern","filled network, fewest hops",3,R0256,"hill near Tythecott, Devon",,50.92392,-4.25442
+"Worcestershire Beacon, Malvern","filled network, fewest hops",4,R0385,"hill near Furzehill, Devon",,51.16276,-3.81122
+"Worcestershire Beacon, Malvern","filled network, fewest hops",5,R0499,"hill near Downs, Bro Morgannwg - the Vale of Glamorgan",,51.46109,-3.28319
+"Worcestershire Beacon, Malvern","filled network, fewest hops",6,R0628,"hill near Forge Side, Torfaen - Torfaen",,51.76405,-3.11353
+"Worcestershire Beacon, Malvern","filled network, fewest hops",7,B093,"Beacon Hill, Gloucestershire",Gloucestershire,51.83116,-2.48899
+"Worcestershire Beacon, Malvern","filled network, fewest hops",8,B100,"Worcestershire Beacon, Worcestershire",Worcestershire,52.1045,-2.33924
+"Worcestershire Beacon, Malvern","filled network, fewest relay hills",0,B002,"Roskruge Beacon, Cornwall",Cornwall,50.06554,-5.10386
+"Worcestershire Beacon, Malvern","filled network, fewest relay hills",1,R0064,"hill near Polperro, Cornwall",,50.32158,-4.5461
+"Worcestershire Beacon, Malvern","filled network, fewest relay hills",2,B010,"Western Beacon, Devon",Devon,50.40462,-3.89531
+"Worcestershire Beacon, Malvern","filled network, fewest relay hills",3,B020,"The Beacon, Devon",Devon,50.52782,-3.50942
+"Worcestershire Beacon, Malvern","filled network, fewest relay hills",4,B042,"Blackborough Beacon, Devon",Devon,50.87535,-3.28672
+"Worcestershire Beacon, Malvern","filled network, fewest relay hills",5,B063,"Beacon Hill, Somerset",Somerset,51.16078,-3.25248
+"Worcestershire Beacon, Malvern","filled network, fewest relay hills",6,B075,"Beacon Batch, Somerset",Somerset,51.3113,-2.74054
+"Worcestershire Beacon, Malvern","filled network, fewest relay hills",7,B189,"Beacon Hill, Sir Fynwy - Monmouthshire",Sir Fynwy - Monmouthshire,51.74437,-2.70726
+"Worcestershire Beacon, Malvern","filled network, fewest relay hills",8,B100,"Worcestershire Beacon, Worcestershire",Worcestershire,52.1045,-2.33924

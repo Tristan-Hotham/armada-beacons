@@ -1,0 +1,2539 @@
+{
+ "n_sites": 193,
+ "n_by_country": {
+  "England": 180,
+  "Wales": 7,
+  "Scotland": 6
+ },
+ "n_by_source": {
+  "OS Open Names": 191,
+  "OpenStreetMap historic=beacon": 2
+ },
+ "n_excluded": 153,
+ "snap_median_m": 171.0,
+ "elev_median_m": 172.0,
+ "start": {
+  "idx": 1,
+  "name": "Roskruge Beacon",
+  "km_from_lizard_point": 14.0
+ },
+ "targets_meta": {
+  "london": {
+   "label": "London",
+   "zone": [
+    79
+   ],
+   "zone_names": [
+    "Beacon Hill, Thurrock"
+   ],
+   "ref": "London",
+   "ref_latlon": [
+    51.50741,
+    -0.12772
+   ],
+   "rule": "any beacon site within 30 km of the OS Open Names point for London"
+  },
+  "york": {
+   "label": "York",
+   "zone": [],
+   "zone_names": [],
+   "ref": "York",
+   "ref_latlon": [
+    53.96201,
+    -1.08367
+   ],
+   "rule": "any beacon site within 30 km of the OS Open Names point for York"
+  },
+  "carlisle": {
+   "label": "Carlisle",
+   "zone": [
+    165,
+    168,
+    173
+   ],
+   "zone_names": [
+    "Beacon Hill, Westmorland and Furness",
+    "Beacon Hill, Cumberland",
+    "The Beacon, Cumberland"
+   ],
+   "ref": "Carlisle",
+   "ref_latlon": [
+    54.89262,
+    -2.93302
+   ],
+   "rule": "any beacon site within 30 km of the OS Open Names point for Carlisle"
+  },
+  "berwick": {
+   "label": "Berwick-upon-Tweed",
+   "zone": [],
+   "zone_names": [],
+   "ref": "Berwick-upon-Tweed",
+   "ref_latlon": [
+    55.77121,
+    -2.00418
+   ],
+   "rule": "any beacon site within 30 km of the OS Open Names point for Berwick-upon-Tweed"
+  },
+  "beacon_fell": {
+   "label": "Beacon Fell, Lancashire",
+   "zone": [
+    138
+   ],
+   "zone_names": [
+    "Beacon Fell, Lancashire"
+   ],
+   "rule": "named site"
+  },
+  "malvern": {
+   "label": "Worcestershire Beacon, Malvern",
+   "zone": [
+    99
+   ],
+   "zone_names": [
+    "Worcestershire Beacon, Worcestershire"
+   ],
+   "rule": "named site"
+  }
+ },
+ "delays_min": {
+  "fast": 5,
+  "central": 15,
+  "slow": 30
+ },
+ "zone_km": 30.0,
+ "params": {
+  "eye_m": 2,
+  "fire_m": 5,
+  "fire_high_m": 10,
+  "main_range_km": 50,
+  "sensitivity_ranges_km": [
+   30,
+   70,
+   100
+  ],
+  "max_search_km": 150,
+  "sample_step_m": 45,
+  "refraction_k": 0.13,
+  "snap_radius_m": 250,
+  "dedupe_km": 1,
+  "relay_cell_km": 10,
+  "relay_sample_m": 100,
+  "relay_min_elev_m": 5,
+  "relay_max_northing_km": 700,
+  "dem_pixel_m_approx": 90,
+  "relay_cost": 1000
+ },
+ "refs": {
+  "sighting_date": {
+   "value": "19 July 1588",
+   "source": "Royal Museums Greenwich, Elizabeth I and the Spanish Armada, https://www.rmg.co.uk/stories/topics/elizabeth-i-spanish-armada"
+  },
+  "poem_written": {
+   "value": 1832,
+   "source": "Wikipedia, Lays of Ancient Rome"
+  },
+  "worcs_height_m": {
+   "value": 425,
+   "source": "Wikipedia, Worcestershire Beacon"
+  },
+  "black_down_height_m": {
+   "value": 325,
+   "source": "Wikipedia, Black Down, Somerset"
+  }
+ },
+ "n_beacon_hill": 118,
+ "n_x_beacon": 61,
+ "zone_detail": {
+  "london": [
+   {
+    "name": "Beacon Hill",
+    "county": "Thurrock",
+    "elev_m": 12.7,
+    "links_50": 1,
+    "links_150": 0
+   }
+  ],
+  "york": [],
+  "carlisle": [
+   {
+    "name": "Beacon Hill",
+    "county": "Westmorland and Furness",
+    "elev_m": 276.4,
+    "links_50": 2,
+    "links_150": 5
+   },
+   {
+    "name": "Beacon Hill",
+    "county": "Cumberland",
+    "elev_m": 79.3,
+    "links_50": 1,
+    "links_150": 3
+   },
+   {
+    "name": "The Beacon",
+    "county": "Cumberland",
+    "elev_m": 302.2,
+    "links_50": 2,
+    "links_150": 4
+   }
+  ],
+  "berwick": [],
+  "beacon_fell": [
+   {
+    "name": "Beacon Fell",
+    "county": "Lancashire",
+    "elev_m": 258.7,
+    "links_50": 3,
+    "links_150": 4
+   }
+  ],
+  "malvern": [
+   {
+    "name": "Worcestershire Beacon",
+    "county": "Worcestershire",
+    "elev_m": 376.9,
+    "links_50": 7,
+    "links_150": 10
+   }
+  ]
+ },
+ "main": {
+  "range_km": 50,
+  "links": 321,
+  "one_way_links": 16,
+  "sees_any": 165,
+  "share_sees_any": 0.8549222797927462,
+  "isolated": 25,
+  "n_components": 44,
+  "giant": 65,
+  "share_giant": 0.33678756476683935,
+  "second": 22,
+  "reached_from_lizard": 12,
+  "share_reached": 0.06217616580310881,
+  "max_hops": 3,
+  "mean_degree": 3.326424870466321,
+  "targets": {
+   "london": {
+    "hops": null
+   },
+   "york": {
+    "hops": null
+   },
+   "carlisle": {
+    "hops": null
+   },
+   "berwick": {
+    "hops": null
+   },
+   "beacon_fell": {
+    "hops": null
+   },
+   "malvern": {
+    "hops": null
+   }
+  }
+ },
+ "sensitivity": [
+  {
+   "range_km": 30,
+   "variant": "Summit, 5 m fire",
+   "links": 193,
+   "share_sees_any": 0.7823834196891192,
+   "giant": 32,
+   "share_giant": 0.16580310880829016,
+   "reached": 3,
+   "hops_london": null,
+   "hops_york": null,
+   "hops_carlisle": null,
+   "hops_berwick": null,
+   "hops_beacon_fell": null,
+   "hops_malvern": null
+  },
+  {
+   "range_km": 30,
+   "variant": "Summit, 10 m fire",
+   "links": 201,
+   "share_sees_any": 0.7875647668393783,
+   "giant": 32,
+   "share_giant": 0.16580310880829016,
+   "reached": 3,
+   "hops_london": null,
+   "hops_york": null,
+   "hops_carlisle": null,
+   "hops_berwick": null,
+   "hops_beacon_fell": null,
+   "hops_malvern": null
+  },
+  {
+   "range_km": 30,
+   "variant": "Name point, 5 m fire",
+   "links": 162,
+   "share_sees_any": 0.6839378238341969,
+   "giant": 36,
+   "share_giant": 0.18652849740932642,
+   "reached": 3,
+   "hops_london": null,
+   "hops_york": null,
+   "hops_carlisle": null,
+   "hops_berwick": null,
+   "hops_beacon_fell": null,
+   "hops_malvern": null
+  },
+  {
+   "range_km": 50,
+   "variant": "Summit, 5 m fire",
+   "links": 321,
+   "share_sees_any": 0.8549222797927462,
+   "giant": 65,
+   "share_giant": 0.33678756476683935,
+   "reached": 12,
+   "hops_london": null,
+   "hops_york": null,
+   "hops_carlisle": null,
+   "hops_berwick": null,
+   "hops_beacon_fell": null,
+   "hops_malvern": null
+  },
+  {
+   "range_km": 50,
+   "variant": "Summit, 10 m fire",
+   "links": 337,
+   "share_sees_any": 0.8652849740932642,
+   "giant": 70,
+   "share_giant": 0.3626943005181347,
+   "reached": 12,
+   "hops_london": null,
+   "hops_york": null,
+   "hops_carlisle": null,
+   "hops_berwick": null,
+   "hops_beacon_fell": null,
+   "hops_malvern": null
+  },
+  {
+   "range_km": 50,
+   "variant": "Name point, 5 m fire",
+   "links": 270,
+   "share_sees_any": 0.7979274611398963,
+   "giant": 59,
+   "share_giant": 0.30569948186528495,
+   "reached": 12,
+   "hops_london": null,
+   "hops_york": null,
+   "hops_carlisle": null,
+   "hops_berwick": null,
+   "hops_beacon_fell": null,
+   "hops_malvern": null
+  },
+  {
+   "range_km": 70,
+   "variant": "Summit, 5 m fire",
+   "links": 393,
+   "share_sees_any": 0.8860103626943006,
+   "giant": 93,
+   "share_giant": 0.48186528497409326,
+   "reached": 93,
+   "hops_london": null,
+   "hops_york": null,
+   "hops_carlisle": null,
+   "hops_berwick": null,
+   "hops_beacon_fell": null,
+   "hops_malvern": 7
+  },
+  {
+   "range_km": 70,
+   "variant": "Summit, 10 m fire",
+   "links": 422,
+   "share_sees_any": 0.8860103626943006,
+   "giant": 138,
+   "share_giant": 0.7150259067357513,
+   "reached": 138,
+   "hops_london": null,
+   "hops_york": null,
+   "hops_carlisle": 19,
+   "hops_berwick": null,
+   "hops_beacon_fell": 17,
+   "hops_malvern": 7
+  },
+  {
+   "range_km": 70,
+   "variant": "Name point, 5 m fire",
+   "links": 324,
+   "share_sees_any": 0.8238341968911918,
+   "giant": 79,
+   "share_giant": 0.40932642487046633,
+   "reached": 75,
+   "hops_london": null,
+   "hops_york": null,
+   "hops_carlisle": null,
+   "hops_berwick": null,
+   "hops_beacon_fell": null,
+   "hops_malvern": 8
+  },
+  {
+   "range_km": 100,
+   "variant": "Summit, 5 m fire",
+   "links": 438,
+   "share_sees_any": 0.8911917098445595,
+   "giant": 96,
+   "share_giant": 0.49740932642487046,
+   "reached": 96,
+   "hops_london": null,
+   "hops_york": null,
+   "hops_carlisle": null,
+   "hops_berwick": null,
+   "hops_beacon_fell": null,
+   "hops_malvern": 5
+  },
+  {
+   "range_km": 100,
+   "variant": "Summit, 10 m fire",
+   "links": 470,
+   "share_sees_any": 0.8911917098445595,
+   "giant": 141,
+   "share_giant": 0.7305699481865285,
+   "reached": 141,
+   "hops_london": null,
+   "hops_york": null,
+   "hops_carlisle": 16,
+   "hops_berwick": null,
+   "hops_beacon_fell": 14,
+   "hops_malvern": 5
+  },
+  {
+   "range_km": 100,
+   "variant": "Name point, 5 m fire",
+   "links": 363,
+   "share_sees_any": 0.8290155440414507,
+   "giant": 94,
+   "share_giant": 0.48704663212435234,
+   "reached": 83,
+   "hops_london": null,
+   "hops_york": null,
+   "hops_carlisle": null,
+   "hops_berwick": null,
+   "hops_beacon_fell": null,
+   "hops_malvern": 5
+  }
+ ],
+ "bottleneck_km": {
+  "london": null,
+  "york": null,
+  "carlisle": null,
+  "berwick": null,
+  "beacon_fell": null,
+  "malvern": 53.5
+ },
+ "bridged": {
+  "malvern": {
+   "range_km": 53.5,
+   "hops": 10,
+   "path": [
+    1,
+    8,
+    16,
+    15,
+    9,
+    19,
+    41,
+    61,
+    74,
+    188,
+    99
+   ],
+   "end": "Worcestershire Beacon, Worcestershire",
+   "path_names": [
+    "Roskruge Beacon, Cornwall",
+    "Hensbarrow Beacon, Cornwall",
+    "The Beacon, Cornwall",
+    "Penn Beacon, Devon",
+    "Western Beacon, Devon",
+    "The Beacon, Devon",
+    "Blackborough Beacon, Devon",
+    "Hurley Beacon, Somerset",
+    "Beacon Batch, Somerset",
+    "Beacon Hill, Sir Fynwy - Monmouthshire",
+    "Worcestershire Beacon, Worcestershire"
+   ],
+   "seg_km": [
+    40.8,
+    11.2,
+    53.2,
+    7.6,
+    30.6,
+    41.7,
+    29.4,
+    38.9,
+    48.2,
+    47.3
+   ],
+   "gaps": [
+    {
+     "a": "The Beacon, Cornwall",
+     "b": "Penn Beacon, Devon",
+     "km": 53.2
+    }
+   ],
+   "minutes_fast": 50,
+   "minutes_central": 150,
+   "minutes_slow": 300
+  }
+ },
+ "london_route_chokes": [],
+ "chokepoints": [
+  {
+   "idx": 74,
+   "name": "Beacon Batch",
+   "county": "Somerset",
+   "region": "South West",
+   "betweenness": 0.036,
+   "cut_vertex": true,
+   "giant_without": 52,
+   "giant_lost": 12
+  },
+  {
+   "idx": 188,
+   "name": "Beacon Hill",
+   "county": "Sir Fynwy - Monmouthshire",
+   "region": "Wales",
+   "betweenness": 0.032,
+   "cut_vertex": true,
+   "giant_without": 53,
+   "giant_lost": 11
+  },
+  {
+   "idx": 68,
+   "name": "Beacon Hill",
+   "county": "Somerset",
+   "region": "South West",
+   "betweenness": 0.032,
+   "cut_vertex": true,
+   "giant_without": 59,
+   "giant_lost": 5
+  },
+  {
+   "idx": 61,
+   "name": "Hurley Beacon",
+   "county": "Somerset",
+   "region": "South West",
+   "betweenness": 0.031,
+   "cut_vertex": false,
+   "giant_without": 64,
+   "giant_lost": 0
+  },
+  {
+   "idx": 19,
+   "name": "The Beacon",
+   "county": "Devon",
+   "region": "South West",
+   "betweenness": 0.027,
+   "cut_vertex": false,
+   "giant_without": 64,
+   "giant_lost": 0
+  },
+  {
+   "idx": 41,
+   "name": "Blackborough Beacon",
+   "county": "Devon",
+   "region": "South West",
+   "betweenness": 0.025,
+   "cut_vertex": false,
+   "giant_without": 64,
+   "giant_lost": 0
+  },
+  {
+   "idx": 57,
+   "name": "Beacon Hill",
+   "county": "Wiltshire",
+   "region": "South West",
+   "betweenness": 0.019,
+   "cut_vertex": true,
+   "giant_without": 58,
+   "giant_lost": 6
+  },
+  {
+   "idx": 11,
+   "name": "Ugborough Beacon",
+   "county": "Devon",
+   "region": "South West",
+   "betweenness": 0.018,
+   "cut_vertex": false,
+   "giant_without": 64,
+   "giant_lost": 0
+  },
+  {
+   "idx": 65,
+   "name": "Beacon Hill",
+   "county": "Wiltshire",
+   "region": "South West",
+   "betweenness": 0.016,
+   "cut_vertex": true,
+   "giant_without": 59,
+   "giant_lost": 5
+  },
+  {
+   "idx": 47,
+   "name": "Culmstock Beacon",
+   "county": "Devon",
+   "region": "South West",
+   "betweenness": 0.015,
+   "cut_vertex": false,
+   "giant_without": 64,
+   "giant_lost": 0
+  },
+  {
+   "idx": 77,
+   "name": "Beacon Hill",
+   "county": "Wiltshire",
+   "region": "South West",
+   "betweenness": 0.013,
+   "cut_vertex": true,
+   "giant_without": 60,
+   "giant_lost": 4
+  },
+  {
+   "idx": 102,
+   "name": "Beacon Hill",
+   "county": "Worcestershire",
+   "region": "West Midlands",
+   "betweenness": 0.013,
+   "cut_vertex": true,
+   "giant_without": 60,
+   "giant_lost": 4
+  }
+ ],
+ "n_cut_vertices": 35,
+ "n_cut_vertices_giant": 11,
+ "single_failures": [
+  {
+   "idx": 16,
+   "name": "The Beacon",
+   "county": "Cornwall",
+   "lost": 1
+  },
+  {
+   "idx": 22,
+   "name": "Michaelstow Beacon",
+   "county": "Cornwall",
+   "lost": 0
+  },
+  {
+   "idx": 21,
+   "name": "Trelill Beacon",
+   "county": "Cornwall",
+   "lost": 0
+  },
+  {
+   "idx": 20,
+   "name": "The Beacon",
+   "county": "Cornwall",
+   "lost": 0
+  },
+  {
+   "idx": 17,
+   "name": "St Breock Beacon",
+   "county": "Cornwall",
+   "lost": 0
+  },
+  {
+   "idx": 12,
+   "name": "Belowda Beacon",
+   "county": "Cornwall",
+   "lost": 0
+  },
+  {
+   "idx": 10,
+   "name": "Beacon Hill",
+   "county": "Cornwall",
+   "lost": 0
+  },
+  {
+   "idx": 8,
+   "name": "Hensbarrow Beacon",
+   "county": "Cornwall",
+   "lost": 0
+  }
+ ],
+ "unreached": {
+  "n": 181,
+  "by_region": {
+   "South West": 54,
+   "Yorkshire and the Humber": 26,
+   "South East": 25,
+   "Eastern": 14,
+   "North West": 14,
+   "North East": 14,
+   "East Midlands": 11,
+   "West Midlands": 10,
+   "Wales": 7,
+   "Scotland": 6
+  }
+ },
+ "reached_by_region": [
+  {
+   "region": "South West",
+   "n": 66,
+   "reached": 12,
+   "min_hops": 0,
+   "median_hops": 2.0
+  },
+  {
+   "region": "East Midlands",
+   "n": 11,
+   "reached": 0,
+   "min_hops": null,
+   "median_hops": null
+  },
+  {
+   "region": "Eastern",
+   "n": 14,
+   "reached": 0,
+   "min_hops": null,
+   "median_hops": null
+  },
+  {
+   "region": "North East",
+   "n": 14,
+   "reached": 0,
+   "min_hops": null,
+   "median_hops": null
+  },
+  {
+   "region": "North West",
+   "n": 14,
+   "reached": 0,
+   "min_hops": null,
+   "median_hops": null
+  },
+  {
+   "region": "Scotland",
+   "n": 6,
+   "reached": 0,
+   "min_hops": null,
+   "median_hops": null
+  },
+  {
+   "region": "South East",
+   "n": 25,
+   "reached": 0,
+   "min_hops": null,
+   "median_hops": null
+  },
+  {
+   "region": "Wales",
+   "n": 7,
+   "reached": 0,
+   "min_hops": null,
+   "median_hops": null
+  },
+  {
+   "region": "West Midlands",
+   "n": 10,
+   "reached": 0,
+   "min_hops": null,
+   "median_hops": null
+  },
+  {
+   "region": "Yorkshire and the Humber",
+   "n": 26,
+   "reached": 0,
+   "min_hops": null,
+   "median_hops": null
+  }
+ ],
+ "giant_regions": {
+  "South West": 50,
+  "West Midlands": 8,
+  "South East": 6,
+  "Wales": 1
+ },
+ "start_component_size": 12,
+ "other_components": [
+  {
+   "size": 22,
+   "regions": [
+    "North East",
+    "North West",
+    "Yorkshire and the Humber"
+   ],
+   "names": [
+    "Penhill Beacon, North Yorkshire",
+    "White Beacon Hill, North Yorkshire",
+    "Beacon Hill, North Yorkshire",
+    "Beacon Hill, North Yorkshire",
+    "Beacon Hill, North Yorkshire",
+    "Danby Beacon, North Yorkshire"
+   ]
+  },
+  {
+   "size": 18,
+   "regions": [
+    "East Midlands",
+    "North West",
+    "Yorkshire and the Humber"
+   ],
+   "names": [
+    "Beacon Hill, Nottinghamshire",
+    "Beacon Hill, Rotherham",
+    "Beacon Hill (Woolley Edge), Wakefield",
+    "Upton Beacon, Wakefield",
+    "Beacon Hill, Calderdale",
+    "Beacon Hill, Calderdale"
+   ]
+  },
+  {
+   "size": 12,
+   "regions": [
+    "South West"
+   ],
+   "names": [
+    "Roskruge Beacon, Cornwall",
+    "The Beacon, Cornwall",
+    "Crowan Beacon, Cornwall",
+    "St Agnes Beacon, Cornwall",
+    "Hensbarrow Beacon, Cornwall",
+    "Beacon Hill, Cornwall"
+   ]
+  },
+  {
+   "size": 10,
+   "regions": [
+    "East Midlands",
+    "Yorkshire and the Humber"
+   ],
+   "names": [
+    "Beacon Hill, Lincolnshire",
+    "Beacon Hill, North East Lincolnshire",
+    "Beacon Hill, North Lincolnshire",
+    "Beacon Hill, East Riding of Yorkshire",
+    "Beacon Hill, East Riding of Yorkshire",
+    "Rudston Beacon, East Riding of Yorkshire"
+   ]
+  },
+  {
+   "size": 6,
+   "regions": [
+    "South East"
+   ],
+   "names": [
+    "Beacon Hill, East Sussex",
+    "Firle Beacon, East Sussex",
+    "Ditchling Beacon, East Sussex",
+    "Glatting Beacon, West Sussex",
+    "Beacon Hill, West Sussex",
+    "Beacon Hill, West Sussex"
+   ]
+  },
+  {
+   "size": 4,
+   "regions": [
+    "South East"
+   ],
+   "names": [
+    "Beacon Hill, Hampshire",
+    "Beacon Hill, Buckinghamshire",
+    "Beacon Hill, Oxfordshire",
+    "Beacon Hill, Buckinghamshire"
+   ]
+  },
+  {
+   "size": 4,
+   "regions": [
+    "East Midlands"
+   ],
+   "names": [
+    "Beacon Hill, Leicestershire",
+    "Beacon Hill, Leicestershire",
+    "Beacon Hill, Nottinghamshire",
+    "Beacon Hill, Lincolnshire"
+   ]
+  },
+  {
+   "size": 4,
+   "regions": [
+    "North West",
+    "Scotland"
+   ],
+   "names": [
+    "Beacon Hill, Cumberland",
+    "Beacon Hill, Dumfries and Galloway",
+    "Beacon Hill, Dumfries and Galloway",
+    "Beacon Hill, Dumfries and Galloway"
+   ]
+  },
+  {
+   "size": 3,
+   "regions": [
+    "Eastern"
+   ],
+   "names": [
+    "Beacon Hill, Essex",
+    "Beacon Hill, Essex",
+    "Beacon Hill, Essex"
+   ]
+  },
+  {
+   "size": 3,
+   "regions": [
+    "East Midlands"
+   ],
+   "names": [
+    "Beacon Hill, Lincolnshire",
+    "Beacon Hill, Lincolnshire",
+    "Beacon Hill, Lincolnshire"
+   ]
+  },
+  {
+   "size": 3,
+   "regions": [
+    "Wales"
+   ],
+   "names": [
+    "The Beacon, Abertawe - Swansea",
+    "Marros Beacon, Sir Gaerfyrddin - Carmarthenshire",
+    "Beacon Hill, Sir Benfro - Pembrokeshire"
+   ]
+  }
+ ],
+ "longest_links": [
+  {
+   "a": "Hurley Beacon, Somerset",
+   "b": "Beacon Hill, Somerset",
+   "km": 49.9
+  },
+  {
+   "a": "Beacon Moor, Redcar and Cleveland",
+   "b": "Beacon Hill, South Tyneside",
+   "km": 49.8
+  },
+  {
+   "a": "Danby Beacon, North Yorkshire",
+   "b": "Beacon Hill, County Durham",
+   "km": 49.1
+  },
+  {
+   "a": "Hameldown Beacon, Devon",
+   "b": "Blackborough Beacon, Devon",
+   "km": 49.0
+  },
+  {
+   "a": "The Beacon, Cornwall",
+   "b": "Beacon Hill, Devon",
+   "km": 49.0
+  }
+ ],
+ "median_link_km": 24.1,
+ "share_pairs_visible_50": 0.3695395513577332,
+ "max_hops": 3,
+ "alight_by_hop": [
+  1,
+  5,
+  11,
+  12
+ ],
+ "alight_by_hour": {
+  "fast": [
+   1,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12
+  ],
+  "central": [
+   1,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12
+  ],
+  "slow": [
+   1,
+   11,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12
+  ]
+ },
+ "hours_all_reached": {
+  "fast": 0.25,
+  "central": 0.75,
+  "slow": 1.5
+ },
+ "half_reached_hops": 2,
+ "degree_median": 3.0,
+ "degree_max": 10,
+ "degree_max_name": "Blackborough Beacon, Devon",
+ "top_degree": [
+  {
+   "name": "Hurley Beacon",
+   "county": "Somerset",
+   "links": 10
+  },
+  {
+   "name": "Blackborough Beacon",
+   "county": "Devon",
+   "links": 10
+  },
+  {
+   "name": "Beacon Batch",
+   "county": "Somerset",
+   "links": 10
+  },
+  {
+   "name": "Beacon Hill",
+   "county": "Somerset",
+   "links": 10
+  },
+  {
+   "name": "Combe Beacon",
+   "county": "Somerset",
+   "links": 9
+  },
+  {
+   "name": "Kingston Beacon",
+   "county": "Somerset",
+   "links": 9
+  },
+  {
+   "name": "Ugborough Beacon",
+   "county": "Devon",
+   "links": 9
+  },
+  {
+   "name": "Hensbarrow Beacon",
+   "county": "Cornwall",
+   "links": 9
+  }
+ ],
+ "poem_sites": [
+  {
+   "poem": "Malvern",
+   "name": "Worcestershire Beacon",
+   "county": "Worcestershire",
+   "hops": null
+  }
+ ],
+ "filled": {
+  "n_relays": 2665,
+  "n_nodes": 2858,
+  "cell_km": 10,
+  "links_50": 47440,
+  "30": {
+   "reached_nodes": 2754,
+   "reached_beacons": 190,
+   "share_beacons_reached": 0.9844559585492227,
+   "max_hops_beacons": 29,
+   "targets": {
+    "london": {
+     "hops": 14,
+     "path": [
+      1,
+      239,
+      256,
+      258,
+      11,
+      300,
+      345,
+      378,
+      418,
+      462,
+      465,
+      510,
+      596,
+      598,
+      672
+     ],
+     "path_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Penare, Cornwall",
+      "hill near Polperro, Cornwall",
+      "hill near Rame, Cornwall",
+      "Ugborough Beacon, Devon",
+      "hill near Middle Rocombe, Devon",
+      "hill near Bowd, Devon",
+      "hill near Fishpond Bottom, Dorset",
+      "hill near Batcombe, Dorset",
+      "hill near East Compton, Dorset",
+      "hill near Whitsbury, Hampshire",
+      "hill near Ashley, Hampshire",
+      "hill near Foxhall, Hampshire",
+      "hill near Ewshot, Hampshire",
+      "hill near Whiteley Village, Surrey"
+     ],
+     "end": "hill near Whiteley Village, Surrey",
+     "path_km": 367.4,
+     "relays_on_fastest": 13,
+     "named_on_fastest": 2,
+     "min_relays": 6,
+     "min_relay_hops": 18,
+     "min_relay_path": [
+      1,
+      239,
+      256,
+      258,
+      11,
+      24,
+      34,
+      41,
+      51,
+      56,
+      48,
+      53,
+      68,
+      589,
+      65,
+      75,
+      668,
+      71,
+      672
+     ],
+     "min_relay_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Penare, Cornwall",
+      "hill near Polperro, Cornwall",
+      "hill near Rame, Cornwall",
+      "Ugborough Beacon, Devon",
+      "Hameldown Beacon, Devon",
+      "Beacon Hill, Devon",
+      "Blackborough Beacon, Devon",
+      "Beacon Hill, Devon",
+      "Kingston Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "The Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "hill near Upton Scudamore, Wiltshire",
+      "Beacon Hill, Wiltshire",
+      "Beacon Hill, Hampshire",
+      "hill near Old Warren, West Berkshire",
+      "Beacon Hill, Hampshire",
+      "hill near Whiteley Village, Surrey"
+     ],
+     "minutes_fast": 70,
+     "minutes_central": 210,
+     "minutes_slow": 420
+    },
+    "york": {
+     "hops": 21,
+     "path": [
+      1,
+      239,
+      274,
+      313,
+      369,
+      449,
+      535,
+      578,
+      651,
+      691,
+      774,
+      913,
+      961,
+      1114,
+      1219,
+      1326,
+      1436,
+      1495,
+      1649,
+      1785,
+      1858,
+      1893
+     ],
+     "path_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Penare, Cornwall",
+      "hill near Pendriscott, Cornwall",
+      "hill near Clitters, Cornwall",
+      "hill near Broadbury, Devon",
+      "hill near Roborough, Devon",
+      "hill near Bentwitchen, Devon",
+      "hill near Exford, Somerset",
+      "hill near Sain Dunwyd, Bro Morgannwg - the Vale of Glamorgan",
+      "hill near Downs, Bro Morgannwg - the Vale of Glamorgan",
+      "hill near Upper Cwmbran, Torfaen - Torfaen",
+      "hill near Cross Ash, Sir Fynwy - Monmouthshire",
+      "hill near Woolhope Cockshoot, County of Herefordshire",
+      "hill near Great Witley, Worcestershire",
+      "hill near Clent, Worcestershire",
+      "hill near Hill, Birmingham",
+      "hill near Upper Midway, Derbyshire",
+      "hill near Stanton-by-Dale, Derbyshire",
+      "hill near Tibshelf, Derbyshire",
+      "hill near Carr, Rotherham",
+      "hill near Stainforth, Doncaster",
+      "hill near Barlow, North Yorkshire"
+     ],
+     "end": "hill near Barlow, North Yorkshire",
+     "path_km": 522.3,
+     "relays_on_fastest": 21,
+     "named_on_fastest": 1,
+     "min_relays": 11,
+     "min_relay_hops": 26,
+     "min_relay_path": [
+      1,
+      239,
+      256,
+      258,
+      11,
+      24,
+      34,
+      41,
+      51,
+      56,
+      48,
+      53,
+      68,
+      696,
+      780,
+      91,
+      94,
+      1016,
+      100,
+      1224,
+      109,
+      1496,
+      1604,
+      123,
+      127,
+      1858,
+      1893
+     ],
+     "min_relay_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Penare, Cornwall",
+      "hill near Polperro, Cornwall",
+      "hill near Rame, Cornwall",
+      "Ugborough Beacon, Devon",
+      "Hameldown Beacon, Devon",
+      "Beacon Hill, Devon",
+      "Blackborough Beacon, Devon",
+      "Beacon Hill, Devon",
+      "Kingston Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "The Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "hill near Upton Cheyney, South Gloucestershire",
+      "hill near Bencombe, Gloucestershire",
+      "Chedworth Beacon, Gloucestershire",
+      "Wyck Beacon, Gloucestershire",
+      "hill near Epwell, Oxfordshire",
+      "Beacon Hill, Warwickshire",
+      "hill near Wibtoft, Warwickshire",
+      "Beacon Hill, Leicestershire",
+      "hill near Thrumpton, Nottinghamshire",
+      "hill near Kirkby-in-Ashfield, Nottinghamshire",
+      "Beacon Hill, Nottinghamshire",
+      "Beacon Hill, Rotherham",
+      "hill near Stainforth, Doncaster",
+      "hill near Barlow, North Yorkshire"
+     ],
+     "minutes_fast": 105,
+     "minutes_central": 315,
+     "minutes_slow": 630
+    },
+    "carlisle": {
+     "hops": 23,
+     "path": [
+      1,
+      239,
+      274,
+      313,
+      369,
+      449,
+      535,
+      578,
+      651,
+      691,
+      774,
+      913,
+      1007,
+      1162,
+      1318,
+      1485,
+      1592,
+      1731,
+      1809,
+      1915,
+      1982,
+      2106,
+      2191,
+      165
+     ],
+     "path_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Penare, Cornwall",
+      "hill near Pendriscott, Cornwall",
+      "hill near Clitters, Cornwall",
+      "hill near Broadbury, Devon",
+      "hill near Roborough, Devon",
+      "hill near Bentwitchen, Devon",
+      "hill near Exford, Somerset",
+      "hill near Sain Dunwyd, Bro Morgannwg - the Vale of Glamorgan",
+      "hill near Downs, Bro Morgannwg - the Vale of Glamorgan",
+      "hill near Upper Cwmbran, Torfaen - Torfaen",
+      "hill near Cross Ash, Sir Fynwy - Monmouthshire",
+      "hill near Yarsop, County of Herefordshire",
+      "hill near Pipe Aston, County of Herefordshire",
+      "hill near Crowsnest, Shropshire",
+      "hill near Lower Hordley, Shropshire",
+      "hill near Caergwrle, Sir y Fflint - Flintshire",
+      "hill near Poll Hill, Wirral",
+      "hill near Freshfield, Sefton",
+      "hill near Great Plumpton, Lancashire",
+      "hill near Newlands, Lancashire",
+      "hill near Nook, Westmorland and Furness",
+      "hill near Hallow Bank, Westmorland and Furness",
+      "Beacon Hill, Westmorland and Furness"
+     ],
+     "end": "Beacon Hill, Westmorland and Furness",
+     "path_km": 592.0,
+     "relays_on_fastest": 22,
+     "named_on_fastest": 2,
+     "min_relays": 12,
+     "min_relay_hops": 31,
+     "min_relay_path": [
+      1,
+      239,
+      256,
+      258,
+      11,
+      24,
+      34,
+      41,
+      51,
+      56,
+      48,
+      53,
+      68,
+      74,
+      736,
+      188,
+      92,
+      97,
+      1011,
+      102,
+      107,
+      1322,
+      1429,
+      1594,
+      124,
+      1776,
+      1849,
+      141,
+      2065,
+      2151,
+      160,
+      165
+     ],
+     "min_relay_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Penare, Cornwall",
+      "hill near Polperro, Cornwall",
+      "hill near Rame, Cornwall",
+      "Ugborough Beacon, Devon",
+      "Hameldown Beacon, Devon",
+      "Beacon Hill, Devon",
+      "Blackborough Beacon, Devon",
+      "Beacon Hill, Devon",
+      "Kingston Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "The Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "Beacon Batch, Somerset",
+      "hill near Almondsbury, South Gloucestershire",
+      "Beacon Hill, Sir Fynwy - Monmouthshire",
+      "Beacon Hill, Gloucestershire",
+      "Herefordshire Beacon, County of Herefordshire",
+      "hill near Stonehall, Worcestershire",
+      "Beacon Hill, Worcestershire",
+      "Sedgley Beacon, Dudley",
+      "hill near Snedshill, Telford and Wrekin",
+      "hill near Kenstone, Shropshire",
+      "hill near Harthill, Cheshire West and Chester",
+      "Beacon Hill, Cheshire West and Chester",
+      "hill near Edge Green, Wigan",
+      "hill near Edgworth Moor, Blackburn with Darwen",
+      "Beacon Hill, Lancashire",
+      "hill near Chapel-le-Dale, North Yorkshire",
+      "hill near Cautley, Westmorland and Furness",
+      "Beacon Hill, Westmorland and Furness",
+      "Beacon Hill, Westmorland and Furness"
+     ],
+     "minutes_fast": 115,
+     "minutes_central": 345,
+     "minutes_slow": 690
+    },
+    "berwick": {
+     "hops": 27,
+     "path": [
+      1,
+      239,
+      274,
+      313,
+      369,
+      449,
+      535,
+      578,
+      651,
+      770,
+      906,
+      1001,
+      1155,
+      1311,
+      1422,
+      1535,
+      1636,
+      1732,
+      1845,
+      1882,
+      141,
+      2066,
+      2196,
+      2317,
+      2403,
+      2488,
+      2605,
+      2666
+     ],
+     "path_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Penare, Cornwall",
+      "hill near Pendriscott, Cornwall",
+      "hill near Clitters, Cornwall",
+      "hill near Broadbury, Devon",
+      "hill near Roborough, Devon",
+      "hill near Bentwitchen, Devon",
+      "hill near Exford, Somerset",
+      "hill near Sain Dunwyd, Bro Morgannwg - the Vale of Glamorgan",
+      "hill near Abergwynfi, Castell-nedd Port Talbot - Neath Port Talbot",
+      "hill near Llanddeusant, Sir Gaerfyrddin - Carmarthenshire",
+      "hill near Llanwrtyd, Powys - Powys",
+      "hill near Cwmystwyth, Sir Ceredigion - Ceredigion",
+      "hill near Abergynolwyn, Gwynedd - Gwynedd",
+      "hill near Pennant, Gwynedd - Gwynedd",
+      "hill near Llangwm, Conwy - Conwy",
+      "hill near Bryn Eithen, Sir Ddinbych - Denbighshire",
+      "hill near Prenton, Wirral",
+      "hill near Pinfold, Lancashire",
+      "hill near Top o' th' Lane, Lancashire",
+      "Beacon Hill, Lancashire",
+      "hill near Foxup, North Yorkshire",
+      "hill near West Stonesdale, North Yorkshire",
+      "hill near Hill End, County Durham",
+      "hill near Pontop, County Durham",
+      "hill near Shotton, Northumberland",
+      "hill near North End, Northumberland",
+      "hill near Chillingham, Northumberland"
+     ],
+     "end": "hill near Chillingham, Northumberland",
+     "path_km": 708.2,
+     "relays_on_fastest": 26,
+     "named_on_fastest": 2,
+     "min_relays": 14,
+     "min_relay_hops": 37,
+     "min_relay_path": [
+      1,
+      239,
+      256,
+      258,
+      11,
+      24,
+      34,
+      41,
+      51,
+      56,
+      48,
+      53,
+      68,
+      74,
+      736,
+      188,
+      92,
+      97,
+      1011,
+      102,
+      107,
+      1322,
+      1429,
+      1594,
+      124,
+      1776,
+      1849,
+      141,
+      2065,
+      152,
+      150,
+      155,
+      163,
+      167,
+      2446,
+      174,
+      2564,
+      2666
+     ],
+     "min_relay_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Penare, Cornwall",
+      "hill near Polperro, Cornwall",
+      "hill near Rame, Cornwall",
+      "Ugborough Beacon, Devon",
+      "Hameldown Beacon, Devon",
+      "Beacon Hill, Devon",
+      "Blackborough Beacon, Devon",
+      "Beacon Hill, Devon",
+      "Kingston Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "The Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "Beacon Batch, Somerset",
+      "hill near Almondsbury, South Gloucestershire",
+      "Beacon Hill, Sir Fynwy - Monmouthshire",
+      "Beacon Hill, Gloucestershire",
+      "Herefordshire Beacon, County of Herefordshire",
+      "hill near Stonehall, Worcestershire",
+      "Beacon Hill, Worcestershire",
+      "Sedgley Beacon, Dudley",
+      "hill near Snedshill, Telford and Wrekin",
+      "hill near Kenstone, Shropshire",
+      "hill near Harthill, Cheshire West and Chester",
+      "Beacon Hill, Cheshire West and Chester",
+      "hill near Edge Green, Wigan",
+      "hill near Edgworth Moor, Blackburn with Darwen",
+      "Beacon Hill, Lancashire",
+      "hill near Chapel-le-Dale, North Yorkshire",
+      "White Beacon Hill, North Yorkshire",
+      "Penhill Beacon, North Yorkshire",
+      "Beacon Hill, North Yorkshire",
+      "Shackleton Beacon Hill, Darlington",
+      "Beacon Hill, County Durham",
+      "hill near Sheriff Hill, Gateshead",
+      "Beacon Hill, Northumberland",
+      "hill near Great Tosson, Northumberland",
+      "hill near Chillingham, Northumberland"
+     ],
+     "minutes_fast": 135,
+     "minutes_central": 405,
+     "minutes_slow": 810
+    },
+    "beacon_fell": {
+     "hops": 20,
+     "path": [
+      1,
+      239,
+      274,
+      313,
+      369,
+      449,
+      535,
+      578,
+      651,
+      691,
+      774,
+      913,
+      1007,
+      1162,
+      1318,
+      1485,
+      1592,
+      1732,
+      1845,
+      1949,
+      138
+     ],
+     "path_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Penare, Cornwall",
+      "hill near Pendriscott, Cornwall",
+      "hill near Clitters, Cornwall",
+      "hill near Broadbury, Devon",
+      "hill near Roborough, Devon",
+      "hill near Bentwitchen, Devon",
+      "hill near Exford, Somerset",
+      "hill near Sain Dunwyd, Bro Morgannwg - the Vale of Glamorgan",
+      "hill near Downs, Bro Morgannwg - the Vale of Glamorgan",
+      "hill near Upper Cwmbran, Torfaen - Torfaen",
+      "hill near Cross Ash, Sir Fynwy - Monmouthshire",
+      "hill near Yarsop, County of Herefordshire",
+      "hill near Pipe Aston, County of Herefordshire",
+      "hill near Crowsnest, Shropshire",
+      "hill near Lower Hordley, Shropshire",
+      "hill near Caergwrle, Sir y Fflint - Flintshire",
+      "hill near Prenton, Wirral",
+      "hill near Pinfold, Lancashire",
+      "hill near Skippool, Lancashire",
+      "Beacon Fell, Lancashire"
+     ],
+     "end": "Beacon Fell, Lancashire",
+     "path_km": 515.0,
+     "relays_on_fastest": 19,
+     "named_on_fastest": 2,
+     "min_relays": 10,
+     "min_relay_hops": 27,
+     "min_relay_path": [
+      1,
+      239,
+      256,
+      258,
+      11,
+      24,
+      34,
+      41,
+      51,
+      56,
+      48,
+      53,
+      68,
+      74,
+      736,
+      188,
+      92,
+      97,
+      1011,
+      102,
+      107,
+      1322,
+      1429,
+      1594,
+      124,
+      1775,
+      1848,
+      138
+     ],
+     "min_relay_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Penare, Cornwall",
+      "hill near Polperro, Cornwall",
+      "hill near Rame, Cornwall",
+      "Ugborough Beacon, Devon",
+      "Hameldown Beacon, Devon",
+      "Beacon Hill, Devon",
+      "Blackborough Beacon, Devon",
+      "Beacon Hill, Devon",
+      "Kingston Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "The Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "Beacon Batch, Somerset",
+      "hill near Almondsbury, South Gloucestershire",
+      "Beacon Hill, Sir Fynwy - Monmouthshire",
+      "Beacon Hill, Gloucestershire",
+      "Herefordshire Beacon, County of Herefordshire",
+      "hill near Stonehall, Worcestershire",
+      "Beacon Hill, Worcestershire",
+      "Sedgley Beacon, Dudley",
+      "hill near Snedshill, Telford and Wrekin",
+      "hill near Kenstone, Shropshire",
+      "hill near Harthill, Cheshire West and Chester",
+      "Beacon Hill, Cheshire West and Chester",
+      "hill near Billinge, St. Helens",
+      "hill near Belmont, Blackburn with Darwen",
+      "Beacon Fell, Lancashire"
+     ],
+     "minutes_fast": 100,
+     "minutes_central": 300,
+     "minutes_slow": 600
+    },
+    "malvern": {
+     "hops": 12,
+     "path": [
+      1,
+      239,
+      274,
+      313,
+      369,
+      450,
+      496,
+      539,
+      618,
+      694,
+      778,
+      869,
+      99
+     ],
+     "path_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Penare, Cornwall",
+      "hill near Pendriscott, Cornwall",
+      "hill near Clitters, Cornwall",
+      "hill near Broadbury, Devon",
+      "hill near Chulmleigh, Devon",
+      "hill near Hartford, Somerset",
+      "hill near Triscombe, Somerset",
+      "hill near Uphill, North Somerset",
+      "hill near Wraxall, North Somerset",
+      "hill near Milbury Heath, South Gloucestershire",
+      "hill near Little London, Gloucestershire",
+      "Worcestershire Beacon, Worcestershire"
+     ],
+     "end": "Worcestershire Beacon, Worcestershire",
+     "path_km": 315.9,
+     "relays_on_fastest": 11,
+     "named_on_fastest": 2,
+     "min_relays": 4,
+     "min_relay_hops": 18,
+     "min_relay_path": [
+      1,
+      239,
+      256,
+      258,
+      11,
+      24,
+      34,
+      41,
+      51,
+      56,
+      48,
+      53,
+      68,
+      74,
+      736,
+      188,
+      92,
+      97,
+      99
+     ],
+     "min_relay_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Penare, Cornwall",
+      "hill near Polperro, Cornwall",
+      "hill near Rame, Cornwall",
+      "Ugborough Beacon, Devon",
+      "Hameldown Beacon, Devon",
+      "Beacon Hill, Devon",
+      "Blackborough Beacon, Devon",
+      "Beacon Hill, Devon",
+      "Kingston Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "The Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "Beacon Batch, Somerset",
+      "hill near Almondsbury, South Gloucestershire",
+      "Beacon Hill, Sir Fynwy - Monmouthshire",
+      "Beacon Hill, Gloucestershire",
+      "Herefordshire Beacon, County of Herefordshire",
+      "Worcestershire Beacon, Worcestershire"
+     ],
+     "minutes_fast": 60,
+     "minutes_central": 180,
+     "minutes_slow": 360
+    }
+   },
+   "beacons_alight_by_hop": [
+    1,
+    2,
+    6,
+    12,
+    21,
+    29,
+    36,
+    43,
+    51,
+    57,
+    58,
+    65,
+    75,
+    82,
+    89,
+    96,
+    101,
+    109,
+    116,
+    123,
+    132,
+    143,
+    152,
+    162,
+    169,
+    181,
+    187,
+    188,
+    189,
+    190
+   ],
+   "beacons_alight_by_hour": {
+    "fast": [
+     1,
+     75,
+     169,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190
+    ],
+    "central": [
+     1,
+     21,
+     51,
+     75,
+     101,
+     132,
+     169,
+     189,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190
+    ],
+    "slow": [
+     1,
+     6,
+     21,
+     36,
+     51,
+     58,
+     75,
+     89,
+     101,
+     116,
+     132,
+     152,
+     169,
+     187,
+     189,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190,
+     190
+    ]
+   },
+   "hours_all_beacons": {
+    "fast": 2.42,
+    "central": 7.25,
+    "slow": 14.5
+   },
+   "unreached_beacons": [
+    "Beacon Hill, Isles of Scilly",
+    "Beacon Hill, North Yorkshire",
+    "Beacon Hill, Highland"
+   ]
+  },
+  "50": {
+   "reached_nodes": 2848,
+   "reached_beacons": 191,
+   "share_beacons_reached": 0.9896373056994818,
+   "max_hops_beacons": 18,
+   "targets": {
+    "london": {
+     "hops": 9,
+     "path": [
+      1,
+      12,
+      311,
+      370,
+      453,
+      501,
+      588,
+      628,
+      554,
+      672
+     ],
+     "path_names": [
+      "Roskruge Beacon, Cornwall",
+      "Belowda Beacon, Cornwall",
+      "hill near Bowithick, Cornwall",
+      "hill near Meldon, Devon",
+      "hill near Huntsham, Devon",
+      "hill near Aller, Somerset",
+      "hill near Whitbourne Springs, Wiltshire",
+      "hill near Tidcombe, Wiltshire",
+      "hill near Four Marks, Hampshire",
+      "hill near Whiteley Village, Surrey"
+     ],
+     "end": "hill near Whiteley Village, Surrey",
+     "path_km": 390.7,
+     "relays_on_fastest": 8,
+     "named_on_fastest": 2,
+     "min_relays": 3,
+     "min_relay_hops": 10,
+     "min_relay_path": [
+      1,
+      256,
+      9,
+      19,
+      41,
+      61,
+      68,
+      57,
+      65,
+      554,
+      672
+     ],
+     "min_relay_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Polperro, Cornwall",
+      "Western Beacon, Devon",
+      "The Beacon, Devon",
+      "Blackborough Beacon, Devon",
+      "Hurley Beacon, Somerset",
+      "Beacon Hill, Somerset",
+      "Beacon Hill, Wiltshire",
+      "Beacon Hill, Wiltshire",
+      "hill near Four Marks, Hampshire",
+      "hill near Whiteley Village, Surrey"
+     ],
+     "minutes_fast": 45,
+     "minutes_central": 135,
+     "minutes_slow": 270
+    },
+    "york": {
+     "hops": 12,
+     "path": [
+      1,
+      12,
+      334,
+      448,
+      574,
+      725,
+      906,
+      1055,
+      1163,
+      1322,
+      1597,
+      1781,
+      1926
+     ],
+     "path_names": [
+      "Roskruge Beacon, Cornwall",
+      "Belowda Beacon, Cornwall",
+      "hill near Tintagel, Cornwall",
+      "hill near Tythecott, Devon",
+      "hill near Bradwell, Devon",
+      "hill near Rhossili, Abertawe - Swansea",
+      "hill near Llanddeusant, Sir Gaerfyrddin - Carmarthenshire",
+      "hill near Glascwm, Powys - Powys",
+      "hill near Cleehill, Shropshire",
+      "hill near Snedshill, Telford and Wrekin",
+      "hill near Mow Cop, Cheshire East",
+      "hill near Crowden, Derbyshire",
+      "hill near Kippax Common, Leeds"
+     ],
+     "end": "hill near Kippax Common, Leeds",
+     "path_km": 516.0,
+     "relays_on_fastest": 11,
+     "named_on_fastest": 2,
+     "min_relays": 4,
+     "min_relay_hops": 14,
+     "min_relay_path": [
+      1,
+      256,
+      9,
+      19,
+      41,
+      62,
+      74,
+      188,
+      99,
+      102,
+      107,
+      112,
+      1597,
+      1781,
+      1926
+     ],
+     "min_relay_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Polperro, Cornwall",
+      "Western Beacon, Devon",
+      "The Beacon, Devon",
+      "Blackborough Beacon, Devon",
+      "Beacon Hill, Somerset",
+      "Beacon Batch, Somerset",
+      "Beacon Hill, Sir Fynwy - Monmouthshire",
+      "Worcestershire Beacon, Worcestershire",
+      "Beacon Hill, Worcestershire",
+      "Sedgley Beacon, Dudley",
+      "Beacon Hill, Staffordshire",
+      "hill near Mow Cop, Cheshire East",
+      "hill near Crowden, Derbyshire",
+      "hill near Kippax Common, Leeds"
+     ],
+     "minutes_fast": 60,
+     "minutes_central": 180,
+     "minutes_slow": 360
+    },
+    "carlisle": {
+     "hops": 14,
+     "path": [
+      1,
+      12,
+      334,
+      448,
+      577,
+      691,
+      861,
+      1108,
+      1316,
+      1538,
+      1732,
+      1915,
+      2063,
+      2269,
+      165
+     ],
+     "path_names": [
+      "Roskruge Beacon, Cornwall",
+      "Belowda Beacon, Cornwall",
+      "hill near Tintagel, Cornwall",
+      "hill near Tythecott, Devon",
+      "hill near Furzehill, Devon",
+      "hill near Downs, Bro Morgannwg - the Vale of Glamorgan",
+      "hill near Nant-ddu, Powys - Powys",
+      "hill near Llanfihangel Rhydithon, Powys - Powys",
+      "hill near The Green, Powys - Powys",
+      "hill near Pant, Sir Ddinbych - Denbighshire",
+      "hill near Prenton, Wirral",
+      "hill near Great Plumpton, Lancashire",
+      "hill near Dalton, Westmorland and Furness",
+      "hill near Legburthwaite, Cumberland",
+      "Beacon Hill, Westmorland and Furness"
+     ],
+     "end": "Beacon Hill, Westmorland and Furness",
+     "path_km": 592.1,
+     "relays_on_fastest": 12,
+     "named_on_fastest": 3,
+     "min_relays": 3,
+     "min_relay_hops": 19,
+     "min_relay_path": [
+      1,
+      256,
+      9,
+      19,
+      41,
+      62,
+      74,
+      188,
+      99,
+      102,
+      107,
+      112,
+      1597,
+      124,
+      1809,
+      138,
+      145,
+      154,
+      160,
+      165
+     ],
+     "min_relay_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Polperro, Cornwall",
+      "Western Beacon, Devon",
+      "The Beacon, Devon",
+      "Blackborough Beacon, Devon",
+      "Beacon Hill, Somerset",
+      "Beacon Batch, Somerset",
+      "Beacon Hill, Sir Fynwy - Monmouthshire",
+      "Worcestershire Beacon, Worcestershire",
+      "Beacon Hill, Worcestershire",
+      "Sedgley Beacon, Dudley",
+      "Beacon Hill, Staffordshire",
+      "hill near Mow Cop, Cheshire East",
+      "Beacon Hill, Cheshire West and Chester",
+      "hill near Freshfield, Sefton",
+      "Beacon Fell, Lancashire",
+      "Beacon Hill, Westmorland and Furness",
+      "Whinfell Beacon, Westmorland and Furness",
+      "Beacon Hill, Westmorland and Furness",
+      "Beacon Hill, Westmorland and Furness"
+     ],
+     "minutes_fast": 70,
+     "minutes_central": 210,
+     "minutes_slow": 420
+    },
+    "berwick": {
+     "hops": 16,
+     "path": [
+      1,
+      12,
+      334,
+      448,
+      574,
+      726,
+      860,
+      1056,
+      1266,
+      1541,
+      1690,
+      1885,
+      2066,
+      2274,
+      2399,
+      2563,
+      2666
+     ],
+     "path_names": [
+      "Roskruge Beacon, Cornwall",
+      "Belowda Beacon, Cornwall",
+      "hill near Tintagel, Cornwall",
+      "hill near Tythecott, Devon",
+      "hill near Bradwell, Devon",
+      "hill near Perriswood, Abertawe - Swansea",
+      "hill near Glyntawe, Powys - Powys",
+      "hill near Gladestry, Powys - Powys",
+      "hill near Tankerville, Shropshire",
+      "hill near Wirswall, Cheshire East",
+      "hill near Hough, Cheshire East",
+      "hill near Weir, Lancashire",
+      "hill near Foxup, North Yorkshire",
+      "hill near Hilton, Westmorland and Furness",
+      "hill near Ayle, Northumberland",
+      "hill near Hepple, Northumberland",
+      "hill near Chillingham, Northumberland"
+     ],
+     "end": "hill near Chillingham, Northumberland",
+     "path_km": 685.2,
+     "relays_on_fastest": 15,
+     "named_on_fastest": 2,
+     "min_relays": 6,
+     "min_relay_hops": 20,
+     "min_relay_path": [
+      1,
+      256,
+      9,
+      19,
+      41,
+      62,
+      74,
+      188,
+      99,
+      102,
+      107,
+      112,
+      1597,
+      1781,
+      139,
+      2029,
+      153,
+      162,
+      172,
+      2641,
+      2666
+     ],
+     "min_relay_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Polperro, Cornwall",
+      "Western Beacon, Devon",
+      "The Beacon, Devon",
+      "Blackborough Beacon, Devon",
+      "Beacon Hill, Somerset",
+      "Beacon Batch, Somerset",
+      "Beacon Hill, Sir Fynwy - Monmouthshire",
+      "Worcestershire Beacon, Worcestershire",
+      "Beacon Hill, Worcestershire",
+      "Sedgley Beacon, Dudley",
+      "Beacon Hill, Staffordshire",
+      "hill near Mow Cop, Cheshire East",
+      "hill near Crowden, Derbyshire",
+      "Beacon Hill, Leeds",
+      "hill near Warsill, North Yorkshire",
+      "Beacon Hill, North Yorkshire",
+      "Beacon Moor, Redcar and Cleveland",
+      "Beacon Hill, South Tyneside",
+      "hill near Bilton, Northumberland",
+      "hill near Chillingham, Northumberland"
+     ],
+     "minutes_fast": 80,
+     "minutes_central": 240,
+     "minutes_slow": 480
+    },
+    "beacon_fell": {
+     "hops": 11,
+     "path": [
+      1,
+      12,
+      334,
+      448,
+      574,
+      726,
+      860,
+      1056,
+      1266,
+      1539,
+      1774,
+      138
+     ],
+     "path_names": [
+      "Roskruge Beacon, Cornwall",
+      "Belowda Beacon, Cornwall",
+      "hill near Tintagel, Cornwall",
+      "hill near Tythecott, Devon",
+      "hill near Bradwell, Devon",
+      "hill near Perriswood, Abertawe - Swansea",
+      "hill near Glyntawe, Powys - Powys",
+      "hill near Gladestry, Powys - Powys",
+      "hill near Tankerville, Shropshire",
+      "hill near Pentre Bychan, Wrecsam - Wrexham",
+      "hill near Gillar's Green, St. Helens",
+      "Beacon Fell, Lancashire"
+     ],
+     "end": "Beacon Fell, Lancashire",
+     "path_km": 481.6,
+     "relays_on_fastest": 9,
+     "named_on_fastest": 3,
+     "min_relays": 3,
+     "min_relay_hops": 15,
+     "min_relay_path": [
+      1,
+      256,
+      9,
+      19,
+      41,
+      62,
+      74,
+      188,
+      99,
+      102,
+      107,
+      112,
+      1597,
+      124,
+      1809,
+      138
+     ],
+     "min_relay_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Polperro, Cornwall",
+      "Western Beacon, Devon",
+      "The Beacon, Devon",
+      "Blackborough Beacon, Devon",
+      "Beacon Hill, Somerset",
+      "Beacon Batch, Somerset",
+      "Beacon Hill, Sir Fynwy - Monmouthshire",
+      "Worcestershire Beacon, Worcestershire",
+      "Beacon Hill, Worcestershire",
+      "Sedgley Beacon, Dudley",
+      "Beacon Hill, Staffordshire",
+      "hill near Mow Cop, Cheshire East",
+      "Beacon Hill, Cheshire West and Chester",
+      "hill near Freshfield, Sefton",
+      "Beacon Fell, Lancashire"
+     ],
+     "minutes_fast": 55,
+     "minutes_central": 165,
+     "minutes_slow": 330
+    },
+    "malvern": {
+     "hops": 8,
+     "path": [
+      1,
+      12,
+      334,
+      448,
+      577,
+      691,
+      820,
+      92,
+      99
+     ],
+     "path_names": [
+      "Roskruge Beacon, Cornwall",
+      "Belowda Beacon, Cornwall",
+      "hill near Tintagel, Cornwall",
+      "hill near Tythecott, Devon",
+      "hill near Furzehill, Devon",
+      "hill near Downs, Bro Morgannwg - the Vale of Glamorgan",
+      "hill near Forge Side, Torfaen - Torfaen",
+      "Beacon Hill, Gloucestershire",
+      "Worcestershire Beacon, Worcestershire"
+     ],
+     "end": "Worcestershire Beacon, Worcestershire",
+     "path_km": 318.5,
+     "relays_on_fastest": 5,
+     "named_on_fastest": 4,
+     "min_relays": 1,
+     "min_relay_hops": 8,
+     "min_relay_path": [
+      1,
+      256,
+      9,
+      19,
+      41,
+      62,
+      74,
+      188,
+      99
+     ],
+     "min_relay_names": [
+      "Roskruge Beacon, Cornwall",
+      "hill near Polperro, Cornwall",
+      "Western Beacon, Devon",
+      "The Beacon, Devon",
+      "Blackborough Beacon, Devon",
+      "Beacon Hill, Somerset",
+      "Beacon Batch, Somerset",
+      "Beacon Hill, Sir Fynwy - Monmouthshire",
+      "Worcestershire Beacon, Worcestershire"
+     ],
+     "minutes_fast": 40,
+     "minutes_central": 120,
+     "minutes_slow": 240
+    }
+   },
+   "beacons_alight_by_hop": [
+    1,
+    5,
+    14,
+    26,
+    37,
+    48,
+    60,
+    66,
+    80,
+    93,
+    103,
+    114,
+    131,
+    144,
+    169,
+    187,
+    189,
+    190,
+    191
+   ],
+   "beacons_alight_by_hour": {
+    "fast": [
+     1,
+     131,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191
+    ],
+    "central": [
+     1,
+     37,
+     80,
+     131,
+     189,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191
+    ],
+    "slow": [
+     1,
+     14,
+     37,
+     60,
+     80,
+     103,
+     131,
+     169,
+     189,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191,
+     191
+    ]
+   },
+   "hours_all_beacons": {
+    "fast": 1.5,
+    "central": 4.5,
+    "slow": 9.0
+   },
+   "unreached_beacons": [
+    "Beacon Hill, Isles of Scilly",
+    "Beacon Hill, Highland"
+   ]
+  },
+  "region_hops": [
+   {
+    "region": "South West",
+    "n": 66,
+    "reached": 65,
+    "first_hops": 0,
+    "median_hops": 4.0
+   },
+   {
+    "region": "Wales",
+    "n": 7,
+    "reached": 7,
+    "first_hops": 5,
+    "median_hops": 7.0
+   },
+   {
+    "region": "South East",
+    "n": 25,
+    "reached": 25,
+    "first_hops": 8,
+    "median_hops": 9.0
+   },
+   {
+    "region": "West Midlands",
+    "n": 10,
+    "reached": 10,
+    "first_hops": 8,
+    "median_hops": 9.0
+   },
+   {
+    "region": "East Midlands",
+    "n": 11,
+    "reached": 11,
+    "first_hops": 10,
+    "median_hops": 12.0
+   },
+   {
+    "region": "North West",
+    "n": 14,
+    "reached": 14,
+    "first_hops": 10,
+    "median_hops": 13.0
+   },
+   {
+    "region": "Eastern",
+    "n": 14,
+    "reached": 14,
+    "first_hops": 11,
+    "median_hops": 13.0
+   },
+   {
+    "region": "Yorkshire and the Humber",
+    "n": 26,
+    "reached": 26,
+    "first_hops": 12,
+    "median_hops": 14.0
+   },
+   {
+    "region": "North East",
+    "n": 14,
+    "reached": 14,
+    "first_hops": 14,
+    "median_hops": 15.0
+   },
+   {
+    "region": "Scotland",
+    "n": 6,
+    "reached": 5,
+    "first_hops": 15,
+    "median_hops": 15.0
+   }
+  ],
+  "london_relays": [
+   {
+    "name": "hill near Polperro, Cornwall",
+    "lat": 50.3216,
+    "lon": -4.5461,
+    "elev_m": 27.2
+   },
+   {
+    "name": "hill near Four Marks, Hampshire",
+    "lat": 51.1207,
+    "lon": -1.0405,
+    "elev_m": 223.1
+   },
+   {
+    "name": "hill near Whiteley Village, Surrey",
+    "lat": 51.3472,
+    "lon": -0.4413,
+    "elev_m": 79.8
+   }
+  ]
+ }
+}

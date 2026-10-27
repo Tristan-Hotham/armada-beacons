@@ -1,0 +1,194 @@
+site_id,name,county,country,region,snap_lat,snap_lon,elev_m,sees_fires_from,links_50km,component,in_giant,hops_from_lizard,minutes_fast,minutes_central,minutes_slow,hops_from_lizard_filled,betweenness,cut_vertex
+B001,Beacon Hill,Isles of Scilly,England,South West,49.96056,-6.34249,31.9,0,0,19,False,,,,,,0.0,False
+B002,Roskruge Beacon,Cornwall,England,South West,50.06554,-5.10386,103.0,4,4,3,False,0,0,0,0,0,0.0004,False
+B003,The Beacon,Cornwall,England,South West,50.10869,-5.6175,164.9,2,2,3,False,1,5,15,30,1,0.0,False
+B004,Crowan Beacon,Cornwall,England,South West,50.17124,-5.27151,211.0,3,3,3,False,1,5,15,30,1,0.0002,False
+B005,Beacon Hill,Devon,England,South West,50.30729,-4.00656,105.0,5,5,0,True,,,,,2,0.0107,False
+B006,St Agnes Beacon,Cornwall,England,South West,50.30902,-5.21783,170.8,4,4,3,False,2,10,30,60,2,0.0,False
+B007,Beacon Hill,Devon,England,South West,50.31864,-4.04485,79.1,4,4,0,True,,,,,3,0.0,False
+B008,Fire Beacon Hill,Devon,England,South West,50.37299,-3.60563,163.8,7,7,0,True,,,,,3,0.0017,False
+B009,Hensbarrow Beacon,Cornwall,England,South West,50.38328,-4.81568,332.1,9,9,3,False,1,5,15,30,1,0.0009,False
+B010,Western Beacon,Devon,England,South West,50.40462,-3.89531,318.9,7,7,0,True,,,,,2,0.0108,False
+B011,Beacon Hill,Cornwall,England,South West,50.40821,-4.63967,110.0,1,1,3,False,3,15,45,90,2,0.0,False
+B012,Ugborough Beacon,Devon,England,South West,50.41596,-3.8775,362.0,9,9,0,True,,,,,3,0.0182,False
+B013,Belowda Beacon,Cornwall,England,South West,50.42733,-4.85808,215.0,8,8,3,False,1,5,15,30,1,0.0004,False
+B014,Yarner Beacon,Devon,England,South West,50.44483,-3.72223,54.9,2,2,0,True,,,,,4,0.0,False
+B015,Beacon Hill,Devon,England,South West,50.44664,-3.60969,175.9,8,8,0,True,,,,,3,0.0031,False
+B016,Penn Beacon,Devon,England,South West,50.4516,-3.97356,425.0,5,5,0,True,,,,,3,0.0107,False
+B017,The Beacon,Cornwall,England,South West,50.46584,-4.72464,151.0,7,7,3,False,2,10,30,60,2,0.0005,True
+B018,St Breock Beacon,Cornwall,England,South West,50.4789,-4.86625,208.0,7,7,3,False,2,10,30,60,2,0.0001,False
+B019,Beacon Hill,Devon,England,South West,50.49456,-3.68941,110.9,5,5,0,True,,,,,4,0.001,False
+B020,The Beacon,Devon,England,South West,50.52782,-3.50942,138.9,9,9,0,True,,,,,3,0.0268,False
+B021,The Beacon,Cornwall,England,South West,50.53559,-4.67262,211.0,7,7,3,False,2,10,30,60,2,0.0001,False
+B022,Trelill Beacon,Cornwall,England,South West,50.56797,-4.75793,146.8,6,6,3,False,2,10,30,60,2,0.0,False
+B023,Michaelstow Beacon,Cornwall,England,South West,50.58447,-4.70826,206.0,6,6,3,False,2,10,30,60,2,0.0,False
+B024,The Beacon,Devon,England,South West,50.59675,-4.17393,294.0,4,4,0,True,,,,,3,0.0079,False
+B025,Hameldown Beacon,Devon,England,South West,50.59758,-3.82815,506.9,9,9,0,True,,,,,4,0.0089,False
+B026,West Down Beacon,Devon,England,South West,50.62406,-3.35016,114.0,7,7,0,True,,,,,4,0.004,False
+B027,Tregearedown Beacon,Cornwall,England,South West,50.65429,-4.47625,210.9,4,4,0,True,,,,,3,0.0079,False
+B028,Firebeacon Hill,Cornwall,England,South West,50.68194,-4.72474,54.4,0,1,0,True,,,,,3,0.0,False
+B029,Beacon Knap,Dorset,England,South West,50.69252,-2.6824,114.9,4,4,0,True,,,,,5,0.0087,False
+B030,Fire Beacon Point,Cornwall,England,South West,50.70321,-4.67809,105.9,0,0,20,False,,,,,4,0.0,False
+B031,Beacon Hill,Devon,England,South West,50.71313,-3.25947,228.3,8,8,0,True,,,,,4,0.0041,False
+B032,Thorncombe Beacon,Dorset,England,South West,50.7218,-2.79914,112.3,2,2,0,True,,,,,5,0.0,False
+B033,The Beacon,Cornwall,England,South West,50.73336,-4.56963,173.9,5,5,0,True,,,,,3,0.01,True
+B034,Beacon Hill,Dorset,England,South West,50.74009,-2.37279,124.7,0,0,21,False,,,,,6,0.0,False
+B035,Beacon Hill,Devon,England,South West,50.74742,-3.48327,113.8,4,4,0,True,,,,,4,0.0001,False
+B036,Beacon Hill,East Sussex,England,South East,50.7968,0.09683,64.0,1,1,5,False,,,,,10,0.0,False
+B037,Beacon Hill,The City of Brighton and Hove,England,South East,50.8081,-0.06524,50.0,0,0,22,False,,,,,10,0.0,False
+B038,Beacon Hill,Devon,England,South West,50.81853,-3.06585,190.0,0,0,23,False,,,,,5,0.0,False
+B039,Efford Beacon,Cornwall,England,South West,50.82461,-4.5559,37.9,3,3,0,True,,,,,3,0.0034,True
+B040,Firle Beacon,East Sussex,England,South East,50.83243,0.10783,191.8,2,2,5,False,,,,,10,0.0,False
+B041,Holsworthy Beacon,Devon,England,South West,50.85058,-4.33339,192.0,3,3,0,True,,,,,3,0.0,False
+B042,Blackborough Beacon,Devon,England,South West,50.87535,-3.28672,245.6,10,10,0,True,,,,,4,0.0249,False
+B043,Beacon Hill,Hampshire,England,South East,50.87911,-1.45362,24.0,2,2,0,True,,,,,8,0.0,False
+B044,Ditchling Beacon,East Sussex,England,South East,50.90006,-0.10884,235.9,4,4,5,False,,,,,9,0.0002,True
+B045,Combe Beacon,Somerset,England,South West,50.90603,-3.00672,245.9,9,9,0,True,,,,,5,0.0094,False
+B046,Glatting Beacon,West Sussex,England,South East,50.90876,-0.62832,230.9,3,3,5,False,,,,,9,0.0001,False
+B047,Limekiln Beacon,Dorset,England,South West,50.90865,-2.54401,133.0,8,8,0,True,,,,,6,0.0049,False
+B048,Culmstock Beacon,Devon,England,South West,50.92969,-3.26512,243.5,6,8,0,True,,,,,4,0.0146,False
+B049,Beacon Hill,Somerset,England,South West,50.93209,-2.91203,91.9,8,8,0,True,,,,,6,0.0002,False
+B050,Stoodleigh Beacon,Devon,England,South West,50.95623,-3.59045,285.9,5,5,0,True,,,,,4,0.0007,False
+B051,Beacon Hill,West Sussex,England,South East,50.95797,-0.85225,220.7,1,2,5,False,,,,,8,0.0,False
+B052,Beacon Hill,Devon,England,South West,50.96399,-3.32125,124.8,5,5,0,True,,,,,5,0.0019,False
+B053,Beacon Hill,Hampshire,England,South East,50.99862,-1.14482,184.0,5,5,0,True,,,,,8,0.0017,False
+B054,The Beacon,Somerset,England,South West,51.00807,-2.52141,169.9,8,8,0,True,,,,,6,0.0002,False
+B055,Beacon Hill,Hampshire,England,South East,51.05907,-1.43323,158.5,5,5,0,True,,,,,8,0.0017,False
+B056,Beacon Hill,Kent,England,South East,51.06266,0.60079,92.0,0,0,24,False,,,,,11,0.0,False
+B057,Kingston Beacon,Somerset,England,South West,51.07125,-3.09837,201.4,9,9,0,True,,,,,5,0.0017,False
+B058,Beacon Hill,Wiltshire,England,South West,51.0703,-2.12531,231.8,3,3,0,True,,,,,6,0.019,True
+B059,Beacon Hill,West Sussex,England,South East,51.08314,-0.24926,147.0,3,4,5,False,,,,,9,0.0001,False
+B060,Beacon Hill,Somerset,England,South West,51.11195,-3.36109,333.8,4,4,0,True,,,,,5,0.0,False
+B061,Lamyatt Beacon,Somerset,England,South West,51.12378,-2.47265,189.9,6,6,0,True,,,,,6,0.0,False
+B062,Hurley Beacon,Somerset,England,South West,51.13672,-3.2242,336.6,9,10,0,True,,,,,5,0.0307,False
+B063,Beacon Hill,Somerset,England,South West,51.16078,-3.25248,294.7,9,9,0,True,,,,,5,0.0121,False
+B064,Dunkery Beacon,Somerset,England,South West,51.16256,-3.58638,499.9,7,7,0,True,,,,,5,0.0018,False
+B065,Beacon Hill,Devon,England,South West,51.16919,-4.67105,136.0,2,2,0,True,,,,,4,0.0,False
+B066,Beacon Hill,Wiltshire,England,South West,51.184,-1.72146,182.8,5,5,0,True,,,,,7,0.0161,True
+B067,Popham Beacon,Hampshire,England,South East,51.1943,-1.22559,177.0,4,4,0,True,,,,,8,0.0,False
+B068,Beacon Hill,Kent,England,South East,51.2057,1.34787,55.0,1,1,12,False,,,,,13,0.0,False
+B069,Beacon Hill,Somerset,England,South West,51.21251,-2.51929,286.8,10,10,0,True,,,,,6,0.0317,True
+B070,Selworthy Beacon,Somerset,England,South West,51.2203,-3.54918,290.0,4,4,0,True,,,,,6,0.0,False
+B071,Beacon Hill,Kent,England,South East,51.24168,0.89047,112.1,1,1,13,False,,,,,12,0.0,False
+B072,Beacon Hill,Hampshire,England,South East,51.24461,-0.82397,176.6,2,2,6,False,,,,,9,0.0001,True
+B073,Westbury Beacon,Somerset,England,South West,51.25553,-2.71693,261.9,9,9,0,True,,,,,6,0.0022,False
+B074,Beacon Hill,Kent,England,South East,51.26652,1.30118,32.0,1,1,12,False,,,,,13,0.0,False
+B075,Beacon Batch,Somerset,England,South West,51.3113,-2.74054,316.9,10,10,0,True,,,,,6,0.0358,True
+B076,Beacon Hill,Hampshire,England,South East,51.31208,-1.34377,231.8,4,4,0,True,,,,,8,0.0,False
+B077,Beacon Hill,Kent,England,South East,51.31847,0.85061,43.6,1,1,13,False,,,,,12,0.0,False
+B078,Beacon Hill,Wiltshire,England,South West,51.38675,-1.99643,205.0,3,3,0,True,,,,,7,0.0133,True
+B079,Beacon Hill,Medway,England,South East,51.41598,0.52809,52.8,1,1,14,False,,,,,11,0.0,False
+B080,Beacon Hill,Thurrock,England,Eastern,51.48174,0.24596,12.7,0,1,14,False,,,,,11,0.0,False
+B081,Beacon Hill,Wiltshire,England,South West,51.4874,-1.98234,107.1,1,1,0,True,,,,,8,0.0,False
+B082,Beacon Hill,Essex,England,Eastern,51.61842,0.74238,39.0,2,2,9,False,,,,,11,0.0,False
+B083,Beacon Hill,Buckinghamshire,England,South East,51.62951,-0.68732,172.0,1,1,6,False,,,,,9,0.0,False
+B084,Beacon Hill,Oxfordshire,England,South East,51.66616,-0.94471,242.8,1,2,6,False,,,,,9,0.0001,True
+B085,Beacon Hill,Essex,England,Eastern,51.66612,0.25466,93.0,0,0,25,False,,,,,11,0.0,False
+B086,Beacon Hill,Essex,England,Eastern,51.67201,0.66676,51.0,2,2,9,False,,,,,11,0.0,False
+B087,Beacon Hill,Buckinghamshire,England,South East,51.7454,-0.79033,206.0,0,0,26,False,,,,,9,0.0,False
+B088,Beacon Hill,Oxfordshire,England,South East,51.76825,-1.35061,115.0,2,2,0,True,,,,,9,0.0,False
+B089,Haresfield Beacon,Gloucestershire,England,South West,51.7793,-2.25865,186.6,5,5,0,True,,,,,7,0.0,False
+B090,Beacon Hill,Essex,England,Eastern,51.78532,0.68997,87.9,2,2,9,False,,,,,12,0.0,False
+B091,Painswick Beacon,Gloucestershire,England,South West,51.80658,-2.19113,255.8,5,5,0,True,,,,,7,0.0,False
+B092,Chedworth Beacon,Gloucestershire,England,South West,51.81165,-1.93871,240.0,3,3,0,True,,,,,8,0.0068,True
+B093,Beacon Hill,Gloucestershire,England,South West,51.83116,-2.48899,260.9,6,6,0,True,,,,,7,0.001,False
+B094,Beacon Hill,Buckinghamshire,England,South East,51.84119,-0.60636,202.8,0,0,27,False,,,,,10,0.0,False
+B095,Wyck Beacon,Gloucestershire,England,South West,51.88535,-1.70767,247.0,2,2,0,True,,,,,8,0.0,False
+B096,Beacon Hill,Buckinghamshire,England,South East,51.9195,-1.06083,98.2,1,1,6,False,,,,,9,0.0,False
+B097,Beacon Hill,Essex,England,Eastern,51.9395,1.28791,6.0,0,0,28,False,,,,,12,0.0,False
+B098,Herefordshire Beacon,County of Herefordshire,England,West Midlands,52.05626,-2.35168,291.6,7,7,0,True,,,,,8,0.0089,False
+B099,Beacon Hill,County of Herefordshire,England,West Midlands,52.10268,-2.4451,136.8,3,3,0,True,,,,,8,0.0,False
+B100,Worcestershire Beacon,Worcestershire,England,West Midlands,52.1045,-2.33924,376.9,7,7,0,True,,,,,8,0.0089,False
+B101,Beacon Hill,Warwickshire,England,West Midlands,52.24588,-1.2833,197.0,0,0,29,False,,,,,9,0.0,False
+B102,Beacon Hill,North Northamptonshire,England,East Midlands,52.2575,-0.66684,90.6,0,0,30,False,,,,,10,0.0,False
+B103,Beacon Hill,Worcestershire,England,West Midlands,52.38101,-2.01957,288.0,4,4,0,True,,,,,9,0.0131,True
+B104,Beacon Hill,Norfolk,England,Eastern,52.39608,1.30257,40.0,0,0,31,False,,,,,14,0.0,False
+B105,Beacon Hill,Norfolk,England,Eastern,52.47388,0.95407,45.0,0,0,32,False,,,,,14,0.0,False
+B106,Beacon Hill,Norfolk,England,Eastern,52.53836,1.53613,20.0,0,0,33,False,,,,,14,0.0,False
+B107,Beacon Hill,Shropshire,England,West Midlands,52.54198,-2.5396,139.5,1,1,0,True,,,,,10,0.0,False
+B108,Sedgley Beacon,Dudley,England,West Midlands,52.54586,-2.11544,224.0,4,4,0,True,,,,,9,0.0068,True
+B109,Barr Beacon,Walsall,England,West Midlands,52.57336,-1.90958,220.0,2,2,0,True,,,,,9,0.0,False
+B110,Beacon Hill,Leicestershire,England,East Midlands,52.72759,-1.2463,229.9,2,2,7,False,,,,,11,0.0001,True
+B111,Beacon Hill,Lincolnshire,England,East Midlands,52.77831,-0.54605,99.0,0,0,34,False,,,,,13,0.0,False
+B112,Beacon Hill,Norfolk,England,Eastern,52.8048,0.82335,87.0,1,1,15,False,,,,,13,0.0,False
+B113,Beacon Hill,Staffordshire,England,West Midlands,52.82398,-2.07986,124.0,1,1,0,True,,,,,10,0.0,False
+B114,Beacon Hill,Staffordshire,England,West Midlands,52.83888,-1.64321,73.0,0,0,35,False,,,,,11,0.0,False
+B115,Beacon Hill,Lincolnshire,England,East Midlands,52.88188,-0.37994,42.2,2,2,10,False,,,,,13,0.0,False
+B116,Beacon Hill,Norfolk,England,Eastern,52.89351,1.39727,58.1,1,1,16,False,,,,,14,0.0,False
+B117,Beacon Hill,Norfolk,England,Eastern,52.92411,1.24917,103.0,1,1,16,False,,,,,13,0.0,False
+B118,Beacon Hill,Norfolk,England,Eastern,52.93189,0.72435,54.4,1,1,15,False,,,,,14,0.0,False
+B119,Beacon Hill,Norfolk,England,Eastern,52.94575,0.57891,51.9,0,0,36,False,,,,,13,0.0,False
+B120,Beacon Hill,Leicestershire,England,East Midlands,52.94811,-0.7917,58.0,2,2,7,False,,,,,11,0.0001,True
+B121,Beacon Hill,Lincolnshire,England,East Midlands,52.97874,-0.35905,17.8,1,2,10,False,,,,,13,0.0,False
+B122,Beacon Hill,Nottinghamshire,England,East Midlands,53.03667,-1.23858,135.8,1,1,7,False,,,,,11,0.0,False
+B123,Beacon Hill,Lincolnshire,England,East Midlands,53.16376,-0.62007,16.0,1,1,7,False,,,,,12,0.0,False
+B124,Beacon Hill,Nottinghamshire,England,East Midlands,53.25336,-0.90983,71.0,1,1,2,False,,,,,12,0.0,False
+B125,Beacon Hill,Cheshire West and Chester,England,North West,53.28448,-2.72251,137.9,1,1,17,False,,,,,10,0.0,False
+B126,Beacon Hill,Lincolnshire,England,East Midlands,53.29513,-0.16141,106.9,2,2,10,False,,,,,13,0.0,False
+B127,Beacon Hill,Halton,England,North West,53.33045,-2.74176,73.0,1,1,17,False,,,,,10,0.0,False
+B128,Beacon Hill,Rotherham,England,Yorkshire and the Humber,53.40903,-1.22288,142.0,2,2,2,False,,,,,12,0.0009,True
+B129,Beacon Hill,Lincolnshire,England,East Midlands,53.46236,0.07201,3.0,2,2,4,False,,,,,14,0.0,False
+B130,Beacon Hill,North East Lincolnshire,England,Yorkshire and the Humber,53.55615,-0.03763,13.0,3,3,4,False,,,,,14,0.0,False
+B131,Beacon Hill (Woolley Edge),Wakefield,England,Yorkshire and the Humber,53.61667,-1.53596,168.9,3,4,2,False,,,,,12,0.0023,True
+B132,Upton Beacon,Wakefield,England,Yorkshire and the Humber,53.61894,-1.2823,86.9,3,3,2,False,,,,,12,0.0007,False
+B133,Beacon Hill,Calderdale,England,Yorkshire and the Humber,53.66288,-1.93159,311.8,1,1,2,False,,,,,12,0.0,False
+B134,Beacon Hill,North Lincolnshire,England,Yorkshire and the Humber,53.6638,-0.4471,59.9,4,4,4,False,,,,,14,0.0003,False
+B135,Beacon Hill,East Riding of Yorkshire,England,Yorkshire and the Humber,53.68,0.03508,23.9,4,4,4,False,,,,,14,0.0004,False
+B136,Beacon Hill,Calderdale,England,Yorkshire and the Humber,53.7216,-1.84364,246.0,3,3,2,False,,,,,12,0.0009,True
+B137,Beacon Hill,East Riding of Yorkshire,England,Yorkshire and the Humber,53.80828,-0.06384,22.0,4,5,4,False,,,,,14,0.0008,False
+B138,Beacon (Big End),Lancashire,England,North West,53.86904,-2.29963,540.9,4,4,2,False,,,,,12,0.0017,False
+B139,Beacon Fell,Lancashire,England,North West,53.87891,-2.65653,258.7,3,3,2,False,,,,,11,0.0036,True
+B140,Beacon Hill,Leeds,England,Yorkshire and the Humber,53.89259,-1.69682,265.9,3,3,2,False,,,,,12,0.0036,True
+B141,Pinhaw Beacon,North Yorkshire,England,Yorkshire and the Humber,53.9209,-2.08529,374.9,4,4,2,False,,,,,12,0.0017,False
+B142,Beacon Hill,Lancashire,England,North West,53.9282,-2.37777,292.9,3,3,2,False,,,,,12,0.0,False
+B143,Beamsley Beacon,North Yorkshire,England,Yorkshire and the Humber,53.96852,-1.84725,376.0,4,4,2,False,,,,,12,0.0038,True
+B144,Rudston Beacon,East Riding of Yorkshire,England,Yorkshire and the Humber,54.07508,-0.33025,86.0,4,4,4,False,,,,,14,0.0003,False
+B145,Beacon Hill,East Riding of Yorkshire,England,Yorkshire and the Humber,54.10792,-0.12558,41.0,2,2,4,False,,,,,14,0.0,False
+B146,Beacon Hill,Westmorland and Furness,England,North West,54.13062,-3.12492,79.0,2,2,2,False,,,,,12,0.0033,True
+B147,Beacon Hill,North Yorkshire,England,Yorkshire and the Humber,54.15637,-0.25603,124.9,4,4,4,False,,,,,14,0.0008,True
+B148,Beacon Hill,North Yorkshire,England,Yorkshire and the Humber,54.20547,-0.30966,54.0,2,2,4,False,,,,,15,0.0,False
+B149,Beacon Hill,North Yorkshire,England,Yorkshire and the Humber,54.2513,-0.78212,48.1,0,0,37,False,,,,,14,0.0,False
+B150,Seamer Beacon,North Yorkshire,England,Yorkshire and the Humber,54.27609,-0.45499,177.0,2,2,4,False,,,,,14,0.0,False
+B151,Penhill Beacon,North Yorkshire,England,Yorkshire and the Humber,54.27488,-1.92061,506.5,4,4,1,False,,,,,14,0.0011,True
+B152,Beacon Fell,Westmorland and Furness,England,North West,54.30568,-3.11104,219.5,0,0,38,False,,,,,13,0.0,False
+B153,White Beacon Hill,North Yorkshire,England,Yorkshire and the Humber,54.35178,-2.15955,593.1,1,1,1,False,,,,,13,0.0,False
+B154,Beacon Hill,North Yorkshire,England,Yorkshire and the Humber,54.38895,-1.29289,285.9,6,6,1,False,,,,,14,0.001,False
+B155,Whinfell Beacon,Westmorland and Furness,England,North West,54.39696,-2.65804,437.8,3,3,2,False,,,,,13,0.0028,True
+B156,Beacon Hill,North Yorkshire,England,Yorkshire and the Humber,54.41846,-1.78111,311.9,5,5,1,False,,,,,13,0.0002,False
+B157,Beacon Hill,North Yorkshire,England,Yorkshire and the Humber,54.43993,-0.56111,179.4,2,2,1,False,,,,,15,0.0011,True
+B158,Beacon Hill,Westmorland and Furness,England,North West,54.46591,-2.43648,366.9,1,2,2,False,,,,,14,0.0,False
+B159,Danby Beacon,North Yorkshire,England,Yorkshire and the Humber,54.47288,-0.866,290.0,4,5,1,False,,,,,15,0.0022,True
+B160,Beacon Hill,North Yorkshire,England,Yorkshire and the Humber,54.4728,-0.57197,94.0,1,1,1,False,,,,,15,0.0,False
+B161,Beacon Hill,Westmorland and Furness,England,North West,54.48391,-2.56458,382.0,3,3,2,False,,,,,14,0.0008,False
+B162,Beacon Hill,North Yorkshire,England,Yorkshire and the Humber,54.54714,-0.77502,103.8,1,1,1,False,,,,,15,0.0,False
+B163,Beacon Moor,Redcar and Cleveland,England,North East,54.5716,-1.02643,171.0,7,7,1,False,,,,,15,0.005,False
+B164,Shackleton Beacon Hill,Darlington,England,North East,54.6034,-1.6445,190.0,6,6,1,False,,,,,14,0.001,False
+B165,Narrowgate Beacon,Westmorland and Furness,England,North West,54.63053,-2.41109,668.8,3,3,2,False,,,,,14,0.0008,False
+B166,Beacon Hill,Westmorland and Furness,England,North West,54.67552,-2.73997,276.4,2,2,2,False,,,,,14,0.0,False
+B167,Beacon Hill,Hartlepool,England,North East,54.68831,-1.31626,114.7,5,6,1,False,,,,,14,0.0005,False
+B168,Beacon Hill,County Durham,England,North East,54.73605,-1.47846,180.9,6,6,1,False,,,,,14,0.0005,False
+B169,Beacon Hill,Cumberland,England,North West,54.7627,-3.33864,79.3,1,1,8,False,,,,,14,0.0,False
+B170,Beacon Hill,County Durham,England,North East,54.80021,-1.31948,75.3,4,4,1,False,,,,,15,0.0018,True
+B171,Catton Beacon,Northumberland,England,North East,54.92902,-2.28047,325.0,3,3,1,False,,,,,15,0.0021,True
+B172,Beacon Hill (Fell House Fell),Northumberland,England,North East,54.92841,-2.3725,330.1,2,2,1,False,,,,,15,0.0,False
+B173,Beacon Hill,South Tyneside,England,North East,54.96865,-1.38504,78.0,6,6,1,False,,,,,15,0.0057,True
+B174,The Beacon,Cumberland,England,North West,55.041,-2.66739,302.2,2,2,1,False,,,,,15,0.0,False
+B175,Beacon Hill,Northumberland,England,North East,55.07802,-1.78445,78.8,1,1,1,False,,,,,15,0.0,False
+B176,Beacon Hill,Northumberland,England,North East,55.1338,-2.44145,306.1,0,0,39,False,,,,,15,0.0,False
+B177,Beacon Hill,Northumberland,England,North East,55.20667,-1.70355,123.9,3,3,1,False,,,,,15,0.0,False
+B178,Beacon Hill,Northumberland,England,North East,55.21846,-1.76946,196.0,6,6,1,False,,,,,15,0.0039,True
+B179,Beacon Hill,Northumberland,England,North East,55.32246,-1.55592,9.0,3,3,1,False,,,,,16,0.0,False
+B180,Beacon Hill,Northumberland,England,North East,55.36465,-1.70773,176.0,4,4,1,False,,,,,16,0.0,False
+B181,Beacon Hill,Dumfries and Galloway,Scotland,Scotland,55.07282,-3.70183,185.2,3,3,8,False,,,,,15,0.0001,True
+B182,Beacon Hill,Dumfries and Galloway,Scotland,Scotland,55.09754,-3.4807,221.8,2,2,8,False,,,,,15,0.0,False
+B183,Beacon Hill,Dumfries and Galloway,Scotland,Scotland,55.15486,-3.74548,196.9,1,2,8,False,,,,,15,0.0,False
+B184,Beacon Hill,East Ayrshire,Scotland,Scotland,55.51504,-4.11221,228.2,0,0,40,False,,,,,18,0.0,False
+B185,Beacon Hill,Scottish Borders,Scotland,Scotland,55.76543,-2.92171,351.2,0,0,41,False,,,,,17,0.0,False
+B186,Beacon Hill,Highland,Scotland,Scotland,57.82832,-3.81153,20.9,0,0,42,False,,,,,,0.0,False
+B187,The Beacon,Abertawe - Swansea,Wales,Wales,51.57568,-4.27977,175.7,2,2,11,False,,,,,5,0.0001,True
+B188,Marros Beacon,Sir Gaerfyrddin - Carmarthenshire,Wales,Wales,51.74278,-4.60395,128.9,1,1,11,False,,,,,6,0.0,False
+B189,Beacon Hill,Sir Fynwy - Monmouthshire,Wales,Wales,51.74437,-2.70726,295.0,6,6,0,True,,,,,7,0.0318,True
+B190,Beacon Hill,Sir Benfro - Pembrokeshire,Wales,Wales,51.76751,-4.83592,92.0,1,1,11,False,,,,,6,0.0,False
+B191,Beacon Hill,Powys - Powys,Wales,Wales,52.38357,-3.21135,534.9,0,1,18,False,,,,,8,0.0,False
+B192,Beacon Ring,Powys - Powys,Wales,Wales,52.64523,-3.08655,401.8,1,1,18,False,,,,,8,0.0,False
+B193,Beacon Hill,Sir Ddinbych - Denbighshire,Wales,Wales,53.17671,-3.47001,172.2,0,0,43,False,,,,,10,0.0,False
